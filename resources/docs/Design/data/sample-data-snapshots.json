@@ -1,0 +1,42 @@
+{
+  "snapshots": [
+    {
+      "id": "loginScreen",
+      "kind": "HTML",
+      "scope": "screen",
+      "sourceRect": { "x": 0, "y": 0, "width": 1440, "height": 900 },
+      "filePath": "snapshots/login.html",
+      "meta": {
+        "label": "Login Page",
+        "created": "2025-09-18T10:00:00Z",
+        "tags": ["auth", "entry"]
+      },
+      "triggers": ["login-btn"]
+    },
+    {
+      "id": "homeScreen",
+      "kind": "PNG",
+      "scope": "screen",
+      "sourceRect": { "x": 0, "y": 0, "width": 1440, "height": 900 },
+      "filePath": "snapshots/home.html",
+      "meta": {
+        "label": "Homepage",
+        "created": "2025-09-18T10:05:00Z"
+      },
+      "triggers": ["logout-btn"]
+    },
+    {
+      "id": "welcomePopup",
+      "kind": "PNG",
+      "scope": "region",
+      "sourceRect": { "x": 400, "y": 200, "width": 360, "height": 220 },
+      "filePath": "snapshots/welcome-popup.png",
+      "meta": {
+        "label": "Welcome Modal",
+        "created": "2025-09-18T10:07:00Z",
+        "tags": ["popup", "modal"]
+      },
+      "triggers": ["dismiss-btn"]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+    "imports": {
+        "runtime": "../../../src/runtime/index.js",
+        "core.ui.MessageBar": "../../../src/core/ui/MessageBar/index.js"
+    }
+}

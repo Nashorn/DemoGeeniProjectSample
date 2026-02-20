@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Conditions Editor</title>
+  <style>
+    body { font-family: sans-serif; padding: 1rem; }
+    .group { border-left: 2px solid #ccc; margin: .5rem 0 .5rem 1rem; padding-left: .5rem; }
+    .group.not { border-color: #888; }
+    .row { margin: .25rem 0; }
+    select, input { margin-right: .5rem; }
+    button { margin-left: .25rem; }
+    pre { background: #f4f4f4; padding: .5rem; white-space: pre-wrap; }
+    .muted { opacity: .7; font-size: .9em; }
+  </style>
+</head>
+<body>
+  <h2>Conditions / Rules Editor</h2>
+  <div id="editor"></div>
+  <button id="exportBtn">Export JSON</button>
+  <pre id="output"></pre>
+
+  <script type="module">
+    // ---- UI builders ----
+    function makeRow() {
+      const div = document.createElement('div');
+      div.className = 'row';
+      div.innerHTML = `
+        Var: <input class="var" placeholder="name">
+        <select class="op">
+          <option value="eq">==</option>
+          <option value="neq">!=</option>
+          <option value="gt">&gt;</option>
+          <option value="lt">&lt;</option>
+          <option value="in">in</option>
+          <option value="between">between</option>
+        </select>
+        <span class="val-wrap single">
+          <input class="val" placeholder="value (comma-list for 'in')">
+        </span>
+        <span class="val-wrap between" style="display:none">
+          <input class="min" placeholder="min">
+          <span class="muted">to</span>
+          <input class="max" placeholder="max">
+        </span>
+        <button class="remove">x</button>
+      `;
+
+      // toggle inputs depending on operator
+      const op = div.querySelector('.op');
+      const single = div.querySelector('.val-wrap.single');
+      const between = div.querySelector('.val-wrap.between');
+      const sync = () => {
+        const isBetween = op.value === 'between';
+        single.style.display = isBetween ? 'none' : '';
+        between.style.display = isBetween ? '' : 'none';
+      };
+      op.addEventListener('change', sync);
+      sync();
+
+      div.querySelector('.remove').onclick = () => div.remove();
+      return div;
+    }
+
+    function makeGroup(type="and") {
+      const div = document.createElement('div');
+      div.className = 'group';
+
+      const header = document.createElement('div');
+      header.innerHTML = `
+        <select class="logic">
+          <option value="and">AND</option>
+          <option value="or">OR</option>
+        </select>
+        <button class="add-cond">+Condition</button>
+        <button class="add-group">+Group</button>
+        <button class="add-not">+NOT</button>
+        <button class="remove">x</button>
+      `;
+      header.querySelector('.logic').value = type;
+      header.querySelector('.add-cond').onclick = () => div.appendChild(makeRow());
+      header.querySelector('.add-group').onclick = () => div.appendChild(makeGroup());
+      header.querySelector('.add-not').onclick  = () => div.appendChild(makeNotGroup());
+      header.querySelector('.remove').onclick   = () => div.remove();
+
+      div.appendChild(header);
+      return div;
+    }
+
+    // NOT group: exactly one child (row or group)
+    function makeNotGroup() {
+      const div = document.createElement('div');
+      div.className = 'group not';
+
+      const header = document.createElement('div');
+      header.innerHTML = `
+        <strong>NOT</strong>
+        <button class="add-cond">+Condition</button>
+        <button class="add-group">+Group</button>
+        <button class="remove">x</button>
+      `;
+      const ensureSingleChild = (nodeMaker) => {
+        // remove any existing child (after header)
+        const existing = Array.from(div.children).slice(1);
+        existing.forEach(c => c.remove());
+        div.appendChild(nodeMaker());
+      };
+      header.querySelector('.add-cond').onclick = () => ensureSingleChild(makeRow);
+      header.querySelector('.add-group').onclick = () => ensureSingleChild(() => makeGroup("and"));
+      header.querySelector('.remove').onclick = () => div.remove();
+
+      div.appendChild(header);
+      return div;
+    }
+
+    // ---- Serialize DOM -> JSON ----
+    function serializeGroup(div) {
+      if (div.classList.contains('not')) {
+        // NOT: take first child after header
+        const child = Array.from(div.children).slice(1)[0];
+        return { not: serializeNode(child) };
+      }
+      const type = div.querySelector('.logic')?.value || "and";
+      const children = Array.from(div.children).slice(1); // skip header
+      const arr = [];
+      for (const child of children) {
+        arr.push(serializeNode(child));
+      }
+      return { [type]: arr.filter(Boolean) };
+    }
+
+    function serializeRow(row) {
+      const variable = row.querySelector('.var').value.trim();
+      const op = row.querySelector('.op').value;
+      if (!variable) return null;
+
+      if (op === 'between') {
+        let min = row.querySelector('.min').value.trim();
+        let max = row.querySelector('.max').value.trim();
+        if (min === "" || max === "") return null;
+        min = parseMaybe(min);
+        max = parseMaybe(max);
+        return { var: variable, between: [min, max] };
+      }
+
+      let val = row.querySelector('.val').value.trim();
+      if (op === 'in') {
+        const list = val ? val.split(",").map(s => parseMaybe(s.trim())) : [];
+        return { var: variable, in: list };
+      }
+
+      val = parseMaybe(val);
+      if (op === "eq")  return { var: variable, eq: val };
+      if (op === "neq") return { var: variable, neq: val };
+      if (op === "gt")  return { var: variable, gt: val };
+      if (op === "lt")  return { var: variable, lt: val };
+      return null;
+    }
+
+    function serializeNode(node) {
+      if (!node) return null;
+      if (node.classList.contains('row'))   return serializeRow(node);
+      if (node.classList.contains('group')) return serializeGroup(node);
+      return null;
+    }
+
+    function parseMaybe(s) {
+      if (s === "true") return true;
+      if (s === "false") return false;
+      if (s === "null") return null;
+      if (s === "") return "";
+      const n = Number(s);
+      return isNaN(n) ? s : n;
+    }
+
+    // ---- Boot ----
+    const root = makeGroup("and");
+    document.getElementById('editor').appendChild(root);
+
+    document.getElementById('exportBtn').onclick = () => {
+      const json = serializeGroup(root);
+      document.getElementById('output').textContent = JSON.stringify(json, null, 2);
+    };
+
+
+
+    // ConditionEvaluator.js
+class ConditionEvaluator {
+  eval(expr, vars = {}) {
+    return this._eval(expr, vars);
+  }
+
+  _eval(expr, vars) {
+    if (!expr) return true;
+    if (typeof expr === "boolean") return expr;
+
+    // Composites
+    if (expr.and) return expr.and.every((c) => this._eval(c, vars));
+    if (expr.or)  return expr.or.some((c) => this._eval(c, vars));
+    if (expr.not) return !this._eval(expr.not, vars);
+
+    // Leaf
+    if (expr.var) {
+      const val = this._get(vars, expr.var);
+      if ("eq"  in expr) return val === expr.eq;
+      if ("neq" in expr) return val !== expr.neq;
+      if ("gt"  in expr) return val >  expr.gt;
+      if ("lt"  in expr) return val <  expr.lt;
+
+      // new: set membership
+      if ("in" in expr) {
+        const set = Array.isArray(expr.in) ? expr.in : [];
+        return set.includes(val);
+      }
+
+      // new: inclusive range
+      if ("between" in expr) {
+        const [min, max] = Array.isArray(expr.between) ? expr.between : [];
+        if (min === undefined || max === undefined) return false;
+        return val >= min && val <= max;
+      }
+
+      // Fallback: truthiness of the variable
+      return Boolean(val);
+    }
+
+    // Unknown shape
+    return false;
+  }
+
+  // Supports dot paths: "user.role"
+  _get(obj, path) {
+    if (!path || typeof path !== "string") return undefined;
+    return path.split(".").reduce((o, k) => (o == null ? undefined : o[k]), obj);
+  }
+}
+
+globalThis.ConditionEvaluator = ConditionEvaluator;
+
+  </script>
+</body>
+</html>

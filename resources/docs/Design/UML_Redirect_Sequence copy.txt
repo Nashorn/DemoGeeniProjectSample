@@ -1,0 +1,24 @@
+sequenceDiagram
+  autonumber
+  participant U as User
+  participant B as Browser (Snapshot HTML)
+  participant C as Controller (Application)
+  participant RS as RenderService (overlays only)
+  participant VS as VariableStore
+  participant SR as SnapshotRepository
+  participant AM as Actions Map
+  participant A as Action instance
+
+  Note over B: Base snapshot HTML is already rendered
+  C ->> RS: Draw trigger hotspots for this page
+  U ->> RS: Click hotspot
+  RS -->> C: Trigger fires 'click'
+  C ->> VS: Evaluate trigger condition
+  VS -->> C: true
+  C ->> AM: Resolve RedirectToSnapshotAction by class name
+  AM -->> C: Return class
+  C ->> A: Construct action with config { snapshotId: "google-home" }
+  A ->> SR: Load target snapshot metadata
+  SR -->> A: Return file path to snapshot HTML
+  A ->> B: Navigate to snapshot file path
+  Note over B: New snapshot loads and a fresh controller boots

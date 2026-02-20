@@ -1,0 +1,121 @@
+{
+  "triggers": [
+    {
+      "id": "login-btn",
+      "label": "Login Button",
+      "description": "Clicking logs user into the demo",
+      "isGlobal": false,
+      "isPseudo": true,
+      "selector": null,
+      "rect": { "x": 420, "y": 300, "width": 140, "height": 40 },
+      "condition": {
+        "and": [
+          { "var": "userReady", "eq": true }
+        ]
+      },
+      "binding": {
+        "expr": "${user.name}",
+        "format": "text"
+      },
+      "style": {
+        "overlayColor": "rgba(0,0,0,0.1)",
+        "border": "2px solid red",
+        "align": "center",
+        "z": 10,
+        "highlightable": true,
+        "highlightState": "off",
+        "highlightStyle": "trigger-highlight",
+        "pulsate": false
+      },
+      "tracking": true,
+      "action": {
+        "class": "RedirectToSnapshotAction",
+        "config": {
+          "snapshotId": "homeScreen"
+        }
+      },
+      "meta": {
+        "createdBy": "author",
+        "createdAt": "2025-09-18T12:00:00Z"
+      }
+    },
+    {
+      "id": "logout-btn",
+      "label": "Logout Button",
+      "description": "Clicking logs user out of the demo",
+      "isGlobal": false,
+      "isPseudo": true,
+      "selector": null,
+      "rect": { "x": 420, "y": 300, "width": 140, "height": 40 },
+      "condition": {
+        "and": [
+          { "var": "userReady", "eq": true }
+        ]
+      },
+      "binding": {
+        "expr": "${user.name}",
+        "format": "text"
+      },
+      "style": {
+        "overlayColor": "rgba(0,0,0,0.1)",
+        "border": "2px solid red",
+        "align": "center",
+        "z": 10,
+        "highlightable": true,
+        "highlightState": "off",
+        "highlightStyle": "trigger-highlight",
+        "pulsate": false
+      },
+      "tracking": true,
+      "action": {
+        "class": "RedirectToSnapshotAction",
+        "config": {
+          "snapshotId": "loginScreen"
+        }
+      },
+      "meta": {
+        "createdBy": "author",
+        "createdAt": "2025-09-18T12:00:00Z"
+      }
+    },
+    {
+      "id": "dismiss-btn",
+      "label": "Dismiss Button",
+      "description": "Clicking dismisses the welcome popup (snapshotId=welcomePopup)",
+      "isGlobal": false,
+      "isPseudo": true,
+      "selector": null,
+      "rect": { "x": 420, "y": 300, "width": 140, "height": 40 },
+      "condition": {
+        "and": [
+          { "var": "userReady", "eq": true }
+        ]
+      },
+      "binding": {
+        "expr": "${user.name}",
+        "format": "text"
+      },
+      "style": {
+        "overlayColor": "rgba(0,0,0,0.1)",
+        "border": "2px solid red",
+        "align": "center",
+        "z": 10,
+        "highlightable": true,
+        "highlightState": "off",
+        "highlightStyle": "trigger-highlight",
+        "pulsate": false
+      },
+      "tracking": true,
+      "action": {
+        "class": "HideAction",
+        "config": {
+          "snapshotId": "welcomePopup"
+        }
+      },
+      "meta": {
+        "createdBy": "author",
+        "createdAt": "2025-09-18T12:00:00Z"
+      }
+    }
+  ]
+}

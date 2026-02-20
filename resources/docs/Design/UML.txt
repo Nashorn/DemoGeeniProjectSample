@@ -1,0 +1,295 @@
+---
+config:
+  layout: elk
+---
+classDiagram
+direction TB
+    class Kind {
+	    HTML
+	    PNG
+    }
+    class Scope {
+	    screen
+	    region
+    }
+    class Rect {
+	    +x: number
+	    +y: number
+	    +width: number
+	    +height: number
+    }
+    class Condition {
+	    +logic: AND|OR groups
+	    +predicates: Array
+    }
+    class Style {
+	    +overlayColor?: string
+	    +border?: string
+	    +align?: string
+	    +z?: number
+	    +highlightable?: boolean
+	    +highlightState?: string
+	    +highlightStyle?: string
+	    +pulsate?: boolean
+    }
+    class Snapshot {
+	    +id: string
+	    +kind: Kind
+	    +scope: Scope
+	    +sourceRect: Rect
+	    +filePath: string
+	    +meta?: Map
+	    +dpr?: number
+	    +triggers?: string[]
+    }
+    class Trigger {
+	    +id: string
+	    +label?: string
+	    +description?: string
+	    +isGlobal: boolean
+	    +isPseudo: boolean
+	    +selector?: string
+	    +rect?: Rect
+	    +condition?: Condition
+	    +action: Action
+	    +binding?: Binding
+	    +style?: Style
+	    +tracking?: boolean
+	    +meta?: Map
+    }
+    class Recording {
+	    +id: string
+	    +clips: Clip[*]
+    }
+    class Clip {
+	    +id: string
+	    +triggers: string[]
+    }
+    class SnapshotClip {
+	    +snapshotId: string
+	    +destRect?: Rect
+    }
+    class MutationClip {
+	    +rootSelector: string
+	    +baselineHtml: string
+	    +mutations: Array
+    }
+    class Action {
+	    +static meta
+	    +run(controller, vars)
+    }
+    class RevealAction
+    class RevealComponentAction
+    class PlayAction
+    class NextAction
+    class PrevAction
+    class JumpAction
+    class RedirectToSnapshotAction
+    class RedirectUrlAction
+    class SetVariableAction
+    class ScriptAction
+
+    %% Repositories
+    class SnapshotRepository {
+	    +get(id): Snapshot
+	    +list(): Snapshot[]
+	    +getByHostPage(url): Snapshot
+    }
+    class RecordingRepository {
+	    +get(id): Recording
+	    +list(): Recording[]
+    }
+    class TriggerRepository {
+	    +get(id): Trigger
+	    +getMany(ids): Trigger[]
+	    +list(): Trigger[]
+	    +getTriggersBy(snapOrClip): Trigger[]
+    }
+
+    %% Runtime core
+    class SnapshotController {
+	    -renderService: RenderService
+	    -triggerBinder: TriggerBinder
+	    -dataBinding: DataBindingService
+	    -mutationRuntime: MutationRuntime
+	    -vars: VariableStore
+	    -snapshotRepo: SnapshotRepository
+	    -recordingRepo: RecordingRepository
+	    -triggerRepo: TriggerRepository
+	    -clickGuard?: ClickGuard
+	    +onConnected(): Promise
+	    +drawAndBindPageTriggers()
+	    +onTrigger(trigger)
+	    +getOrCreatePlayer(recordingId): Player
+	    +nextFromTrigger(trigger)
+	    +prevFromTrigger(trigger)
+	    +jumpToFromTrigger(trigger, i)
+    }
+
+    class RenderService {
+	    +drawTriggers(triggers: Trigger[], sheet?)
+	    +clearStageTriggers()
+	    +renderOverlay(snapshot, destRect?, opts?)
+	    +renderComponentOverlay(ComponentClass, props, destRect, opts)
+	    +clearOverlays(where)
+	    +toCssRect(physicalRect, dpr, opts?): Rect
+	    +scaleStageToViewport(stageEl, w, h, opts?)
+	    +findSheetBySnapshotId(id)
+	    -registerRenderer(kind, scope, renderer)
+	    -getRenderer(kind, scope)
+    }
+
+    %% Renderer strategy (polymorphic)
+    class RendererStrategy {
+	    <<interface>>
+	    +render(sheet, snapshot, destRect?)
+    }
+    class PngScreenRenderer
+    class PngRegionRenderer
+
+    %% Input + eval
+    class TriggerBinder {
+	    +bind(triggers, vars?, onFire?): ()=>void
+    }
+    class DataBindingService {
+	    +applyBindings(triggers, vars)
+    }
+    class ConditionEvaluator {
+	    +evaluate(condition, vars): boolean
+    }
+    class MutationRuntime {
+	    +resetRegion(rootSelector, baselineHtml)
+	    +apply(rootSelector, mutations)
+    }
+    class VariableStore {
+	    +get(key, dflt?)
+	    +set(patch)
+    }
+    class Player {
+	    -rec: Recording
+	    -index: number
+	    -group: string
+	    -boundDispose?: function
+	    +start(at=0)
+	    +next()
+	    +prev()
+	    +jumpTo(i)
+	    +dispose()
+    }
+    class ClickGuard {
+	    +setAllow(nodes[])
+	    +destroy()
+    }
+
+    %% Overlay structure managed by RenderService
+    class OverlayLayer {
+	    <<struct>>
+	    +name: "overlay-ui" | "overlay-tooltip" | "overlay-hud"
+    }
+    class OverlayGroup {
+	    <<struct>>
+	    +name: string
+    }
+    class OverlaySheet {
+	    <<struct>>
+	    +z?: number
+	    +passThrough?: boolean
+    }
+
+    %% Stereotypes
+	<<enum>> Kind
+	<<enum>> Scope
+	<<domain>> Snapshot
+	<<domain>> Trigger
+	<<domain>> Recording
+	<<domain>> Clip
+	<<domain>> SnapshotClip
+	<<domain>> MutationClip
+	<<domain>> Action
+	<<domain>> RevealAction
+	<<domain>> RevealComponentAction
+	<<domain>> PlayAction
+	<<domain>> NextAction
+	<<domain>> PrevAction
+	<<domain>> JumpAction
+	<<domain>> RedirectToSnapshotAction
+	<<domain>> RedirectUrlAction
+	<<domain>> SetVariableAction
+	<<domain>> ScriptAction
+	<<repository>> SnapshotRepository
+	<<repository>> RecordingRepository
+	<<repository>> TriggerRepository
+	<<runtime>> SnapshotController
+	<<runtime>> RenderService
+	<<runtime>> RendererStrategy
+	<<runtime>> PngScreenRenderer
+	<<runtime>> PngRegionRenderer
+	<<runtime>> TriggerBinder
+	<<runtime>> DataBindingService
+	<<runtime>> MutationRuntime
+	<<runtime>> VariableStore
+	<<runtime>> Player
+	<<runtime>> ConditionEvaluator
+	<<runtime>> ClickGuard
+	<<struct>> OverlayLayer
+	<<struct>> OverlayGroup
+	<<struct>> OverlaySheet
+
+    %% Inheritance
+    Clip <|-- SnapshotClip
+    Clip <|-- MutationClip
+    Action <|-- RevealAction
+    Action <|-- RevealComponentAction
+    Action <|-- PlayAction
+    Action <|-- NextAction
+    Action <|-- PrevAction
+    Action <|-- JumpAction
+    Action <|-- RedirectToSnapshotAction
+    Action <|-- RedirectUrlAction
+    Action <|-- SetVariableAction
+    Action <|-- ScriptAction
+
+    RendererStrategy <|-- PngScreenRenderer
+    RendererStrategy <|-- PngRegionRenderer
+
+    %% References / associations
+    SnapshotClip --> Snapshot : references
+    Snapshot --> Scope : uses
+    Snapshot --> Kind : uses
+    DataBindingService --> Binding : returns
+    ConditionEvaluator --> Condition : evals
+
+    RecordingRepository "1" --* "*" Recording
+    SnapshotRepository "1" --* "*" Snapshot
+    TriggerRepository  "1" --* "*" Trigger
+
+    SnapshotController --> RenderService : uses
+    SnapshotController --> TriggerBinder : uses
+    SnapshotController --> DataBindingService : uses
+    SnapshotController --> VariableStore : uses
+    SnapshotController --> ConditionEvaluator : uses
+    SnapshotController --> SnapshotRepository : uses
+    SnapshotController --> RecordingRepository : uses
+    SnapshotController --> TriggerRepository : uses
+    SnapshotController --> Player : creates/uses
+    SnapshotController --> ClickGuard : uses optional
+	DataBindingService --> VariableStore : uses
+	DataBindingService --> RenderService : uses
+	
+
+	Trigger --> Rect : uses
+    Snapshot --> Rect : uses
+	TriggerBinder --> ConditionEvaluator : uses
+
+
+    Player --> RenderService : uses
+    Player --> MutationRuntime : uses
+    Trigger --* Action : has 1
+    Trigger --* Style  : has 1
+    Trigger "1" --* "*" Condition
+
+    %% RenderService manages overlay hierarchy and renderer registry
+    RenderService o-- "Map<Kind,Map<Scope,RendererStrategy>>" RendererStrategy : registry
+    RenderService "1" --* "*" OverlayLayer
+    OverlayLayer  "1" --* "*" OverlayGroup
+    OverlayGroup  "1" --* "*" OverlaySheet

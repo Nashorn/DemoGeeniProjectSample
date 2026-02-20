@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Conditions Editor</title>
+  <style>
+    body { font-family: sans-serif; padding: 1rem; }
+    .group {
+      border-left: 2px solid #ccc;
+      margin: .5rem 0 .5rem 1rem;
+      padding-left: .5rem;
+    }
+    .row {
+      margin: .25rem 0;
+    }
+    select, input { margin-right: .5rem; }
+    button { margin-left: .25rem; }
+    pre { background: #f4f4f4; padding: .5rem; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <h2>Conditions / Rules Editor</h2>
+  <div id="editor"></div>
+  <button id="exportBtn">Export JSON</button>
+  <pre id="output"></pre>
+
+  <script type="module">
+    // ---- UI builders ----
+    function makeRow() {
+      const div = document.createElement('div');
+      div.className = 'row';
+      div.innerHTML = `
+        Var: <input class="var" placeholder="name">
+        <select class="op">
+          <option value="eq">==</option>
+          <option value="neq">!=</option>
+          <option value="gt">&gt;</option>
+          <option value="lt">&lt;</option>
+          <option value="in">in</option>
+        </select>
+        <input class="val" placeholder="value">
+        <button class="remove">x</button>
+      `;
+      div.querySelector('.remove').onclick = () => div.remove();
+      return div;
+    }
+
+    function makeGroup(type="and") {
+      const div = document.createElement('div');
+      div.className = 'group';
+
+      const header = document.createElement('div');
+      header.innerHTML = `
+        <select class="logic">
+          <option value="and">AND</option>
+          <option value="or">OR</option>
+        </select>
+        <button class="add-cond">+Condition</button>
+        <button class="add-group">+Group</button>
+        <button class="remove">x</button>
+      `;
+      header.querySelector('.logic').value = type;
+      header.querySelector('.add-cond').onclick = () => div.appendChild(makeRow());
+      header.querySelector('.add-group').onclick = () => div.appendChild(makeGroup());
+      header.querySelector('.remove').onclick = () => div.remove();
+
+      div.appendChild(header);
+      return div;
+    }
+
+    // ---- Serialize DOM -> JSON ----
+    function serializeGroup(div) {
+      const type = div.querySelector('.logic')?.value || "and";
+      const children = Array.from(div.children).slice(1); // skip header
+      const arr = [];
+      for (const child of children) {
+        if (child.classList.contains('row')) {
+          const variable = child.querySelector('.var').value.trim();
+          const op = child.querySelector('.op').value;
+          let val = child.querySelector('.val').value.trim();
+          // basic parse
+          if (val === "true") val = true;
+          else if (val === "false") val = false;
+          else if (!isNaN(val) && val !== "") val = Number(val);
+          if (op === "eq") arr.push({ var: variable, eq: val });
+          if (op === "neq") arr.push({ var: variable, neq: val });
+          if (op === "gt") arr.push({ var: variable, gt: val });
+          if (op === "lt") arr.push({ var: variable, lt: val });
+          if (op === "in") arr.push({ var: variable, in: val.split(",").map(s=>s.trim()) });
+        }
+        if (child.classList.contains('group')) {
+          arr.push(serializeGroup(child));
+        }
+      }
+      return { [type]: arr };
+    }
+
+    // ---- Boot ----
+    const root = makeGroup("and");
+    document.getElementById('editor').appendChild(root);
+
+    document.getElementById('exportBtn').onclick = () => {
+      const json = serializeGroup(root);
+      document.getElementById('output').textContent = JSON.stringify(json, null, 2);
+    };
+  </script>
+</body>
+</html>

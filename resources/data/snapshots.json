@@ -1,0 +1,97 @@
+{
+  "snapshots": [
+    {
+      "id": "loginScreen",
+      "kind": "HTML",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "filePath": "/src/snapshots/Login/index.html",
+      "meta": {
+        "label": "Login Page",
+        "created": "2025-09-18T10:00:00Z",
+        "tags": [
+          "auth",
+          "entry"
+        ]
+      },
+      "triggers": [
+        "login-btn",
+        "reveal-snap-0-btn"
+      ]
+    },
+    {
+      "id": "a1d93d33-baec-4a90-95e4-50dcc101d0cc",
+      "namespace": "snapshots.Home",
+      "kind": "PNG",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 3420,
+        "height": 1728
+      },
+      "filePath": "/src/snapshots/Home/index.html",
+      "imgPath": "/resources/images/snapshots/google-home.png",
+      "meta": {
+        "label": "Homepage",
+        "created": "2025-09-18T10:05:00Z"
+      },
+      "dpr": 2,
+      "triggers": [
+        "search-input-field"
+      ]
+    },
+    {
+      "id": "4f7a228d-dfe3-4473-9ef7-329fc638c740",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.Google",
+      "kind": "PNG",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 3420,
+        "height": 1826
+      },
+      "filePath": "/src/snapshots/Google/Untitled_files/screenshot.png",
+      "meta": {
+        "label": "Tool Tray",
+        "created": "2026-02-19T13:40:50.677Z",
+        "tags": []
+      },
+      "triggers": [
+        "search-input-field"
+      ],
+      "imgPath": "./Untitled_files/screenshot.png",
+      "dpr": 2
+    },
+    {
+      "id": "7a9acd36-31f9-4763-a5f1-1b80b7053bc5",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.7a9acd36-31f9-4763-a5f1-1b80b7053bc5",
+      "kind": "PNG",
+      "scope": "region",
+      "sourceRect": {
+        "x": 504.5,
+        "y": 368,
+        "width": 703,
+        "height": 522
+      },
+      "filePath": "/resources/images/snapshots/regions/region_504.5_368_703x522.png",
+      "meta": {
+        "label": "Region Screenshot 703x522",
+        "created": "2026-02-19T13:48:42.997Z",
+        "tags": []
+      },
+      "triggers": ["search-input-field-close-button"],
+      "parent_id": "4f7a228d-dfe3-4473-9ef7-329fc638c740",
+      "imgPath": "../../../resources/images/snapshots/regions/region_504.5_368_703x522.png",
+      "dpr": 1
+    }
+  ]
+}

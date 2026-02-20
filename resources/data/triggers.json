@@ -1,0 +1,268 @@
+{
+  "triggers": [
+    {
+      "id": "login-btn",
+      "label": "Login Button",
+      "description": "Clicking logs user into the demo",
+      "isGlobal": false,
+      "isPseudo": true,
+      "selector": null,
+      "rect": { "x": 100, "y": 200, "width": 140, "height": 40 },
+      "condition": {
+        "and": [
+          { "var": "userReady", "eq": true }
+        ]
+      },
+      "binding": {
+        "expr": "${user.name}",
+        "format": "text"
+      },
+      "style": {
+        "overlayColor": "rgba(0,0,0,0.1)",
+        "border": "2px solid red",
+        "align": "center",
+        "z": 10,
+        "highlightable": true,
+        "highlightState": "off",
+        "highlightStyle": "trigger-highlight",
+        "pulsate": false
+      },
+      "tracking": true,
+      "action": {
+        "class": "RedirectToSnapshotAction",
+        "config": {
+          "snapshotId": "google-home"
+        }
+      },
+      "meta": {
+        "createdBy": "author",
+        "createdAt": "2025-09-18T12:00:00Z"
+      }
+    },
+    {
+      "id": "reveal-snap-0-btn",
+      "label": "Reveal Snapshot 0",
+      "description": "Clicking reveals Snapshot 0",
+      "isGlobal": false,
+      "isPseudo": true,
+      "selector": null,
+      "rect": { "x": 100, "y": 100, "width": 140, "height": 40 },
+      "condition": null,
+      "binding": {
+        "expr": "${user.name}",
+        "format": "text"
+      },
+      "style": {
+        "overlayColor": "rgba(0,0,0,0.1)",
+        "border": "2px solid red",
+        "align": "center",
+        "z": 0,
+        "highlightable": true,
+        "highlightState": "off",
+        "highlightStyle": "trigger-highlight",
+        "pulsate": false
+      },
+      "tracking": true,
+      "action": {
+        "class": "RevealAction",
+        "config": {
+          "snapshotId": "snap-0",
+          "modal": true
+        }
+      },
+      "meta": {
+        "createdBy": "author",
+        "createdAt": "2025-09-18T12:00:00Z"
+      }
+    },
+    {
+      "id": "dismiss-snap-0-btn",
+      "label": "Dismiss Button",
+      "description": "Clicking dismisses the welcome popup (snapshotId=welcomePopup)",
+      "isGlobal": false,
+      "isPseudo": true,
+      "selector": null,
+      "rect": { "x": 0, "y": 0, "width": 140, "height": 40 },
+      "condition": {
+        "and": [
+          { "var": "userReady", "eq": true }
+        ]
+      },
+      "binding": {
+        "expr": "${user.name}",
+        "format": "text"
+      },
+      "style": {
+        "overlayColor": "rgba(0,0,0,0.1)",
+        "border": "2px solid red",
+        "align": "center",
+        "z": 0,
+        "highlightable": true,
+        "highlightState": "off",
+        "highlightStyle": "trigger-highlight",
+        "pulsate": false
+      },
+      "tracking": true,
+      "action": {
+        "class": "HideAction",
+        "config": {
+          "snapshotId": "snap-0"
+        }
+      },
+      "meta": {
+        "createdBy": "author",
+        "createdAt": "2025-09-18T12:00:00Z"
+      }
+    },
+    {
+      "id": "dismiss-btn",
+      "label": "Dismiss Button",
+      "description": "Clicking dismisses the welcome popup (snapshotId=welcomePopup)",
+      "isGlobal": false,
+      "isPseudo": true,
+      "selector": null,
+      "rect": { "x": 420, "y": 300, "width": 140, "height": 40 },
+      "condition": {
+        "and": [
+          { "var": "userReady", "eq": true }
+        ]
+      },
+      "binding": {
+        "expr": "${user.name}",
+        "format": "text"
+      },
+      "style": {
+        "overlayColor": "rgba(0,0,0,0.1)",
+        "border": "2px solid red",
+        "align": "center",
+        "z": 0,
+        "highlightable": true,
+        "highlightState": "off",
+        "highlightStyle": "trigger-highlight",
+        "pulsate": false
+      },
+      "tracking": true,
+      "action": {
+        "class": "HideAction",
+        "config": {
+          "snapshotId": "google-home-search-expanded-popup"
+        }
+      },
+      "meta": {
+        "createdBy": "author",
+        "createdAt": "2025-09-18T12:00:00Z"
+      }
+    },
+    {
+      "id": "search-input-field",
+      "label": "Search Input Field",
+      "description": "Interacting with the search input field",
+      "isGlobal": false,
+      "isPseudo": true,
+      "selector": null,
+      "rect": { "x": 546, "y": 377, "width": 434, "height": 50 },
+      "condition": null,
+      "binding": {
+        "expr": "${user.name}",
+        "format": "text"
+      },
+      "style": {
+        "overlayColor": "rgba(0,0,0,0.1)",
+        "border": "2px solid red",
+        "align": "center",
+        "z": 10,
+        "highlightable": true,
+        "highlightState": "off",
+        "highlightStyle": "trigger-highlight",
+        "pulsate": false
+      },
+      "tracking": true,
+      "action": {
+        "class": "ToggleRevealAction",
+        "config": {
+          "snapshotId": "7a9acd36-31f9-4763-a5f1-1b80b7053bc5",
+          "modal": false,
+          "replace" : false
+        }
+      },
+      "meta": {
+        "createdBy": "author",
+        "createdAt": "2025-09-18T12:00:00Z"
+      }
+    },
+    {
+      "id": "search-input-field-close-button",
+      "label": "Search Input Field",
+      "description": "Interacting with the search input field",
+      "isGlobal": false,
+      "isPseudo": true,
+      "selector": null,
+      "rect": { "x": 546, "y": 377, "width": 434, "height": 50 },
+      "condition": null,
+      "binding": {
+        "expr": "${user.name}",
+        "format": "text"
+      },
+      "style": {
+        "overlayColor": "rgba(0,0,0,0.1)",
+        "border": "2px solid red",
+        "align": "center",
+        "z": 10,
+        "highlightable": true,
+        "highlightState": "off",
+        "highlightStyle": "trigger-highlight",
+        "pulsate": false
+      },
+      "tracking": true,
+      "action": {
+        "class": "ToggleRevealAction",
+        "config": {
+          "snapshotId": "7a9acd36-31f9-4763-a5f1-1b80b7053bc5",
+          "modal": false,
+          "replace" : false
+        }
+      },
+      "meta": {
+        "createdBy": "author",
+        "createdAt": "2025-09-18T12:00:00Z"
+      }
+    },
+    {
+      "id": "show-adp-dropdown",
+      "label": "Show ADP Dropdown",
+      "description": "Clicking shows the ADP dropdown menu",
+      "isGlobal": false,
+      "isPseudo": true,
+      "selector": null,
+      "rect": { "x": 722.5, "y": 369, "width": 330, "height": 85 },
+      "condition": null,
+      "binding": {
+        "expr": "${user.name}",
+        "format": "text"
+      },
+      "style": {
+        "overlayColor": "rgba(0,0,0,0.1)",
+        "border": "2px solid red",
+        "align": "center",
+        "z": 10,
+        "highlightable": true,
+        "highlightState": "off",
+        "highlightStyle": "trigger-highlight",
+        "pulsate": false
+      },
+      "tracking": true,
+      "action": {
+        "class": "RevealAction",
+        "config": {
+          "snapshotId": "a102b15f-ed3b-4f7f-adfe-9b4097332a7a",
+          "modal": false,
+          "replace" : false
+        }
+      },
+      "meta": {
+        "createdBy": "author",
+        "createdAt": "2025-09-18T12:00:00Z"
+      }
+    }
+  ]
+}

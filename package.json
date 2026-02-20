@@ -1,0 +1,22 @@
+{
+    "name": "snapshot-simulator",
+    "version": "1.0.0",
+    "description": "",
+    "author": "Jason Smith",
+    "license": "MIT",
+    "scripts": {
+        "start": "http-server ./ -o index.html",
+        "seam": "node --inspect node_modules/od-seam/index.js"
+    },
+    "dependencies": {
+        "http-server": "^14.1.1",
+        "od-cocoon": "github:Nashorn/od-cocoon#7.5.0"
+    },
+     "optionalDependencies": {
+        "od-seam": "github:Nashorn/od-seam#1.0.5",
+        "od-toolset": "github:Nashorn/od-toolset#1.0.1"
+    },
+    "devDependencies": {
+        "javascript-obfuscator": "^4.1.1"
+    }
+}

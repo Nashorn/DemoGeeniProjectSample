@@ -1,0 +1,33 @@
+sequenceDiagram
+  participant U as User
+  participant TB as TriggerBinder
+  participant C as Controller (Application)
+  participant VS as VariableStore
+  participant AM as Actions Map
+  participant A as Action instance
+  participant SR as SnapshotRepository
+  participant RS as RenderService (overlays + registry)
+  participant PR as PngRegionRenderer
+
+  autonumber
+  Note over C, RS: Base PNG screen snapshot already rendered & overlay-ui scaled
+  C ->> TB: paints trigges and binds them for clicks
+  U ->> TB: click on a page trigger on stage
+  TB ->> VS: evaluates any conditions on Trigger
+  VS -->> TB: true
+  TB -->> C: Tells controller to take action for trigger
+  C ->> AM: resolve "RevealAction" for this Trigger
+  AM -->> C: Returns the Action class-type
+  C ->> A: calls run() on new RevealAction instance
+  A ->> SR: gets Snapshot data
+  SR -->> A: return region snapshot (dpr, rect, pngFilePath)
+  A ->> RS: tells RenderService to paint png region as overlay
+  RS ->> PR: render(sheet, regionSnapshot, destRect?)
+  PR -->> RS: { container, rect, png }
+  RS -->> A: handle (sheet, contentEl)
+  A ->> C: paint any Triggers for this snapshot region
+  C ->> TB: paints trigges and binds them for clicks
+  U ->> TB: clicks on a trigger within the painted snapshot region
+  Note over RS: Region snapshot is painted over page/snapshot at src rect in z-order.
+
+
