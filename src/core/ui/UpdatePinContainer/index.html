@@ -1,0 +1,257 @@
+<template><style>.modal-content-full {
+  background-color: #fefefe;
+          margin: 15% auto; 
+          border: 1px solid #888;
+          width: 420px;
+          height: fit-content;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          position: relative;
+          z-index: 999;
+}
+
+.pin-container-dialog {
+  border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          background-color: #ffffff;
+}
+
+.title {
+  font-size: 24px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+          color: #424242;
+          padding-top: 50px;
+          margin-bottom: 30px;
+}
+
+.desc {
+  font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: center;
+          color: #7c7c7c;
+          width: 294px;
+          margin: 0 auto;
+          margin-bottom: 40px;
+}
+
+.pin-container {
+  display: block;
+          text-align: center;
+}
+
+.input-container {
+  text-align: center;
+          display: inline-block;
+}
+
+.number-input {
+  width: 30px;
+          height: 42px;
+          text-align: center;
+          font-size: 24px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #3570d2;
+          border: 0px;
+          border-bottom: 2px solid #7f7f7f;
+          padding-bottom: 15px;
+          
+          border-radius: 0;
+          -webkit-appearance: none;
+          
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          -webkit-text-security:disc;
+}
+
+#input-1 {
+  margin-right: 7px;
+}
+
+#input-2 {
+  margin-left: 7px;
+          margin-right: 7px;
+}
+
+#input-3 {
+  margin-left: 7px;
+          margin-right: 7px;
+}
+
+#input-4 {
+  margin-left: 7px;
+          margin-right: 7px;
+}
+
+#input-5 {
+  margin-left: 7px;
+          margin-right: 7px;
+}
+
+#input-6 {
+  margin-left: 7px;
+}
+
+.error-notif {
+  margin-top: 22px;
+          font-size: 12px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+          color: #d0021b;
+          margin-left: 85px;
+          margin-right: 85px;
+}
+
+.button-container {
+  margin: 32px 55px;
+          text-align: center;
+}
+
+.submit-btn-container:active {
+  color: #fff;
+          background-color: #003a9e;
+}
+
+.submit-btn-container {
+  color: #ffffff;
+          border-radius: 5px;
+          background-color: #3570d2;
+          border: 1px solid transparent;
+          font-weight: 700;
+          font-size: 18px;
+          text-align: center;
+          width: 100%;
+          height: 50px;
+          cursor: pointer;
+          box-sizing: border-box;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+}
+
+.submit-btn-container.inactive {
+  background-color: #747474;
+          color: #aaaaaa;
+          cursor: auto;
+}
+
+.button-container .link-wrapper {
+  padding-bottom: 32px;
+}
+
+.button-container a.link {
+  outline: 0;
+          cursor: pointer;
+          text-decoration: none;
+          font-weight: 700;
+          font-size: 18px;
+          color: #3570D2;
+}
+
+.message-container {
+  font-weight: 400;
+          font-size: 14px;
+          text-align: center;
+          margin: 24px 70px 24px;
+          color: #424242;
+}
+
+.error-otp {
+  color: #D0021B !important;
+          border-bottom: 2px solid #D0021B !important;
+}
+
+.links, .link-forgot {
+  font-weight: bold;
+          color: #3570d2;
+          cursor: pointer;
+}
+
+.link-forgot {
+  font-weight: 700;
+          padding-top: 16px;
+          line-height: 20px;
+}
+
+.link-forgot:hover {
+  text-decoration: underline;
+          color: #1652b5;
+}
+
+.button-container.login-pin .submit-btn-container {
+  margin-top: 20px;
+}
+
+.button-container.max-attempt .submit-btn-container {
+  margin: 0px;
+}
+
+input {
+  outline: none;
+}
+
+.loader {
+  position: absolute;
+          height: 6em;
+          top: 40%;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+}
+
+.modal-container-spinner {
+  position: absolute;
+          z-index: 1000;
+          top: 0;
+          height: 100%;
+          margin: 0 auto;
+          background-color: #ffffff;
+          opacity: 0.9;
+}
+
+.modal-spinner {
+  margin: 15% auto;
+          width: 420px;
+          height: 100%;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+}
+
+</style>
+      
+      <iron-ajax id="getOtp" method="post" content-type="application/json" handle-as="json" hidden="">
+      </iron-ajax>
+      <div class="modal-content-full">
+        
+          <login-pin id="loginPin" is-update="true"></login-pin>
+        <dom-if style="display: none;"><template is="dom-if"></template></dom-if>
+        <dom-if style="display: none;"><template is="dom-if"></template></dom-if>
+        <div class="modal-container-spinner" hidden="">
+          <div class="modal-spinner">
+            <img class="loader" src="/packs/images/spinner-alo-4c8ff72a883857622a490625a57f157d.gif">
+          </div>
+        </div>
+      </div>
+    </template>

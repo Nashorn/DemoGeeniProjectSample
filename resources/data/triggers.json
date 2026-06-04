@@ -1,25 +1,23 @@
 {
   "triggers": [
     {
-      "id": "login-btn",
-      "label": "Login Button",
-      "description": "Clicking logs user into the demo",
+      "id": "trigger-2751b3c9-a936-4906-b386-af1e46579896",
+      "label": "Untitled Trigger",
+      "description": "",
       "isGlobal": false,
       "isPseudo": true,
       "selector": null,
-      "rect": { "x": 100, "y": 200, "width": 140, "height": 40 },
-      "condition": {
-        "and": [
-          { "var": "userReady", "eq": true }
-        ]
+      "rect": {
+        "x": 683.53,
+        "y": 246.76,
+        "width": 286,
+        "height": 101
       },
-      "binding": {
-        "expr": "${user.name}",
-        "format": "text"
-      },
+      "condition": null,
+      "binding": null,
       "style": {
         "overlayColor": "rgba(0,0,0,0.1)",
-        "border": "2px solid red",
+        "border": "1px solid red",
         "align": "center",
         "z": 10,
         "highlightable": true,
@@ -28,147 +26,33 @@
         "pulsate": false
       },
       "tracking": true,
-      "action": {
-        "class": "RedirectToSnapshotAction",
-        "config": {
-          "snapshotId": "google-home"
-        }
-      },
+      "action": null,
       "meta": {
-        "createdBy": "author",
-        "createdAt": "2025-09-18T12:00:00Z"
+        "status": "draft",
+        "createdBy": "demogeeni",
+        "createdAt": "2026-05-29T16:49:19.490Z",
+        "sourceUrl": "https://www.google.com/?zx=1780073231644",
+        "updatedAt": "2026-06-04T12:59:52.474Z"
       }
     },
     {
-      "id": "reveal-snap-0-btn",
-      "label": "Reveal Snapshot 0",
-      "description": "Clicking reveals Snapshot 0",
+      "id": "trigger-d6f52231-2e08-47fc-9c43-be72a6a2aac4",
+      "label": "Untitled Trigger",
+      "description": "",
       "isGlobal": false,
       "isPseudo": true,
       "selector": null,
-      "rect": { "x": 100, "y": 100, "width": 140, "height": 40 },
+      "rect": {
+        "x": 675.52,
+        "y": 445.95,
+        "width": 144.75,
+        "height": 56.19
+      },
       "condition": null,
-      "binding": {
-        "expr": "${user.name}",
-        "format": "text"
-      },
+      "binding": null,
       "style": {
         "overlayColor": "rgba(0,0,0,0.1)",
-        "border": "2px solid red",
-        "align": "center",
-        "z": 0,
-        "highlightable": true,
-        "highlightState": "off",
-        "highlightStyle": "trigger-highlight",
-        "pulsate": false
-      },
-      "tracking": true,
-      "action": {
-        "class": "RevealAction",
-        "config": {
-          "snapshotId": "snap-0",
-          "modal": true
-        }
-      },
-      "meta": {
-        "createdBy": "author",
-        "createdAt": "2025-09-18T12:00:00Z"
-      }
-    },
-    {
-      "id": "dismiss-snap-0-btn",
-      "label": "Dismiss Button",
-      "description": "Clicking dismisses the welcome popup (snapshotId=welcomePopup)",
-      "isGlobal": false,
-      "isPseudo": true,
-      "selector": null,
-      "rect": { "x": 0, "y": 0, "width": 140, "height": 40 },
-      "condition": {
-        "and": [
-          { "var": "userReady", "eq": true }
-        ]
-      },
-      "binding": {
-        "expr": "${user.name}",
-        "format": "text"
-      },
-      "style": {
-        "overlayColor": "rgba(0,0,0,0.1)",
-        "border": "2px solid red",
-        "align": "center",
-        "z": 0,
-        "highlightable": true,
-        "highlightState": "off",
-        "highlightStyle": "trigger-highlight",
-        "pulsate": false
-      },
-      "tracking": true,
-      "action": {
-        "class": "HideAction",
-        "config": {
-          "snapshotId": "snap-0"
-        }
-      },
-      "meta": {
-        "createdBy": "author",
-        "createdAt": "2025-09-18T12:00:00Z"
-      }
-    },
-    {
-      "id": "dismiss-btn",
-      "label": "Dismiss Button",
-      "description": "Clicking dismisses the welcome popup (snapshotId=welcomePopup)",
-      "isGlobal": false,
-      "isPseudo": true,
-      "selector": null,
-      "rect": { "x": 420, "y": 300, "width": 140, "height": 40 },
-      "condition": {
-        "and": [
-          { "var": "userReady", "eq": true }
-        ]
-      },
-      "binding": {
-        "expr": "${user.name}",
-        "format": "text"
-      },
-      "style": {
-        "overlayColor": "rgba(0,0,0,0.1)",
-        "border": "2px solid red",
-        "align": "center",
-        "z": 0,
-        "highlightable": true,
-        "highlightState": "off",
-        "highlightStyle": "trigger-highlight",
-        "pulsate": false
-      },
-      "tracking": true,
-      "action": {
-        "class": "HideAction",
-        "config": {
-          "snapshotId": "google-home-search-expanded-popup"
-        }
-      },
-      "meta": {
-        "createdBy": "author",
-        "createdAt": "2025-09-18T12:00:00Z"
-      }
-    },
-    {
-      "id": "search-input-field",
-      "label": "Search Input Field",
-      "description": "Interacting with the search input field",
-      "isGlobal": false,
-      "isPseudo": true,
-      "selector": null,
-      "rect": { "x": 546, "y": 377, "width": 434, "height": 50 },
-      "condition": null,
-      "binding": {
-        "expr": "${user.name}",
-        "format": "text"
-      },
-      "style": {
-        "overlayColor": "rgba(0,0,0,0.1)",
-        "border": "2px solid red",
+        "border": "1px solid red",
         "align": "center",
         "z": 10,
         "highlightable": true,
@@ -177,91 +61,13 @@
         "pulsate": false
       },
       "tracking": true,
-      "action": {
-        "class": "ToggleRevealAction",
-        "config": {
-          "snapshotId": "7a9acd36-31f9-4763-a5f1-1b80b7053bc5",
-          "modal": false,
-          "replace" : false
-        }
-      },
+      "action": null,
       "meta": {
-        "createdBy": "author",
-        "createdAt": "2025-09-18T12:00:00Z"
-      }
-    },
-    {
-      "id": "search-input-field-close-button",
-      "label": "Search Input Field",
-      "description": "Interacting with the search input field",
-      "isGlobal": false,
-      "isPseudo": true,
-      "selector": null,
-      "rect": { "x": 546, "y": 377, "width": 434, "height": 50 },
-      "condition": null,
-      "binding": {
-        "expr": "${user.name}",
-        "format": "text"
-      },
-      "style": {
-        "overlayColor": "rgba(0,0,0,0.1)",
-        "border": "2px solid red",
-        "align": "center",
-        "z": 10,
-        "highlightable": true,
-        "highlightState": "off",
-        "highlightStyle": "trigger-highlight",
-        "pulsate": false
-      },
-      "tracking": true,
-      "action": {
-        "class": "ToggleRevealAction",
-        "config": {
-          "snapshotId": "7a9acd36-31f9-4763-a5f1-1b80b7053bc5",
-          "modal": false,
-          "replace" : false
-        }
-      },
-      "meta": {
-        "createdBy": "author",
-        "createdAt": "2025-09-18T12:00:00Z"
-      }
-    },
-    {
-      "id": "show-adp-dropdown",
-      "label": "Show ADP Dropdown",
-      "description": "Clicking shows the ADP dropdown menu",
-      "isGlobal": false,
-      "isPseudo": true,
-      "selector": null,
-      "rect": { "x": 722.5, "y": 369, "width": 330, "height": 85 },
-      "condition": null,
-      "binding": {
-        "expr": "${user.name}",
-        "format": "text"
-      },
-      "style": {
-        "overlayColor": "rgba(0,0,0,0.1)",
-        "border": "2px solid red",
-        "align": "center",
-        "z": 10,
-        "highlightable": true,
-        "highlightState": "off",
-        "highlightStyle": "trigger-highlight",
-        "pulsate": false
-      },
-      "tracking": true,
-      "action": {
-        "class": "RevealAction",
-        "config": {
-          "snapshotId": "a102b15f-ed3b-4f7f-adfe-9b4097332a7a",
-          "modal": false,
-          "replace" : false
-        }
-      },
-      "meta": {
-        "createdBy": "author",
-        "createdAt": "2025-09-18T12:00:00Z"
+        "status": "draft",
+        "createdBy": "demogeeni",
+        "createdAt": "2026-06-04T13:15:18.564Z",
+        "sourceUrl": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Google/index.html",
+        "updatedAt": "2026-06-04T15:05:50.033Z"
       }
     }
   ]

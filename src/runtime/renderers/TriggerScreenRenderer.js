@@ -7,7 +7,7 @@ export default class TriggerScreenRenderer {
 
   drawTriggers(triggers = [], sheet) {
     const drawnTriggers = [];
-    for (const t of triggers) {
+    for (var t of triggers) {
       // If intrinsic: resolve the node by selector.
       if (!t.isPseudo && t.selector) {
         const el = this.rs._qsSafe(t.selector);
@@ -24,6 +24,13 @@ export default class TriggerScreenRenderer {
         console.warn(`[TriggerScreenRenderer] Trigger "${t.id}" needs a rect to draw as pseudo; skipping.`);
         continue;
       }
+      t = t.clone(`${t.id}__overlay_${Date.now()}`);
+      // Always convert screen-relative to region-relative
+      t.rect = {
+        ...t.rect,
+        x: t.rect.x + 27.5,
+        y: t.rect.y
+      };
       const el = this.rs._getOrCreateStageTriggerEl(t.id);
       this.rs._positionRect(el, t.rect);
       this.rs._markTriggerEl(el, t.id);
@@ -33,6 +40,7 @@ export default class TriggerScreenRenderer {
       t.element = el;
       t.selector = `[data-trigger-id="${cssEscape(t.id)}"]`;
       this.rs._applyTriggerStyle(t);
+      debugger
       // Append to sheet if provided, otherwise stageRoot
       if (sheet) {
         sheet.appendChild(el);

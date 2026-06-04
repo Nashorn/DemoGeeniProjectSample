@@ -14,7 +14,7 @@ export default class TriggerBinder {
 
   // Bind runtime triggers (each must have .element). Returns a disposer.
   bind(triggers) {
-    debugger
+    
     if (!Array.isArray(triggers)) return () => {};
     const unbinds = [];
 
@@ -39,7 +39,7 @@ export default class TriggerBinder {
           catch { ok = false; }
         }
         if (!ok) { this.controller.onBlocked?.(t, ev); return; }
-        debugger
+        
         this.controller.onTrigger?.(t, ev);
       };
 

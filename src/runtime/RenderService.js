@@ -40,10 +40,11 @@ export default class RenderService {
   // Delegates trigger drawing to the appropriate renderer.
   // Optionally accepts regionSnapshot for region overlays.
   drawTriggers(triggers = [], sheet, snapshot) {
-    debugger
+    
     if (snapshot?.scope == "region") {
       // Region overlays
-      return this._triggerRegionRenderer.drawTriggers(triggers, sheet, snapshot);
+      return this._triggerScreenRenderer.drawTriggers(triggers, sheet);
+      // return this._triggerRegionRenderer.drawTriggers(triggers, sheet, snapshot);
     } else {
       // Stage/screen
       return this._triggerScreenRenderer.drawTriggers(triggers, sheet);
@@ -139,6 +140,7 @@ export default class RenderService {
     if (opts.modal) { this._ensureModalScrim(sheet); } else { this._removeModalScrim(sheet); }
     if (opts.data) { for (const [k, v] of Object.entries(opts.data)) { sheet.dataset[k] = String(v); } }
 
+    debugger
     return renderer.render(sheet, snapshot, destRect);
   }
 
@@ -390,7 +392,7 @@ export default class RenderService {
   }
 
   findSheetBySnapshotId(snapshotId) {
-    debugger
+    
     const group = this._queryGroup("overlay-ui", "default");
     return group?.querySelector(`[data-snap-shot-id="${cssEscape(snapshotId)}"]`);
   }

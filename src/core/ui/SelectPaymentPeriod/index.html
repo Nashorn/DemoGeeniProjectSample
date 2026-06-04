@@ -1,0 +1,43 @@
+<template><style>.modal-content-full {
+  width: 620px;
+           border-radius: 5px;
+           background-color: #ffffff;
+           padding: 26px 30px 35px;
+           position: relative;
+           z-index: 999;
+}
+
+.close-button {
+  position: absolute;
+           width: 24px;
+           height: 24px;
+           cursor: pointer;
+           top: 16px;
+           right: 16px;
+}
+
+.title {
+  text-align: center;
+           font-size: 18px;
+           line-height: 14px;
+           letter-spacing: normal;
+           color: #000000;
+           margin: 20px 0 30px;
+}
+
+</style>
+       
+ 
+       <div id="loginFormModal" class="modal-content-full">
+         <img class="close-button" src="/packs/images/close-button-grey-1bc6ef406c7c3cc6aa4cd0f8d02cd773.jpg">
+         <div class="message-full-view">
+           <div class="container-login">
+            <h1 class="title">Pilih Periode</h1>
+              <payment-period-box id="paymentPeriodMonthly" title="Bayar Bulanan" price="125.000" period="monthly" description="Bayar tiap bulan, batalkan kapan saja" is-active="true">
+              </payment-period-box>
+              <payment-period-box id="paymentPeriodYearly" title="Bayar Tahunan" price="115.000" promo="Gratis 1 Bulan Terakhir" period="yearly" description="Jadi member penuh selama setahun">
+              </payment-period-box>
+           </div>
+         </div>
+       </div>
+     </template>

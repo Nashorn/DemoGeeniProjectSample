@@ -6,7 +6,7 @@ export default namespace `runtime` (
         async onConnected() {
             await super.onConnected();
             
-            // debugger
+            // 
             this.triggerBinder = new runtime.TriggerBinder(this);
             this.snapshotRepository = await new runtime.SnapshotRepository;
             this.triggerRepository = await new runtime.TriggerRepository;
@@ -14,7 +14,7 @@ export default namespace `runtime` (
 
             //get my snapshot
             // const snapshot = this.snapshotRepository.getByHostPage(location.href);
-            debugger
+            
             // const snapshot = this.snapshotRepository.getByNamespace(this.namespace);
                 const snapshot = this.snapshotRepository.getByID(document.body.dataset.snapshotId);
             console.log("snapshot", snapshot);
@@ -24,7 +24,7 @@ export default namespace `runtime` (
             console.log("triggers", this.triggerRepository.getTriggersBy(snapshot));
 
             // // //render triggers
-            // debugger
+            // 
             // this.renderService.drawTriggers(triggers);
 
             // //trigger binding
@@ -40,7 +40,7 @@ export default namespace `runtime` (
 
             // render backdrop first (if this page hosts a rasterized snapshot)
             if (this.isSnapshotRasterized(snapshot)) {
-                debugger
+                
                 const handle = this.renderService.renderOverlay(snapshot, snapshot.sourceRect, {
                     layer: 'overlay-ui',
                     group: 'default',
@@ -88,7 +88,7 @@ export default namespace `runtime` (
 
         onRedirect(url, ev){
             console.log("Trigger redirected");
-            debugger
+            
             var fullUrl = new URL(url, location.origin).href;
             location.href = fullUrl;
         }

@@ -74,7 +74,7 @@ export default class RevealAction {
     // - optional modal scrim
     // - group replacement vs stacking
     // - z-index ordering
-    var { layer, group, container, img } = RS.renderOverlay(
+    var { layer, group, sheet, container, img } = RS.renderOverlay(
       snap,            // unified: HTML host file or PNG-on-host file
       rect,
       {
@@ -88,7 +88,7 @@ export default class RevealAction {
     );
     debugger
     var triggers = repoTriggers.getTriggersBy(snap);
-    var drawnTriggers = RS.drawTriggers(triggers, container, snap);
+    var drawnTriggers = RS.drawTriggers(triggers, sheet, snap);
     controller.triggerBinder.bind(drawnTriggers);
   }
 }

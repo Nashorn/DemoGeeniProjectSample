@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <path id="a" d="M0 0h1440v349H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <use fill="#3570D2" fill-rule="nonzero" transform="translate(-830 -100)" xlink:href="#a"/>
+        <path fill="#FFF" d="M0 19.856C0 8.89 8.823 0 19.706 0s19.706 8.89 19.706 19.856c0 10.966-8.823 19.856-19.706 19.856S0 30.822 0 19.856z"/>
+        <path fill="#3570D2" d="M21.103 30.87V20.065h2.96l.392-3.722h-3.352l.005-1.864c0-.97.092-1.49 1.476-1.49h1.85V9.265h-2.96c-3.555 0-4.807 1.806-4.807 4.843v2.235h-2.216v3.723h2.216v10.802h4.436z"/>
+    </g>
+</svg>

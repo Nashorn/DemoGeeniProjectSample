@@ -26,8 +26,8 @@ export default class TriggerRegionRenderer {
       // Always convert screen-relative to region-relative
       target.rect = {
         ...target.rect,
-        x: target.rect.x - regionOffset.x,
-        y: target.rect.y - regionOffset.y
+        x: target.rect.x,
+        y: target.rect.y
       };
       const el = this.rs._createTriggerEl(target.id);
       this.rs._positionRect(el, target.rect);
