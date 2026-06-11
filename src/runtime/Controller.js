@@ -82,6 +82,10 @@ export default namespace `runtime` (
         }
 
         onTrigger(trigger, ev){
+            if (window.idehost?.isAuthoringMode?.() === true) {
+                console.log("Trigger action skipped in authoring mode");
+                return;
+            }
             console.log("Trigger executed");
             trigger.execute(this, this.getVariableStore(), ev);
         }

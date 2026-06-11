@@ -1,6 +1,5 @@
 import * as runtime from "runtime";
-import 'applications.OfflineApplication';
-import 'core.ui.BaseComponent';
+
 import 'core.ui.TopNavbarTransparentView';
 import 'core.ui.MessageBar';
 import 'core.ui.MessagePopup';
@@ -17,7 +16,7 @@ import 'core.ui.ReconfirmPinForm';
 import 'core.ui.LoginPinContainer';
 import 'core.ui.LoginPin';
 import 'core.ui.UpdatePinContainer';
-import 'core.ui.RegisterUserPopup';
+// import 'core.ui.RegisterUserPopup';
 import 'core.ui.LocationPicker';
 import 'core.ui.HomeBanner';
 import 'core.ui.HeroMenu';

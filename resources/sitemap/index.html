@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DemoGeeni Sitemap</title>
+  <link rel="stylesheet" href="./sitemap.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="toolbar">
+      <div class="brand">
+        <span class="brand-mark"></span>
+        <div>
+          <h1>Demo Sitemap</h1>
+          <p id="summary">Loading project flow...</p>
+        </div>
+      </div>
+      <div class="toolbar-actions">
+        <label class="search-box" for="search-input">
+          <span>Search</span>
+          <input id="search-input" type="search" placeholder="Snapshots or triggers">
+        </label>
+        <button id="zoom-out" type="button" title="Zoom out">-</button>
+        <output id="zoom-label">100%</output>
+        <button id="zoom-in" type="button" title="Zoom in">+</button>
+        <button id="fit-view" type="button" title="Fit to view">Fit</button>
+      </div>
+    </header>
+    <section id="viewport" class="viewport" aria-label="Generated sitemap">
+      <div id="stage" class="stage">
+        <svg id="connections" class="connections" aria-hidden="true"></svg>
+        <div id="tiles" class="tiles"></div>
+      </div>
+    </section>
+    <aside id="issues" class="issues" hidden></aside>
+  </main>
+  <script src="./sitemap.js"></script>
+</body>
+</html>

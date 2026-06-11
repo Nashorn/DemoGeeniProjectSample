@@ -21,7 +21,21 @@ export default class PngScreenRenderer extends runtime.BaseRenderer {
     sheet.style.width  = r.width + 'px';
     sheet.style.height = r.height + 'px';
     var overlayUI = this.rs._ensureLayer('overlay-ui');
-    this.rs.scaleStageToViewport(overlayUI, r.width, r.height);
+    const applyAuthoringMode = enabled => {
+      if (enabled) {
+        overlayUI.style.width = r.width + 'px';
+        overlayUI.style.height = r.height + 'px';
+        overlayUI.style.transformOrigin = 'top left';
+        overlayUI.style.transform = 'none';
+        overlayUI.style.willChange = 'auto';
+        document.documentElement.style.overflow = 'auto';
+        return;
+      }
+      this.rs.scaleStageToViewport(overlayUI, r.width, r.height);
+    };
+
+    window.idehost?.onAuthoringModeChanged?.(applyAuthoringMode);
+    applyAuthoringMode(window.idehost?.isAuthoringMode?.() === true);
 
     return { container: sheet, rect: r, img };
   }

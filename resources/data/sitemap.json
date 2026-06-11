@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "generatedAt": "2026-06-11T13:00:14.123Z",
+  "source": {
+    "snapshots": "/resources/data/snapshots.json",
+    "triggers": "/resources/data/triggers.json"
+  },
+  "nodes": [
+    {
+      "id": "e6b34543-813c-4c5d-a3e3-c6cd90471ec4",
+      "snapshotId": "e6b34543-813c-4c5d-a3e3-c6cd90471ec4",
+      "label": "Tool Tray",
+      "url": "https://www.google.com/?zx=1780073231644",
+      "namespace": "snapshots.Google",
+      "kind": "PNG",
+      "scope": "screen",
+      "filePath": "/src/snapshots/Google/index.html",
+      "imgPath": "index_files/screenshot.png",
+      "created": "2026-05-29T16:48:31.807Z",
+      "triggers": [
+        {
+          "id": "trigger-d6f52231-2e08-47fc-9c43-be72a6a2aac4",
+          "label": "Untitled Trigger",
+          "description": "",
+          "kind": "trigger",
+          "rect": {
+            "x": 680.52,
+            "y": 452.96,
+            "width": 138.75,
+            "height": 45.19
+          },
+          "actionType": "snapshot",
+          "targetSnapshotId": "a368b239-febb-48a3-aa73-87f8b4139940",
+          "hasNavigationAction": true,
+          "missingDefinition": false
+        },
+        {
+          "id": "trigger-fa5b4d88-9433-4e5b-8d2d-6454c53f2cfb",
+          "label": "Untitled Trigger",
+          "description": "",
+          "kind": "trigger",
+          "rect": {
+            "x": 726.5,
+            "y": 245,
+            "width": 175,
+            "height": 83
+          },
+          "actionType": null,
+          "targetSnapshotId": null,
+          "hasNavigationAction": false,
+          "missingDefinition": false
+        }
+      ]
+    },
+    {
+      "id": "a368b239-febb-48a3-aa73-87f8b4139940",
+      "snapshotId": "a368b239-febb-48a3-aa73-87f8b4139940",
+      "label": "Tool Tray",
+      "url": "https://www.alodokter.com/",
+      "namespace": "snapshots.Alo",
+      "kind": "HTML",
+      "scope": "screen",
+      "filePath": "/src/snapshots/Alo/index.html",
+      "imgPath": null,
+      "created": "2026-06-04T15:27:23.894Z",
+      "triggers": []
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-e6b34543-813c-4c5d-a3e3-c6cd90471ec4-a368b239-febb-48a3-aa73-87f8b4139940",
+      "fromSnapshotId": "e6b34543-813c-4c5d-a3e3-c6cd90471ec4",
+      "toSnapshotId": "a368b239-febb-48a3-aa73-87f8b4139940",
+      "triggerIds": [
+        "trigger-d6f52231-2e08-47fc-9c43-be72a6a2aac4"
+      ],
+      "labels": [
+        "Untitled Trigger"
+      ]
+    }
+  ],
+  "issues": []
+}
