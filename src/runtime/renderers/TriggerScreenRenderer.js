@@ -40,14 +40,19 @@ export default class TriggerScreenRenderer {
       t.element = el;
       t.selector = `[data-trigger-id="${cssEscape(t.id)}"]`;
       this.rs._applyTriggerStyle(t);
-      debugger
-      // Append to sheet if provided, otherwise stageRoot
-      if (sheet) {
-        sheet.appendChild(el);
-      }
+      // Append to sheet if provided, otherwise stageRoot.
+      const target = sheet || this.getStageAppendTarget();
+      target?.appendChild(el);
       drawnTriggers.push(t);
     }
     return drawnTriggers;
+  }
+
+  getStageAppendTarget() {
+    if (this.rs.stageRoot?.nodeType === Node.DOCUMENT_NODE) {
+      return this.rs.stageRoot.body;
+    }
+    return this.rs.stageRoot || document.body;
   }
 }
 
