@@ -7,9 +7,10 @@ import * as runtime from "runtime";
 // Layer z-order is controlled via CSS or inline z on layer/sheet as needed.
 //
 export default class RenderService {
-  constructor({ stageRoot, layersRoot } = {}) {
+  constructor({ stageRoot, layersRoot, component } = {}) {
     this.stageRoot = stageRoot || document;     // e.g., document.querySelector('[data-stage-root]')
     this.layersRoot = layersRoot || document;   // e.g., document.querySelector('[data-layers-root]')
+    this.component = component || null;          // page controller (IHtmlComponent) for selector resolution
 
     this._renderers = new Map();
     this._groupZIndexes = new Map(); // groupName -> highest z-index used
@@ -242,7 +243,14 @@ export default class RenderService {
    * ========================= */
 
   _qsSafe(selector) {
-    try { return document.querySelector(selector); }
+    try {
+      // Delegate to the page controller (IHtmlComponent): its querySelector
+      // routes ">>>" through od-cocoon's $_ shadow-piercing traversal. Falls back
+      // to native querySelector if no component was provided.
+      return this.component
+        ? this.component.querySelector(selector)
+        : document.querySelector(selector);
+    }
     catch (e) {
       console.warn(`[RS] Invalid selector "${selector}":`, e.message);
       return null;

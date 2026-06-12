@@ -45,6 +45,285 @@
         "tags": []
       },
       "triggers": []
+    },
+    {
+      "id": "12661109-6dfc-4308-89d2-ade57002157a",
+      "url": "https://www.google.com/?zx=1781194309783",
+      "namespace": "snapshots.Google",
+      "kind": "HTML",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "filePath": "/src/snapshots/Google/index2.html",
+      "imgPath": "",
+      "meta": {
+        "label": "Google",
+        "created": "2026-06-11T16:12:34.251Z",
+        "tags": []
+      },
+      "triggers": [
+        "trigger-1510a25b-5e2b-49d0-9a6e-bf70dd519583"
+      ]
+    },
+    {
+      "id": "8c4db5e6-f871-4ed9-8ae9-bee11f484eb1",
+      "url": "https://www.google.com/?zx=1781197116143",
+      "namespace": "snapshots.Google",
+      "kind": "HTML",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "filePath": "/src/snapshots/Google/index3.html",
+      "imgPath": "",
+      "meta": {
+        "label": "Google",
+        "created": "2026-06-11T16:59:06.672Z",
+        "tags": []
+      },
+      "triggers": []
+    },
+    {
+      "id": "ca54d9e3-c4f0-4307-95a1-45feec3b1790",
+      "url": "https://www.google.com/?zx=1781197507846",
+      "namespace": "snapshots.Google",
+      "kind": "HTML",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "filePath": "/src/snapshots/Google/index4.html",
+      "imgPath": "",
+      "meta": {
+        "label": "Google",
+        "created": "2026-06-11T17:05:38.806Z",
+        "tags": []
+      },
+      "triggers": []
+    },
+    {
+      "id": "82d4e045-2a99-45b1-836f-d2ea6f4b4f62",
+      "url": "https://www.google.com/?zx=1781197723930",
+      "namespace": "snapshots.Google",
+      "kind": "HTML",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "filePath": "/src/snapshots/Google/index5.html",
+      "imgPath": "",
+      "meta": {
+        "label": "Google",
+        "created": "2026-06-11T17:09:14.799Z",
+        "tags": []
+      },
+      "triggers": []
+    },
+    {
+      "id": "4b6e5f79-224e-42d9-bb58-a63f1980a15d",
+      "url": "https://www.google.com/?zx=1781198431910",
+      "namespace": "snapshots.Google",
+      "kind": "HTML",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "filePath": "/src/snapshots/Google/index6.html",
+      "imgPath": "",
+      "meta": {
+        "label": "Google",
+        "created": "2026-06-11T17:21:03.207Z",
+        "tags": []
+      },
+      "triggers": []
+    },
+    {
+      "id": "1c0f3a7f-16f1-4bd0-ac9b-8eafc81a71ba",
+      "url": "https://www.google.com/?zx=1781198598949",
+      "namespace": "snapshots.Google",
+      "kind": "HTML",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "filePath": "/src/snapshots/Google/index7.html",
+      "imgPath": "",
+      "meta": {
+        "label": "Google",
+        "created": "2026-06-11T17:23:50.081Z",
+        "tags": []
+      },
+      "triggers": []
+    },
+    {
+      "id": "ff708e9c-bb0c-4ad3-8499-ba2fb1967f4b",
+      "url": "https://www.google.com/?zx=1781198740907",
+      "namespace": "snapshots.Google",
+      "kind": "HTML",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "filePath": "/src/snapshots/Google/index8.html",
+      "imgPath": "",
+      "meta": {
+        "label": "Google",
+        "created": "2026-06-11T17:26:11.515Z",
+        "tags": []
+      },
+      "triggers": []
+    },
+    {
+      "id": "d497c5bd-925d-4783-b1ae-1a6f094dca35",
+      "url": "https://www.google.com/?zx=1781198740907",
+      "namespace": "snapshots.Google",
+      "kind": "HTML",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "filePath": "/src/snapshots/Google/index9.html",
+      "imgPath": "",
+      "meta": {
+        "label": "Google",
+        "created": "2026-06-11T17:26:24.583Z",
+        "tags": []
+      },
+      "triggers": []
+    },
+    {
+      "id": "8f904db0-541b-4746-be36-a9b84c6ca4df",
+      "url": "https://www.google.com/?zx=1781198740907",
+      "namespace": "snapshots.Google",
+      "kind": "HTML",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "filePath": "/src/snapshots/Google/index10.html",
+      "imgPath": "",
+      "meta": {
+        "label": "Google",
+        "created": "2026-06-11T17:26:36.507Z",
+        "tags": []
+      },
+      "triggers": [
+        "trigger-67f803eb-48ce-496a-ac26-2a744b5ed394"
+      ]
+    },
+    {
+      "id": "14e8663e-175c-4d4f-a51b-34a3e982a5d2",
+      "url": "https://www.google.com/?zx=1781198740907",
+      "namespace": "snapshots.Google",
+      "kind": "HTML",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "filePath": "/src/snapshots/Google/test1.html",
+      "imgPath": "",
+      "meta": {
+        "label": "Google",
+        "created": "2026-06-11T17:26:51.849Z",
+        "tags": []
+      },
+      "triggers": []
+    },
+    {
+      "id": "e4d30fb8-f77c-4593-b831-4c41028a799d",
+      "url": "https://www.google.com/?zx=1781198740907",
+      "namespace": "snapshots.Google",
+      "kind": "HTML",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "filePath": "/src/snapshots/Google/test2.html",
+      "imgPath": "",
+      "meta": {
+        "label": "Google",
+        "created": "2026-06-11T17:27:00.689Z",
+        "tags": []
+      },
+      "triggers": []
+    },
+    {
+      "id": "ae8c26fb-91f4-464b-a10c-427c0e3d56bf",
+      "url": "https://www.adp.com/?zx=1781201666507",
+      "namespace": "snapshots.Adp",
+      "kind": "HTML",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "filePath": "/src/snapshots/Adp/index2.html",
+      "imgPath": "",
+      "meta": {
+        "label": "Payroll, HR and Tax Services | ADP Official Site",
+        "created": "2026-06-11T18:15:09.265Z",
+        "tags": []
+      },
+      "triggers": []
+    },
+    {
+      "id": "354c7d3e-8f19-41c6-9088-85225f5a0037",
+      "url": "https://www.adp.com/",
+      "namespace": "snapshots.Adp",
+      "kind": "HTML",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "filePath": "/src/snapshots/Adp/index3.html",
+      "imgPath": "",
+      "meta": {
+        "label": "Payroll, HR and Tax Services | ADP Official Site",
+        "created": "2026-06-11T18:28:36.336Z",
+        "tags": []
+      },
+      "triggers": [
+        "trigger-9fd05f0f-3cf4-460d-ad07-fe33ef188edf"
+      ]
     }
   ]
 }

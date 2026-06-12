@@ -4,13 +4,14 @@ export default namespace `runtime` (
     class Controller extends Application {
 
         async onConnected() {
+            debugger
             await super.onConnected();
             
             // 
             this.triggerBinder = new runtime.TriggerBinder(this);
             this.snapshotRepository = await new runtime.SnapshotRepository;
             this.triggerRepository = await new runtime.TriggerRepository;
-            this.renderService = new runtime.RenderService;
+            this.renderService = new runtime.RenderService({ component: this });
 
             //get my snapshot
             // const snapshot = this.snapshotRepository.getByHostPage(location.href);
