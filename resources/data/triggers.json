@@ -203,9 +203,9 @@
       "isPseudo": true,
       "selector": null,
       "rect": {
-        "x": 364,
+        "x": 253,
         "y": 368,
-        "width": 116,
+        "width": 227,
         "height": 70
       },
       "condition": null,
@@ -232,7 +232,7 @@
           "namespace": "snapshots.Google",
           "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Google/index10.html"
         },
-        "updatedAt": "2026-06-13T11:49:50.545Z"
+        "updatedAt": "2026-06-13T13:28:29.731Z"
       }
     },
     {

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-13T11:51:11.436Z",
+  "generatedAt": "2026-06-13T13:28:29.734Z",
   "source": {
     "snapshots": "/resources/data/snapshots.json",
     "triggers": "/resources/data/triggers.json"
@@ -236,9 +236,9 @@
           "description": "",
           "kind": "trigger",
           "rect": {
-            "x": 364,
+            "x": 253,
             "y": 368,
-            "width": 116,
+            "width": 227,
             "height": 70
           },
           "actionType": null,
