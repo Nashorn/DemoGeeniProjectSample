@@ -14,6 +14,11 @@ export default class TriggerScreenRenderer {
         if (el) {
           t.element = el;
           t.rect = this.rs._measureRect(el);
+          // Tag the resolved node so the authoring layer can attach contextual
+          // tools (delete, etc.) to it. Plain setAttribute only — do NOT mutate
+          // its style/position the way _markTriggerEl does for pseudo overlays.
+          el.setAttribute('data-trigger-id', t.id);
+          el.setAttribute('data-trigger-intrinsic', '1');
           this.rs._applyTriggerStyle(t);
           drawnTriggers.push(t);
           continue;

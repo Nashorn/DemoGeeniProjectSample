@@ -20,8 +20,7 @@
         "tags": []
       },
       "triggers": [
-        "trigger-d6f52231-2e08-47fc-9c43-be72a6a2aac4",
-        "trigger-fa5b4d88-9433-4e5b-8d2d-6454c53f2cfb"
+        "trigger-dfeccb93-fd64-4a65-bd90-2dc802264adc"
       ],
       "dpr": 2
     },
@@ -236,7 +235,10 @@
         "tags": []
       },
       "triggers": [
-        "trigger-67f803eb-48ce-496a-ac26-2a744b5ed394"
+        "trigger-b722e697-532e-429c-9103-a0863bc04092",
+        "trigger-56a76edc-d31f-4076-91f8-f3a3c07d4941",
+        "trigger-f7c8c9b7-0618-414e-8963-2e9bb0b24af2",
+        "trigger-e8d44441-9682-43d1-bbe4-f81418132232"
       ]
     },
     {

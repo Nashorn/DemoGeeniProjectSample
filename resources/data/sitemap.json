@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-12T19:44:21.463Z",
+  "generatedAt": "2026-06-13T11:51:11.436Z",
   "source": {
     "snapshots": "/resources/data/snapshots.json",
     "triggers": "/resources/data/triggers.json"
@@ -19,31 +19,15 @@
       "created": "2026-05-29T16:48:31.807Z",
       "triggers": [
         {
-          "id": "trigger-d6f52231-2e08-47fc-9c43-be72a6a2aac4",
+          "id": "trigger-dfeccb93-fd64-4a65-bd90-2dc802264adc",
           "label": "Untitled Trigger",
           "description": "",
           "kind": "trigger",
           "rect": {
-            "x": 711.99,
-            "y": 274.73,
-            "width": 230,
-            "height": 48
-          },
-          "actionType": "snapshot",
-          "targetSnapshotId": "a368b239-febb-48a3-aa73-87f8b4139940",
-          "hasNavigationAction": true,
-          "missingDefinition": false
-        },
-        {
-          "id": "trigger-fa5b4d88-9433-4e5b-8d2d-6454c53f2cfb",
-          "label": "Untitled Trigger",
-          "description": "",
-          "kind": "trigger",
-          "rect": {
-            "x": 40.25,
-            "y": 193.06,
-            "width": 230,
-            "height": 48
+            "x": 293.5,
+            "y": 326,
+            "width": 215,
+            "height": 132
           },
           "actionType": null,
           "targetSnapshotId": null,
@@ -199,7 +183,23 @@
       "created": "2026-06-11T17:26:36.507Z",
       "triggers": [
         {
-          "id": "trigger-67f803eb-48ce-496a-ac26-2a744b5ed394",
+          "id": "trigger-b722e697-532e-429c-9103-a0863bc04092",
+          "label": "Untitled Trigger",
+          "description": "",
+          "kind": "trigger",
+          "rect": {
+            "x": 531.5,
+            "y": 237,
+            "width": 446.86,
+            "height": 50
+          },
+          "actionType": null,
+          "targetSnapshotId": null,
+          "hasNavigationAction": false,
+          "missingDefinition": false
+        },
+        {
+          "id": "trigger-56a76edc-d31f-4076-91f8-f3a3c07d4941",
           "label": "Untitled Trigger",
           "description": "",
           "kind": "trigger",
@@ -208,6 +208,38 @@
             "y": 317,
             "width": 127.4,
             "height": 36
+          },
+          "actionType": null,
+          "targetSnapshotId": null,
+          "hasNavigationAction": false,
+          "missingDefinition": false
+        },
+        {
+          "id": "trigger-f7c8c9b7-0618-414e-8963-2e9bb0b24af2",
+          "label": "Untitled Trigger",
+          "description": "",
+          "kind": "trigger",
+          "rect": {
+            "x": 600.23,
+            "y": 396,
+            "width": 454.53,
+            "height": 17
+          },
+          "actionType": null,
+          "targetSnapshotId": null,
+          "hasNavigationAction": false,
+          "missingDefinition": false
+        },
+        {
+          "id": "trigger-e8d44441-9682-43d1-bbe4-f81418132232",
+          "label": "Untitled Trigger",
+          "description": "",
+          "kind": "trigger",
+          "rect": {
+            "x": 364,
+            "y": 368,
+            "width": 116,
+            "height": 70
           },
           "actionType": null,
           "targetSnapshotId": null,
@@ -286,18 +318,6 @@
       ]
     }
   ],
-  "edges": [
-    {
-      "id": "edge-e6b34543-813c-4c5d-a3e3-c6cd90471ec4-a368b239-febb-48a3-aa73-87f8b4139940",
-      "fromSnapshotId": "e6b34543-813c-4c5d-a3e3-c6cd90471ec4",
-      "toSnapshotId": "a368b239-febb-48a3-aa73-87f8b4139940",
-      "triggerIds": [
-        "trigger-d6f52231-2e08-47fc-9c43-be72a6a2aac4"
-      ],
-      "labels": [
-        "Untitled Trigger"
-      ]
-    }
-  ],
+  "edges": [],
   "issues": []
 }
