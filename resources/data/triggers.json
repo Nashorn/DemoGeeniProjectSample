@@ -196,46 +196,6 @@
       }
     },
     {
-      "id": "trigger-e8d44441-9682-43d1-bbe4-f81418132232",
-      "label": "Untitled Trigger",
-      "description": "",
-      "isGlobal": false,
-      "isPseudo": true,
-      "selector": null,
-      "rect": {
-        "x": 253,
-        "y": 368,
-        "width": 227,
-        "height": 70
-      },
-      "condition": null,
-      "binding": null,
-      "style": {
-        "overlayColor": "rgba(0,0,0,0.1)",
-        "border": "1px solid red",
-        "align": "center",
-        "z": 10,
-        "highlightable": true,
-        "highlightState": "off",
-        "highlightStyle": "trigger-highlight",
-        "pulsate": false
-      },
-      "tracking": true,
-      "action": null,
-      "meta": {
-        "status": "draft",
-        "createdBy": "demogeeni",
-        "createdAt": "2026-06-13T11:48:39.997Z",
-        "sourceUrl": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Google/index10.html",
-        "snapshotContext": {
-          "snapshotId": "8f904db0-541b-4746-be36-a9b84c6ca4df",
-          "namespace": "snapshots.Google",
-          "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Google/index10.html"
-        },
-        "updatedAt": "2026-06-13T13:28:29.731Z"
-      }
-    },
-    {
       "id": "trigger-dfeccb93-fd64-4a65-bd90-2dc802264adc",
       "label": "Untitled Trigger",
       "description": "",
@@ -272,6 +232,46 @@
           "namespace": "snapshots.Google",
           "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Google/index.html"
         }
+      }
+    },
+    {
+      "id": "trigger-297a7e05-65d9-4693-a0a9-72c4705acc8d",
+      "label": "Untitled Trigger",
+      "description": "",
+      "isGlobal": false,
+      "isPseudo": true,
+      "selector": null,
+      "rect": {
+        "x": 363,
+        "y": 215,
+        "width": 283,
+        "height": 161
+      },
+      "condition": null,
+      "binding": null,
+      "style": {
+        "overlayColor": "rgba(0,0,0,0.1)",
+        "border": "1px solid red",
+        "align": "center",
+        "z": 10,
+        "highlightable": true,
+        "highlightState": "off",
+        "highlightStyle": "trigger-highlight",
+        "pulsate": false
+      },
+      "tracking": true,
+      "action": null,
+      "meta": {
+        "status": "draft",
+        "createdBy": "demogeeni",
+        "createdAt": "2026-06-13T14:40:25.488Z",
+        "sourceUrl": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Google/index10.html",
+        "snapshotContext": {
+          "snapshotId": "8f904db0-541b-4746-be36-a9b84c6ca4df",
+          "namespace": "snapshots.Google",
+          "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Google/index10.html"
+        },
+        "updatedAt": "2026-06-13T14:40:56.844Z"
       }
     }
   ]

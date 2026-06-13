@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-13T13:28:29.734Z",
+  "generatedAt": "2026-06-13T14:40:56.845Z",
   "source": {
     "snapshots": "/resources/data/snapshots.json",
     "triggers": "/resources/data/triggers.json"
@@ -231,15 +231,15 @@
           "missingDefinition": false
         },
         {
-          "id": "trigger-e8d44441-9682-43d1-bbe4-f81418132232",
+          "id": "trigger-297a7e05-65d9-4693-a0a9-72c4705acc8d",
           "label": "Untitled Trigger",
           "description": "",
           "kind": "trigger",
           "rect": {
-            "x": 253,
-            "y": 368,
-            "width": 227,
-            "height": 70
+            "x": 363,
+            "y": 215,
+            "width": 283,
+            "height": 161
           },
           "actionType": null,
           "targetSnapshotId": null,
