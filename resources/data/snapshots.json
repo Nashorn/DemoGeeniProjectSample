@@ -326,6 +326,308 @@
       "triggers": [
         "trigger-9fd05f0f-3cf4-460d-ad07-fe33ef188edf"
       ]
+    },
+    {
+      "id": "d496845d-fd8d-48ef-8cba-6642e408040d",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.Google",
+      "kind": "PNG",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 3420,
+        "height": 1826
+      },
+      "filePath": "/src/snapshots/Google/index11.html",
+      "imgPath": "index11_files/screenshot.png",
+      "meta": {
+        "label": "Google",
+        "created": "2026-06-14T12:32:26.947Z",
+        "tags": []
+      },
+      "triggers": [],
+      "dpr": 2
+    },
+    {
+      "id": "283e62ad-56f6-4465-aaf6-5cbd8ef4f9cb",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.Google",
+      "kind": "PNG",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 3420,
+        "height": 1826
+      },
+      "filePath": "/src/snapshots/Google/index12.html",
+      "imgPath": "index12_files/screenshot.png",
+      "meta": {
+        "label": "Google",
+        "created": "2026-06-14T12:53:40.809Z",
+        "tags": []
+      },
+      "triggers": [
+        "trigger-7e84cec3-856c-4bd2-ade9-9a7e957574eb",
+        "trigger-84484ccc-7c18-48bf-835e-2e1d8092e090"
+      ],
+      "dpr": 2
+    },
+    {
+      "id": "0bb11225-e022-4a95-83d5-9181ba6712f8",
+      "url": "https://www.adp.com/",
+      "namespace": "snapshots.Adp",
+      "kind": "PNG",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 3420,
+        "height": 11296
+      },
+      "filePath": "/src/snapshots/Adp/index4.html",
+      "imgPath": "index4_files/screenshot.png",
+      "meta": {
+        "label": "Payroll, HR and Tax Services | ADP Official Site",
+        "created": "2026-06-14T12:56:29.421Z",
+        "tags": []
+      },
+      "triggers": [],
+      "dpr": 2
+    },
+    {
+      "id": "17eeacd7-3b28-4d03-9bf5-5749088c11d9",
+      "url": "https://www.adp.com/",
+      "namespace": "snapshots.Adp",
+      "kind": "PNG",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 3420,
+        "height": 11682
+      },
+      "filePath": "/src/snapshots/Adp/index5.html",
+      "imgPath": "index5_files/screenshot.png",
+      "meta": {
+        "label": "Payroll, HR and Tax Services | ADP Official Site",
+        "created": "2026-06-14T12:57:25.966Z",
+        "tags": []
+      },
+      "triggers": [],
+      "dpr": 2
+    },
+    {
+      "id": "21c9c785-d392-4221-822b-9f34ce6a6685",
+      "url": "https://www.adp.com/",
+      "namespace": "snapshots.Adp",
+      "kind": "PNG",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 3420,
+        "height": 11682
+      },
+      "filePath": "/src/snapshots/Adp/index6.html",
+      "imgPath": "index6_files/screenshot.png",
+      "meta": {
+        "label": "Payroll, HR and Tax Services | ADP Official Site",
+        "created": "2026-06-14T12:57:59.931Z",
+        "tags": []
+      },
+      "triggers": [],
+      "dpr": 2
+    },
+    {
+      "id": "0de6672c-19bc-478e-9241-5dbd66111496",
+      "url": "https://www.alodokter.com/",
+      "namespace": "snapshots.Alo",
+      "kind": "PNG",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 3420,
+        "height": 9590
+      },
+      "filePath": "/src/snapshots/Alo/index7.html",
+      "imgPath": "index7_files/screenshot.png",
+      "meta": {
+        "label": "Alodokter - Info Kesehatan, Booking dan Chat Dokter",
+        "created": "2026-06-14T12:59:31.376Z",
+        "tags": []
+      },
+      "triggers": [
+        "trigger-7ff5e76d-dd44-4023-aa54-349f28438ac8",
+        "trigger-e6af3420-0f20-4122-a98a-141fc94af81a",
+        "trigger-61d485d1-7e3c-4d7a-a88d-8bee76e1bd2b"
+      ],
+      "dpr": 2
+    },
+    {
+      "id": "64b5ec20-ce39-467e-8cba-4443ac38b903",
+      "url": "https://www.adp.com/",
+      "namespace": "snapshots.Adp",
+      "kind": "PNG",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 3420,
+        "height": 1826
+      },
+      "filePath": "/src/snapshots/Adp/index7.html",
+      "imgPath": "index7_files/screenshot.png",
+      "meta": {
+        "label": "Payroll, HR and Tax Services | ADP Official Site",
+        "created": "2026-06-14T13:13:58.655Z",
+        "tags": []
+      },
+      "triggers": [],
+      "dpr": 2
+    },
+    {
+      "id": "9d1e8c37-80fb-48a4-b044-f9c60b497942",
+      "url": "https://www.adp.com/",
+      "namespace": "snapshots.Adp",
+      "kind": "PNG",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 3420,
+        "height": 11048
+      },
+      "filePath": "/src/snapshots/Adp/index8.html",
+      "imgPath": "index8_files/screenshot.png",
+      "meta": {
+        "label": "Payroll, HR and Tax Services | ADP Official Site",
+        "created": "2026-06-14T13:14:20.172Z",
+        "tags": []
+      },
+      "triggers": [
+        "trigger-8f2b20b3-4bf1-4688-8961-61a70ea3aa97"
+      ],
+      "dpr": 2
+    },
+    {
+      "id": "49d1d172-1d54-457a-b127-afc61c0d39ed",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.49d1d172-1d54-457a-b127-afc61c0d39ed",
+      "kind": "PNG",
+      "scope": "region",
+      "sourceRect": {
+        "x": 645.5,
+        "y": 26,
+        "width": 358,
+        "height": 159
+      },
+      "filePath": "",
+      "imgPath": "resources/images/snapshots/regions/region_645.5_26_358x159.png",
+      "meta": {
+        "label": "Region Screenshot 358x159",
+        "created": "2026-06-14T13:45:59.014Z",
+        "tags": []
+      },
+      "triggers": [],
+      "parent_id": "283e62ad-56f6-4465-aaf6-5cbd8ef4f9cb",
+      "dpr": 2
+    },
+    {
+      "id": "cdc18b52-660a-4f86-ae5b-7fefcac70a28",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.Google",
+      "kind": "PNG",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 3420,
+        "height": 1826
+      },
+      "filePath": "/src/snapshots/Google/index13.html",
+      "imgPath": "index13_files/screenshot.png",
+      "meta": {
+        "label": "Google",
+        "created": "2026-06-14T14:52:36.678Z",
+        "tags": []
+      },
+      "triggers": [
+        "trigger-48332a4d-8a29-4ca7-86ec-56610e6e5e93"
+      ],
+      "dpr": 2
+    },
+    {
+      "id": "935d5a5a-c931-42a8-a19b-2879c0d991ae",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.935d5a5a-c931-42a8-a19b-2879c0d991ae",
+      "kind": "PNG",
+      "scope": "region",
+      "sourceRect": {
+        "x": 686.5,
+        "y": 237,
+        "width": 323,
+        "height": 149
+      },
+      "filePath": "",
+      "imgPath": "resources/images/snapshots/regions/region_686.5_237_323x149.png",
+      "meta": {
+        "label": "Region Screenshot 323x149",
+        "created": "2026-06-14T14:52:57.632Z",
+        "tags": []
+      },
+      "triggers": [],
+      "parent_id": "cdc18b52-660a-4f86-ae5b-7fefcac70a28",
+      "dpr": 2
+    },
+    {
+      "id": "697e0436-17db-4fae-bd05-4806cf5bc465",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.Google",
+      "kind": "PNG",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 3420,
+        "height": 1826
+      },
+      "filePath": "/src/snapshots/Google/index14.html",
+      "imgPath": "index14_files/screenshot.png",
+      "meta": {
+        "label": "Google",
+        "created": "2026-06-14T14:58:09.152Z",
+        "tags": []
+      },
+      "triggers": [
+        "trigger-082da219-c7cd-4d18-bf65-aa84298cb7a4"
+      ],
+      "dpr": 2
+    },
+    {
+      "id": "9d77da26-6a47-4131-a996-f073df048eeb",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.9d77da26-6a47-4131-a996-f073df048eeb",
+      "kind": "PNG",
+      "scope": "region",
+      "sourceRect": {
+        "x": 693.5,
+        "y": 245,
+        "width": 308,
+        "height": 136
+      },
+      "filePath": "",
+      "imgPath": "Google/index14_files/region_693.5_245_308x136.png",
+      "meta": {
+        "label": "Region Screenshot 308x136",
+        "created": "2026-06-14T14:58:34.483Z",
+        "tags": []
+      },
+      "triggers": [],
+      "parent_id": "697e0436-17db-4fae-bd05-4806cf5bc465",
+      "dpr": 2
     }
   ]
 }

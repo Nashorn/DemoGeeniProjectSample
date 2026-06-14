@@ -1,0 +1,11 @@
+:root #overlay-ui {
+  z-index: 1000;
+}
+
+:root overlay-tooltip {
+  z-index: 1001;
+}
+
+:root overlay-hud {
+  z-index: 1002;
+}
