@@ -4,7 +4,7 @@ export default namespace `runtime` (
     class Controller extends Application {
 
         async onConnected() {
-            debugger
+
             await super.onConnected();
             
             // 

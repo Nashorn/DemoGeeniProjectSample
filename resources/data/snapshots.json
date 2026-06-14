@@ -602,7 +602,16 @@
         "tags": []
       },
       "triggers": [
-        "trigger-082da219-c7cd-4d18-bf65-aa84298cb7a4"
+        "trigger-4c55fb60-5243-4d62-a28f-7d3a1be4a8f1",
+        "trigger-f9e2fc5b-c867-4399-99b7-cad8282ac1b5",
+        "trigger-2965f9e9-01fa-432a-bc0f-602385fa5495",
+        "trigger-b3b01733-cf3c-47f6-addc-cec9ddcd6122",
+        "trigger-92e959df-83e5-4060-8aa7-96d84d3615c2",
+        "trigger-62fcadf3-862c-40c1-b195-08b281f6f86f",
+        "trigger-994b392c-b2a0-44ba-97e6-d6b9f5e4bd92",
+        "trigger-b93141ae-3593-486e-b427-c79c39583f68",
+        "trigger-39ff0ad4-5b93-4a8f-a896-5b92281dad39",
+        "trigger-3a2ca3e7-b29e-47de-b5e2-f996660a708e"
       ],
       "dpr": 2
     },
@@ -627,6 +636,635 @@
       },
       "triggers": [],
       "parent_id": "697e0436-17db-4fae-bd05-4806cf5bc465",
+      "dpr": 2
+    },
+    {
+      "id": "9dcad8e7-0f98-449f-8334-c7b59d931d9d",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.9dcad8e7-0f98-449f-8334-c7b59d931d9d",
+      "kind": "PNG",
+      "scope": "region",
+      "sourceRect": {
+        "x": 693.5,
+        "y": 245,
+        "width": 308,
+        "height": 136
+      },
+      "filePath": "",
+      "imgPath": "Google/index14_files/region_693.5_245_308x136.png",
+      "meta": {
+        "label": "Region Screenshot 308x136",
+        "created": "2026-06-14T15:00:32.123Z",
+        "tags": []
+      },
+      "triggers": [],
+      "parent_id": "697e0436-17db-4fae-bd05-4806cf5bc465",
+      "dpr": 2
+    },
+    {
+      "id": "307cd03b-dbd1-4f93-a6a6-517fc3ef8d0e",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.307cd03b-dbd1-4f93-a6a6-517fc3ef8d0e",
+      "kind": "PNG",
+      "scope": "region",
+      "sourceRect": {
+        "x": 509.5,
+        "y": 373,
+        "width": 335,
+        "height": 140
+      },
+      "filePath": "",
+      "imgPath": "Google/index14_files/region_509.5_373_335x140.png",
+      "meta": {
+        "label": "Region Screenshot 335x140",
+        "created": "2026-06-14T15:06:15.030Z",
+        "tags": []
+      },
+      "triggers": [],
+      "parent_id": "697e0436-17db-4fae-bd05-4806cf5bc465",
+      "dpr": 2
+    },
+    {
+      "id": "30a57dd6-0cbd-41ea-a1bf-5cd5b9e6878a",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.30a57dd6-0cbd-41ea-a1bf-5cd5b9e6878a",
+      "kind": "PNG",
+      "scope": "region",
+      "sourceRect": {
+        "x": 509.5,
+        "y": 373,
+        "width": 335,
+        "height": 140
+      },
+      "filePath": "",
+      "imgPath": "Google/index14_files/region_509.5_373_335x140.png",
+      "meta": {
+        "label": "Region Screenshot 335x140",
+        "created": "2026-06-14T15:06:42.748Z",
+        "tags": []
+      },
+      "triggers": [],
+      "parent_id": "697e0436-17db-4fae-bd05-4806cf5bc465",
+      "dpr": 2
+    },
+    {
+      "id": "0187b320-b3bd-463f-9624-139c2a964fbc",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.0187b320-b3bd-463f-9624-139c2a964fbc",
+      "kind": "PNG",
+      "scope": "region",
+      "sourceRect": {
+        "x": 366.5,
+        "y": 193,
+        "width": 159,
+        "height": 87
+      },
+      "filePath": "",
+      "imgPath": "Google/index14_files/region_366.5_193_159x87.png",
+      "meta": {
+        "label": "Region Screenshot 159x87",
+        "created": "2026-06-14T15:55:25.956Z",
+        "tags": []
+      },
+      "triggers": [],
+      "parent_id": "697e0436-17db-4fae-bd05-4806cf5bc465",
+      "dpr": 2
+    },
+    {
+      "id": "afd8953d-70d1-40c8-b783-0cb26895e469",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.afd8953d-70d1-40c8-b783-0cb26895e469",
+      "kind": "PNG",
+      "scope": "region",
+      "sourceRect": {
+        "x": 366.5,
+        "y": 193,
+        "width": 159,
+        "height": 87
+      },
+      "filePath": "",
+      "imgPath": "Google/index14_files/region_366.5_193_159x87.png",
+      "meta": {
+        "label": "Region Screenshot 159x87",
+        "created": "2026-06-14T15:55:27.708Z",
+        "tags": []
+      },
+      "triggers": [],
+      "parent_id": "697e0436-17db-4fae-bd05-4806cf5bc465",
+      "dpr": 2
+    },
+    {
+      "id": "16237ab8-022b-41ba-95a3-091a5df618f7",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.16237ab8-022b-41ba-95a3-091a5df618f7",
+      "kind": "PNG",
+      "scope": "region",
+      "sourceRect": {
+        "x": 624.5,
+        "y": 254,
+        "width": 159,
+        "height": 87
+      },
+      "filePath": "",
+      "imgPath": "Google/index14_files/region_624.5_254_159x87.png",
+      "meta": {
+        "label": "Region Screenshot 159x87",
+        "created": "2026-06-14T15:55:34.665Z",
+        "tags": []
+      },
+      "triggers": [],
+      "parent_id": "697e0436-17db-4fae-bd05-4806cf5bc465",
+      "dpr": 2
+    },
+    {
+      "id": "4528ffdf-575d-4368-9d90-2d30eea39672",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.4528ffdf-575d-4368-9d90-2d30eea39672",
+      "kind": "PNG",
+      "scope": "region",
+      "sourceRect": {
+        "x": 624.5,
+        "y": 254,
+        "width": 159,
+        "height": 87
+      },
+      "filePath": "",
+      "imgPath": "Google/index14_files/region_624.5_254_159x87.png",
+      "meta": {
+        "label": "Region Screenshot 159x87",
+        "created": "2026-06-14T15:56:53.731Z",
+        "tags": []
+      },
+      "triggers": [],
+      "parent_id": "697e0436-17db-4fae-bd05-4806cf5bc465",
+      "dpr": 2
+    },
+    {
+      "id": "a4110d6f-6bdd-4469-9cfd-231e936cba65",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.a4110d6f-6bdd-4469-9cfd-231e936cba65",
+      "kind": "PNG",
+      "scope": "region",
+      "sourceRect": {
+        "x": 332.5,
+        "y": 125,
+        "width": 168,
+        "height": 122
+      },
+      "filePath": "",
+      "imgPath": "Google/index14_files/region_332.5_125_168x122.png",
+      "meta": {
+        "label": "Region Screenshot 168x122",
+        "created": "2026-06-14T16:03:30.828Z",
+        "tags": []
+      },
+      "triggers": [],
+      "parent_id": "697e0436-17db-4fae-bd05-4806cf5bc465",
+      "dpr": 2
+    },
+    {
+      "id": "ccfa952f-d975-4250-bd7d-7eedf95b8136",
+      "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Google/index14.html",
+      "namespace": "snapshots.ccfa952f-d975-4250-bd7d-7eedf95b8136",
+      "kind": "PNG",
+      "scope": "region",
+      "sourceRect": {
+        "x": 694.5,
+        "y": 236,
+        "width": 356,
+        "height": 130
+      },
+      "filePath": "",
+      "imgPath": "Google/index14_files/region_694.5_236_356x130.png",
+      "meta": {
+        "label": "Region Screenshot 356x130",
+        "created": "2026-06-14T16:09:24.834Z",
+        "tags": []
+      },
+      "triggers": [],
+      "dpr": 2
+    },
+    {
+      "id": "d5cddec0-9722-4aea-944f-fecfd48ed707",
+      "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Google/index14.html",
+      "namespace": "snapshots.d5cddec0-9722-4aea-944f-fecfd48ed707",
+      "kind": "PNG",
+      "scope": "region",
+      "sourceRect": {
+        "x": 694.5,
+        "y": 236,
+        "width": 356,
+        "height": 130
+      },
+      "filePath": "",
+      "imgPath": "Google/index14_files/region_694.5_236_356x130.png",
+      "meta": {
+        "label": "Region Screenshot 356x130",
+        "created": "2026-06-14T16:09:27.750Z",
+        "tags": []
+      },
+      "triggers": [],
+      "dpr": 2
+    },
+    {
+      "id": "b7b98622-9633-4748-9352-93a5b6b0db97",
+      "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Google/index14.html",
+      "namespace": "snapshots.b7b98622-9633-4748-9352-93a5b6b0db97",
+      "kind": "PNG",
+      "scope": "region",
+      "sourceRect": {
+        "x": 694.5,
+        "y": 236,
+        "width": 356,
+        "height": 130
+      },
+      "filePath": "",
+      "imgPath": "Google/index14_files/region_694.5_236_356x130.png",
+      "meta": {
+        "label": "Region Screenshot 356x130",
+        "created": "2026-06-14T16:09:29.167Z",
+        "tags": []
+      },
+      "triggers": [],
+      "dpr": 2
+    },
+    {
+      "id": "5a5aab25-30b1-43a5-a081-a6befef8d4ab",
+      "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Google/index14.html",
+      "namespace": "snapshots.5a5aab25-30b1-43a5-a081-a6befef8d4ab",
+      "kind": "PNG",
+      "scope": "region",
+      "sourceRect": {
+        "x": 694.5,
+        "y": 236,
+        "width": 245,
+        "height": 123
+      },
+      "filePath": "",
+      "imgPath": "Google/index14_files/region_694.5_236_245x123.png",
+      "meta": {
+        "label": "Region Screenshot 245x123",
+        "created": "2026-06-14T16:09:57.779Z",
+        "tags": []
+      },
+      "triggers": [],
+      "dpr": 2
+    },
+    {
+      "id": "76845084-391b-47b0-925e-74b2351e8d03",
+      "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Google/index14.html",
+      "namespace": "snapshots.76845084-391b-47b0-925e-74b2351e8d03",
+      "kind": "PNG",
+      "scope": "region",
+      "sourceRect": {
+        "x": 468.5,
+        "y": 270,
+        "width": 109,
+        "height": 62
+      },
+      "filePath": "",
+      "imgPath": "Google/index14_files/region_468.5_270_109x62.png",
+      "meta": {
+        "label": "Region Screenshot 109x62",
+        "created": "2026-06-14T17:01:11.638Z",
+        "tags": []
+      },
+      "triggers": [],
+      "dpr": 2
+    },
+    {
+      "id": "90c76d97-420d-423e-9f26-a90f108b6975",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.90c76d97-420d-423e-9f26-a90f108b6975",
+      "kind": "PNG",
+      "scope": "region",
+      "sourceRect": {
+        "x": 497.5,
+        "y": 312,
+        "width": 179,
+        "height": 148
+      },
+      "filePath": "",
+      "imgPath": "Google/index14_files/region_497.5_312_179x148.png",
+      "meta": {
+        "label": "Region Screenshot 179x148",
+        "created": "2026-06-14T17:35:51.486Z",
+        "tags": []
+      },
+      "triggers": [],
+      "parent_id": "697e0436-17db-4fae-bd05-4806cf5bc465",
+      "dpr": 2
+    },
+    {
+      "id": "4a2c3f8b-6d9a-4ad9-865d-80e1445b19a6",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.4a2c3f8b-6d9a-4ad9-865d-80e1445b19a6",
+      "kind": "PNG",
+      "scope": "region",
+      "sourceRect": {
+        "x": 497.5,
+        "y": 312,
+        "width": 179,
+        "height": 148
+      },
+      "filePath": "",
+      "imgPath": "Google/index14_files/region_497.5_312_179x148.png",
+      "meta": {
+        "label": "Region Screenshot 179x148",
+        "created": "2026-06-14T17:36:00.234Z",
+        "tags": []
+      },
+      "triggers": [],
+      "parent_id": "697e0436-17db-4fae-bd05-4806cf5bc465",
+      "dpr": 2
+    },
+    {
+      "id": "87193cbe-b60d-45b7-805e-e5bd7cd9a506",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.87193cbe-b60d-45b7-805e-e5bd7cd9a506",
+      "kind": "PNG",
+      "scope": "region",
+      "sourceRect": {
+        "x": 497.5,
+        "y": 312,
+        "width": 179,
+        "height": 148
+      },
+      "filePath": "",
+      "imgPath": "Google/index14_files/region_497.5_312_179x148.png",
+      "meta": {
+        "label": "Region Screenshot 179x148",
+        "created": "2026-06-14T17:36:03.775Z",
+        "tags": []
+      },
+      "triggers": [],
+      "parent_id": "697e0436-17db-4fae-bd05-4806cf5bc465",
+      "dpr": 2
+    },
+    {
+      "id": "2365759b-cd9d-4c14-a8ee-96a4b1ea50ca",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.2365759b-cd9d-4c14-a8ee-96a4b1ea50ca",
+      "kind": "PNG",
+      "scope": "region",
+      "sourceRect": {
+        "x": 497.5,
+        "y": 312,
+        "width": 179,
+        "height": 148
+      },
+      "filePath": "",
+      "imgPath": "Google/index14_files/region_497.5_312_179x148.png",
+      "meta": {
+        "label": "Region Screenshot 179x148",
+        "created": "2026-06-14T17:36:05.024Z",
+        "tags": []
+      },
+      "triggers": [],
+      "parent_id": "697e0436-17db-4fae-bd05-4806cf5bc465",
+      "dpr": 2
+    },
+    {
+      "id": "4030fe82-3d9e-4fa3-a61e-f50790abb568",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.4030fe82-3d9e-4fa3-a61e-f50790abb568",
+      "kind": "PNG",
+      "scope": "region",
+      "sourceRect": {
+        "x": 497.5,
+        "y": 312,
+        "width": 179,
+        "height": 148
+      },
+      "filePath": "",
+      "imgPath": "Google/index14_files/region_497.5_312_179x148.png",
+      "meta": {
+        "label": "Region Screenshot 179x148",
+        "created": "2026-06-14T17:36:06.291Z",
+        "tags": []
+      },
+      "triggers": [],
+      "parent_id": "697e0436-17db-4fae-bd05-4806cf5bc465",
+      "dpr": 2
+    },
+    {
+      "id": "9262cf17-3751-4e05-ba3b-3fdee6a9cb70",
+      "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Google/index14.html",
+      "namespace": "snapshots.9262cf17-3751-4e05-ba3b-3fdee6a9cb70",
+      "kind": "PNG",
+      "scope": "region",
+      "sourceRect": {
+        "x": 342.5,
+        "y": 236,
+        "width": 187,
+        "height": 92
+      },
+      "filePath": "",
+      "imgPath": "Google/index14_files/region_342.5_236_187x92.png",
+      "meta": {
+        "label": "Region Screenshot 187x92",
+        "created": "2026-06-14T17:52:12.735Z",
+        "tags": []
+      },
+      "triggers": [],
+      "dpr": 2
+    },
+    {
+      "id": "cbfd3d71-4ed6-467b-8e92-740d791040d7",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.Google",
+      "kind": "HTML",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "filePath": "/src/snapshots/Google/index15.html",
+      "imgPath": "",
+      "meta": {
+        "label": "Google",
+        "created": "2026-06-14T17:55:15.034Z",
+        "tags": []
+      },
+      "triggers": []
+    },
+    {
+      "id": "6d624f22-63eb-4a77-963d-69a8f7bd281f",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.Google",
+      "kind": "HTML",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "filePath": "/src/snapshots/Google/index16.html",
+      "imgPath": "",
+      "meta": {
+        "label": "Google",
+        "created": "2026-06-14T17:56:09.910Z",
+        "tags": []
+      },
+      "triggers": []
+    },
+    {
+      "id": "adf001b9-374f-4743-a8bb-8fd50233925c",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.Google",
+      "kind": "HTML",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "filePath": "/src/snapshots/Google/index17.html",
+      "imgPath": "",
+      "meta": {
+        "label": "Google",
+        "created": "2026-06-14T17:57:56.802Z",
+        "tags": []
+      },
+      "triggers": []
+    },
+    {
+      "id": "e66adf4f-08ad-4ec4-a2c6-0405918e9857",
+      "url": "https://www.adp.com/",
+      "namespace": "snapshots.Adp",
+      "kind": "HTML",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "filePath": "/src/snapshots/Adp/index18.html",
+      "imgPath": "",
+      "meta": {
+        "label": "Payroll, HR and Tax Services | ADP Official Site",
+        "created": "2026-06-14T17:58:48.405Z",
+        "tags": []
+      },
+      "triggers": []
+    },
+    {
+      "id": "85799f9d-daab-41a2-89b2-691a19914c42",
+      "url": "https://www.adp.com/",
+      "namespace": "snapshots.Adp",
+      "kind": "HTML",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "filePath": "/src/snapshots/Adp/index19.html",
+      "imgPath": "",
+      "meta": {
+        "label": "Payroll, HR and Tax Services | ADP Official Site",
+        "created": "2026-06-14T18:00:53.942Z",
+        "tags": []
+      },
+      "triggers": [
+        "trigger-590a3613-6592-48de-9229-f6384da0599b"
+      ]
+    },
+    {
+      "id": "5ecb9280-ef2c-4424-ba0a-c10499077f33",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.Google",
+      "kind": "HTML",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "filePath": "/src/snapshots/Google/index20.html",
+      "imgPath": "",
+      "meta": {
+        "label": "Google",
+        "created": "2026-06-14T18:12:24.758Z",
+        "tags": []
+      },
+      "triggers": []
+    },
+    {
+      "id": "1122f337-086b-4125-af9e-c73f282e858f",
+      "url": "https://www.alodokter.com/",
+      "namespace": "snapshots.Alodokter",
+      "kind": "HTML",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "filePath": "/src/snapshots/Alodokter/index2.html",
+      "imgPath": "",
+      "meta": {
+        "label": "Alodokter - Info Kesehatan, Booking dan Chat Dokter",
+        "created": "2026-06-14T18:15:21.920Z",
+        "tags": []
+      },
+      "triggers": [
+        "trigger-906f9b93-0677-422b-956b-2068bb5429f8",
+        "trigger-adbb35d4-c952-426f-8579-6f35ac6503f9",
+        "trigger-a7db4d5f-7064-4b48-b535-0558e9c959da",
+        "trigger-3f565b52-a48e-420a-8deb-6304b3c97a48"
+      ]
+    },
+    {
+      "id": "7a4e4a33-2fd8-454d-a409-e5872e2d83cc",
+      "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Alodokter/index2.html",
+      "namespace": "snapshots.7a4e4a33-2fd8-454d-a409-e5872e2d83cc",
+      "kind": "PNG",
+      "scope": "region",
+      "sourceRect": {
+        "x": 291.5,
+        "y": 330,
+        "width": 132,
+        "height": 119
+      },
+      "filePath": "",
+      "imgPath": "Alodokter/index2_files/region_291.5_330_132x119.png",
+      "meta": {
+        "label": "Region Screenshot 132x119",
+        "created": "2026-06-14T19:29:10.819Z",
+        "tags": []
+      },
+      "triggers": [],
+      "dpr": 2
+    },
+    {
+      "id": "998d1269-bab7-45e9-aa33-e1b77885ce5b",
+      "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Alodokter/index2.html",
+      "namespace": "snapshots.998d1269-bab7-45e9-aa33-e1b77885ce5b",
+      "kind": "PNG",
+      "scope": "region",
+      "sourceRect": {
+        "x": 291.5,
+        "y": 330,
+        "width": 132,
+        "height": 119
+      },
+      "filePath": "",
+      "imgPath": "Alodokter/index2_files/region_291.5_330_132x119.png",
+      "meta": {
+        "label": "Region Screenshot 132x119",
+        "created": "2026-06-14T19:29:55.576Z",
+        "tags": []
+      },
+      "triggers": [],
       "dpr": 2
     }
   ]

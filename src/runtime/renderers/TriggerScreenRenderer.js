@@ -7,6 +7,7 @@ export default class TriggerScreenRenderer {
 
   drawTriggers(triggers = [], sheet) {
     const drawnTriggers = [];
+    const viewportOffsetX = this.getViewportOffsetX();
     for (var t of triggers) {
       // If intrinsic: resolve the node by selector.
       if (!t.isPseudo && t.selector) {
@@ -30,10 +31,9 @@ export default class TriggerScreenRenderer {
         continue;
       }
       t = t.clone(`${t.id}__overlay_${Date.now()}`);
-      // Always convert screen-relative to region-relative
       t.rect = {
         ...t.rect,
-        x: t.rect.x + 27.5,
+        x: t.rect.x + viewportOffsetX,
         y: t.rect.y
       };
       const el = this.rs._getOrCreateStageTriggerEl(t.id);
@@ -51,6 +51,10 @@ export default class TriggerScreenRenderer {
       drawnTriggers.push(t);
     }
     return drawnTriggers;
+  }
+
+  getViewportOffsetX() {
+    return globalThis.idehost ? 0 : 0;
   }
 
   getStageAppendTarget() {

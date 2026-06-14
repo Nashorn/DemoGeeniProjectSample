@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-14T14:58:34.483Z",
+  "generatedAt": "2026-06-14T19:29:55.579Z",
   "source": {
     "snapshots": "/resources/data/snapshots.json",
     "triggers": "/resources/data/triggers.json"
@@ -563,15 +563,332 @@
       "created": "2026-06-14T14:58:09.152Z",
       "triggers": [
         {
-          "id": "trigger-082da219-c7cd-4d18-bf65-aa84298cb7a4",
+          "id": "trigger-4c55fb60-5243-4d62-a28f-7d3a1be4a8f1",
           "label": "Untitled Trigger",
           "description": "",
           "kind": "trigger",
           "rect": {
-            "x": 666,
-            "y": 245,
-            "width": 308,
-            "height": 136
+            "x": 496,
+            "y": 113,
+            "width": 271,
+            "height": 191
+          },
+          "actionType": null,
+          "targetSnapshotId": null,
+          "hasNavigationAction": false,
+          "missingDefinition": false
+        },
+        {
+          "id": "trigger-f9e2fc5b-c867-4399-99b7-cad8282ac1b5",
+          "label": "Untitled Trigger",
+          "description": "",
+          "kind": "trigger",
+          "rect": {
+            "x": 822,
+            "y": 90,
+            "width": 485,
+            "height": 257
+          },
+          "actionType": null,
+          "targetSnapshotId": null,
+          "hasNavigationAction": false,
+          "missingDefinition": false
+        },
+        {
+          "id": "trigger-2965f9e9-01fa-432a-bc0f-602385fa5495",
+          "label": "Untitled Trigger",
+          "description": "",
+          "kind": "trigger",
+          "rect": {
+            "x": 70.5,
+            "y": 349,
+            "width": 227,
+            "height": 51
+          },
+          "actionType": null,
+          "targetSnapshotId": null,
+          "hasNavigationAction": false,
+          "missingDefinition": false
+        },
+        {
+          "id": "trigger-b3b01733-cf3c-47f6-addc-cec9ddcd6122",
+          "label": "Untitled Trigger",
+          "description": "",
+          "kind": "trigger",
+          "rect": {
+            "x": 166,
+            "y": 408,
+            "width": 193,
+            "height": 90
+          },
+          "actionType": null,
+          "targetSnapshotId": null,
+          "hasNavigationAction": false,
+          "missingDefinition": false
+        },
+        {
+          "id": "trigger-92e959df-83e5-4060-8aa7-96d84d3615c2",
+          "label": "Untitled Trigger",
+          "description": "",
+          "kind": "trigger",
+          "rect": {
+            "x": 608,
+            "y": 405,
+            "width": 324,
+            "height": 204
+          },
+          "actionType": null,
+          "targetSnapshotId": null,
+          "hasNavigationAction": false,
+          "missingDefinition": false
+        },
+        {
+          "id": "trigger-62fcadf3-862c-40c1-b195-08b281f6f86f",
+          "label": "Untitled Trigger",
+          "description": "",
+          "kind": "trigger",
+          "rect": {
+            "x": 591,
+            "y": 179,
+            "width": 128,
+            "height": 72
+          },
+          "actionType": null,
+          "targetSnapshotId": null,
+          "hasNavigationAction": false,
+          "missingDefinition": false
+        },
+        {
+          "id": "trigger-994b392c-b2a0-44ba-97e6-d6b9f5e4bd92",
+          "label": "Untitled Trigger",
+          "description": "",
+          "kind": "trigger",
+          "rect": {
+            "x": 89.5,
+            "y": 140,
+            "width": 188,
+            "height": 57
+          },
+          "actionType": null,
+          "targetSnapshotId": null,
+          "hasNavigationAction": false,
+          "missingDefinition": false
+        },
+        {
+          "id": "trigger-b93141ae-3593-486e-b427-c79c39583f68",
+          "label": "Untitled Trigger",
+          "description": "",
+          "kind": "trigger",
+          "rect": {
+            "x": 118,
+            "y": 78,
+            "width": 188,
+            "height": 57
+          },
+          "actionType": null,
+          "targetSnapshotId": null,
+          "hasNavigationAction": false,
+          "missingDefinition": false
+        },
+        {
+          "id": "trigger-39ff0ad4-5b93-4a8f-a896-5b92281dad39",
+          "label": "Untitled Trigger",
+          "description": "",
+          "kind": "trigger",
+          "rect": {
+            "x": 322.5,
+            "y": 142,
+            "width": 146,
+            "height": 77
+          },
+          "actionType": null,
+          "targetSnapshotId": null,
+          "hasNavigationAction": false,
+          "missingDefinition": false
+        },
+        {
+          "id": "trigger-3a2ca3e7-b29e-47de-b5e2-f996660a708e",
+          "label": "Untitled Trigger",
+          "description": "",
+          "kind": "trigger",
+          "rect": {
+            "x": 531.5,
+            "y": 179,
+            "width": 446.86,
+            "height": 50
+          },
+          "actionType": null,
+          "targetSnapshotId": null,
+          "hasNavigationAction": false,
+          "missingDefinition": false
+        }
+      ]
+    },
+    {
+      "id": "cbfd3d71-4ed6-467b-8e92-740d791040d7",
+      "snapshotId": "cbfd3d71-4ed6-467b-8e92-740d791040d7",
+      "label": "Google",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.Google",
+      "kind": "HTML",
+      "scope": "screen",
+      "filePath": "/src/snapshots/Google/index15.html",
+      "imgPath": null,
+      "created": "2026-06-14T17:55:15.034Z",
+      "triggers": []
+    },
+    {
+      "id": "6d624f22-63eb-4a77-963d-69a8f7bd281f",
+      "snapshotId": "6d624f22-63eb-4a77-963d-69a8f7bd281f",
+      "label": "Google",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.Google",
+      "kind": "HTML",
+      "scope": "screen",
+      "filePath": "/src/snapshots/Google/index16.html",
+      "imgPath": null,
+      "created": "2026-06-14T17:56:09.910Z",
+      "triggers": []
+    },
+    {
+      "id": "adf001b9-374f-4743-a8bb-8fd50233925c",
+      "snapshotId": "adf001b9-374f-4743-a8bb-8fd50233925c",
+      "label": "Google",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.Google",
+      "kind": "HTML",
+      "scope": "screen",
+      "filePath": "/src/snapshots/Google/index17.html",
+      "imgPath": null,
+      "created": "2026-06-14T17:57:56.802Z",
+      "triggers": []
+    },
+    {
+      "id": "e66adf4f-08ad-4ec4-a2c6-0405918e9857",
+      "snapshotId": "e66adf4f-08ad-4ec4-a2c6-0405918e9857",
+      "label": "Payroll, HR and Tax Services | ADP Official Site",
+      "url": "https://www.adp.com/",
+      "namespace": "snapshots.Adp",
+      "kind": "HTML",
+      "scope": "screen",
+      "filePath": "/src/snapshots/Adp/index18.html",
+      "imgPath": null,
+      "created": "2026-06-14T17:58:48.405Z",
+      "triggers": []
+    },
+    {
+      "id": "85799f9d-daab-41a2-89b2-691a19914c42",
+      "snapshotId": "85799f9d-daab-41a2-89b2-691a19914c42",
+      "label": "Payroll, HR and Tax Services | ADP Official Site",
+      "url": "https://www.adp.com/",
+      "namespace": "snapshots.Adp",
+      "kind": "HTML",
+      "scope": "screen",
+      "filePath": "/src/snapshots/Adp/index19.html",
+      "imgPath": null,
+      "created": "2026-06-14T18:00:53.942Z",
+      "triggers": [
+        {
+          "id": "trigger-590a3613-6592-48de-9229-f6384da0599b",
+          "label": "Untitled Trigger",
+          "description": "",
+          "kind": "trigger",
+          "rect": {
+            "x": 207.5,
+            "y": 416,
+            "width": 1240,
+            "height": 22
+          },
+          "actionType": null,
+          "targetSnapshotId": null,
+          "hasNavigationAction": false,
+          "missingDefinition": false
+        }
+      ]
+    },
+    {
+      "id": "5ecb9280-ef2c-4424-ba0a-c10499077f33",
+      "snapshotId": "5ecb9280-ef2c-4424-ba0a-c10499077f33",
+      "label": "Google",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.Google",
+      "kind": "HTML",
+      "scope": "screen",
+      "filePath": "/src/snapshots/Google/index20.html",
+      "imgPath": null,
+      "created": "2026-06-14T18:12:24.758Z",
+      "triggers": []
+    },
+    {
+      "id": "1122f337-086b-4125-af9e-c73f282e858f",
+      "snapshotId": "1122f337-086b-4125-af9e-c73f282e858f",
+      "label": "Alodokter - Info Kesehatan, Booking dan Chat Dokter",
+      "url": "https://www.alodokter.com/",
+      "namespace": "snapshots.Alodokter",
+      "kind": "HTML",
+      "scope": "screen",
+      "filePath": "/src/snapshots/Alodokter/index2.html",
+      "imgPath": null,
+      "created": "2026-06-14T18:15:21.920Z",
+      "triggers": [
+        {
+          "id": "trigger-906f9b93-0677-422b-956b-2068bb5429f8",
+          "label": "Untitled Trigger",
+          "description": "",
+          "kind": "trigger",
+          "rect": {
+            "x": 665.27,
+            "y": 15.5,
+            "width": 92.3,
+            "height": 49
+          },
+          "actionType": null,
+          "targetSnapshotId": null,
+          "hasNavigationAction": false,
+          "missingDefinition": false
+        },
+        {
+          "id": "trigger-adbb35d4-c952-426f-8579-6f35ac6503f9",
+          "label": "Untitled Trigger",
+          "description": "",
+          "kind": "trigger",
+          "rect": {
+            "x": 386,
+            "y": 8,
+            "width": 247,
+            "height": 64
+          },
+          "actionType": null,
+          "targetSnapshotId": null,
+          "hasNavigationAction": false,
+          "missingDefinition": false
+        },
+        {
+          "id": "trigger-a7db4d5f-7064-4b48-b535-0558e9c959da",
+          "label": "Untitled Trigger",
+          "description": "",
+          "kind": "trigger",
+          "rect": {
+            "x": 66,
+            "y": 164,
+            "width": 152,
+            "height": 131
+          },
+          "actionType": null,
+          "targetSnapshotId": null,
+          "hasNavigationAction": false,
+          "missingDefinition": false
+        },
+        {
+          "id": "trigger-3f565b52-a48e-420a-8deb-6304b3c97a48",
+          "label": "Untitled Trigger",
+          "description": "",
+          "kind": "trigger",
+          "rect": {
+            "x": 67,
+            "y": 309,
+            "width": 151,
+            "height": 40
           },
           "actionType": null,
           "targetSnapshotId": null,
