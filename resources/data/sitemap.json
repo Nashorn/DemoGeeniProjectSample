@@ -1,33 +1,33 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-14T19:29:55.579Z",
+  "generatedAt": "2026-06-15T18:39:08.724Z",
   "source": {
     "snapshots": "/resources/data/snapshots.json",
     "triggers": "/resources/data/triggers.json"
   },
   "nodes": [
     {
-      "id": "e6b34543-813c-4c5d-a3e3-c6cd90471ec4",
-      "snapshotId": "e6b34543-813c-4c5d-a3e3-c6cd90471ec4",
-      "label": "Tool Tray",
-      "url": "https://www.google.com/?zx=1780073231644",
+      "id": "38104e3b-2640-4781-ba83-53c9902a231e",
+      "snapshotId": "38104e3b-2640-4781-ba83-53c9902a231e",
+      "label": "Google",
+      "url": "https://www.google.com/",
       "namespace": "snapshots.Google",
       "kind": "PNG",
       "scope": "screen",
       "filePath": "/src/snapshots/Google/index.html",
       "imgPath": "index_files/screenshot.png",
-      "created": "2026-05-29T16:48:31.807Z",
+      "created": "2026-06-15T11:47:37.979Z",
       "triggers": [
         {
-          "id": "trigger-dfeccb93-fd64-4a65-bd90-2dc802264adc",
+          "id": "trigger-55536c65-9359-4b07-b8e3-297979a07f85",
           "label": "Untitled Trigger",
           "description": "",
           "kind": "trigger",
           "rect": {
-            "x": 293.5,
-            "y": 326,
-            "width": 215,
-            "height": 132
+            "x": 544,
+            "y": 228,
+            "width": 211,
+            "height": 148
           },
           "actionType": null,
           "targetSnapshotId": null,
@@ -37,259 +37,73 @@
       ]
     },
     {
-      "id": "a368b239-febb-48a3-aa73-87f8b4139940",
-      "snapshotId": "a368b239-febb-48a3-aa73-87f8b4139940",
-      "label": "Tool Tray",
-      "url": "https://www.alodokter.com/",
-      "namespace": "snapshots.Alo",
-      "kind": "HTML",
-      "scope": "screen",
-      "filePath": "/src/snapshots/Alo/index.html",
-      "imgPath": null,
-      "created": "2026-06-04T15:27:23.894Z",
-      "triggers": []
-    },
-    {
-      "id": "12661109-6dfc-4308-89d2-ade57002157a",
-      "snapshotId": "12661109-6dfc-4308-89d2-ade57002157a",
+      "id": "392fdd2f-c4bc-434e-ad1b-d7fe6a68e871",
+      "snapshotId": "392fdd2f-c4bc-434e-ad1b-d7fe6a68e871",
       "label": "Google",
-      "url": "https://www.google.com/?zx=1781194309783",
+      "url": "https://www.google.com/",
       "namespace": "snapshots.Google",
-      "kind": "HTML",
+      "kind": "PNG",
       "scope": "screen",
       "filePath": "/src/snapshots/Google/index2.html",
-      "imgPath": null,
-      "created": "2026-06-11T16:12:34.251Z",
-      "triggers": [
-        {
-          "id": "trigger-1510a25b-5e2b-49d0-9a6e-bf70dd519583",
-          "label": "Untitled Trigger",
-          "description": "",
-          "kind": "trigger",
-          "rect": {
-            "x": 435,
-            "y": 147,
-            "width": 211,
-            "height": 229
-          },
-          "actionType": null,
-          "targetSnapshotId": null,
-          "hasNavigationAction": false,
-          "missingDefinition": false
-        }
-      ]
+      "imgPath": "index2_files/screenshot.png",
+      "created": "2026-06-15T12:01:14.682Z",
+      "triggers": []
     },
     {
-      "id": "8c4db5e6-f871-4ed9-8ae9-bee11f484eb1",
-      "snapshotId": "8c4db5e6-f871-4ed9-8ae9-bee11f484eb1",
+      "id": "23d098fc-9728-4694-8fff-7a5109cf20a3",
+      "snapshotId": "23d098fc-9728-4694-8fff-7a5109cf20a3",
       "label": "Google",
-      "url": "https://www.google.com/?zx=1781197116143",
+      "url": "https://www.google.com/",
       "namespace": "snapshots.Google",
-      "kind": "HTML",
+      "kind": "PNG",
       "scope": "screen",
       "filePath": "/src/snapshots/Google/index3.html",
-      "imgPath": null,
-      "created": "2026-06-11T16:59:06.672Z",
+      "imgPath": "index3_files/screenshot.png",
+      "created": "2026-06-15T12:04:56.426Z",
       "triggers": []
     },
     {
-      "id": "ca54d9e3-c4f0-4307-95a1-45feec3b1790",
-      "snapshotId": "ca54d9e3-c4f0-4307-95a1-45feec3b1790",
+      "id": "6a62b02c-1081-4c39-bd3f-cafb1fa582b5",
+      "snapshotId": "6a62b02c-1081-4c39-bd3f-cafb1fa582b5",
       "label": "Google",
-      "url": "https://www.google.com/?zx=1781197507846",
+      "url": "https://www.google.com/",
       "namespace": "snapshots.Google",
-      "kind": "HTML",
+      "kind": "PNG",
       "scope": "screen",
       "filePath": "/src/snapshots/Google/index4.html",
-      "imgPath": null,
-      "created": "2026-06-11T17:05:38.806Z",
+      "imgPath": "index4_files/screenshot.png",
+      "created": "2026-06-15T12:12:28.253Z",
       "triggers": []
     },
     {
-      "id": "82d4e045-2a99-45b1-836f-d2ea6f4b4f62",
-      "snapshotId": "82d4e045-2a99-45b1-836f-d2ea6f4b4f62",
+      "id": "fde92dd4-f5ae-4125-a840-cdf18c6e5543",
+      "snapshotId": "fde92dd4-f5ae-4125-a840-cdf18c6e5543",
       "label": "Google",
-      "url": "https://www.google.com/?zx=1781197723930",
+      "url": "https://www.google.com/",
       "namespace": "snapshots.Google",
       "kind": "HTML",
       "scope": "screen",
-      "filePath": "/src/snapshots/Google/index5.html",
+      "filePath": "/src/snapshots/Google/index.html",
       "imgPath": null,
-      "created": "2026-06-11T17:09:14.799Z",
+      "created": "2026-06-15T12:28:30.741Z",
       "triggers": []
     },
     {
-      "id": "4b6e5f79-224e-42d9-bb58-a63f1980a15d",
-      "snapshotId": "4b6e5f79-224e-42d9-bb58-a63f1980a15d",
-      "label": "Google",
-      "url": "https://www.google.com/?zx=1781198431910",
-      "namespace": "snapshots.Google",
-      "kind": "HTML",
-      "scope": "screen",
-      "filePath": "/src/snapshots/Google/index6.html",
-      "imgPath": null,
-      "created": "2026-06-11T17:21:03.207Z",
-      "triggers": []
-    },
-    {
-      "id": "1c0f3a7f-16f1-4bd0-ac9b-8eafc81a71ba",
-      "snapshotId": "1c0f3a7f-16f1-4bd0-ac9b-8eafc81a71ba",
-      "label": "Google",
-      "url": "https://www.google.com/?zx=1781198598949",
-      "namespace": "snapshots.Google",
-      "kind": "HTML",
-      "scope": "screen",
-      "filePath": "/src/snapshots/Google/index7.html",
-      "imgPath": null,
-      "created": "2026-06-11T17:23:50.081Z",
-      "triggers": []
-    },
-    {
-      "id": "ff708e9c-bb0c-4ad3-8499-ba2fb1967f4b",
-      "snapshotId": "ff708e9c-bb0c-4ad3-8499-ba2fb1967f4b",
-      "label": "Google",
-      "url": "https://www.google.com/?zx=1781198740907",
-      "namespace": "snapshots.Google",
-      "kind": "HTML",
-      "scope": "screen",
-      "filePath": "/src/snapshots/Google/index8.html",
-      "imgPath": null,
-      "created": "2026-06-11T17:26:11.515Z",
-      "triggers": []
-    },
-    {
-      "id": "d497c5bd-925d-4783-b1ae-1a6f094dca35",
-      "snapshotId": "d497c5bd-925d-4783-b1ae-1a6f094dca35",
-      "label": "Google",
-      "url": "https://www.google.com/?zx=1781198740907",
-      "namespace": "snapshots.Google",
-      "kind": "HTML",
-      "scope": "screen",
-      "filePath": "/src/snapshots/Google/index9.html",
-      "imgPath": null,
-      "created": "2026-06-11T17:26:24.583Z",
-      "triggers": []
-    },
-    {
-      "id": "8f904db0-541b-4746-be36-a9b84c6ca4df",
-      "snapshotId": "8f904db0-541b-4746-be36-a9b84c6ca4df",
-      "label": "Google",
-      "url": "https://www.google.com/?zx=1781198740907",
-      "namespace": "snapshots.Google",
-      "kind": "HTML",
-      "scope": "screen",
-      "filePath": "/src/snapshots/Google/index10.html",
-      "imgPath": null,
-      "created": "2026-06-11T17:26:36.507Z",
-      "triggers": [
-        {
-          "id": "trigger-b722e697-532e-429c-9103-a0863bc04092",
-          "label": "Untitled Trigger",
-          "description": "",
-          "kind": "trigger",
-          "rect": {
-            "x": 531.5,
-            "y": 237,
-            "width": 446.86,
-            "height": 50
-          },
-          "actionType": null,
-          "targetSnapshotId": null,
-          "hasNavigationAction": false,
-          "missingDefinition": false
-        },
-        {
-          "id": "trigger-56a76edc-d31f-4076-91f8-f3a3c07d4941",
-          "label": "Untitled Trigger",
-          "description": "",
-          "kind": "trigger",
-          "rect": {
-            "x": 686.6,
-            "y": 317,
-            "width": 127.4,
-            "height": 36
-          },
-          "actionType": null,
-          "targetSnapshotId": null,
-          "hasNavigationAction": false,
-          "missingDefinition": false
-        },
-        {
-          "id": "trigger-f7c8c9b7-0618-414e-8963-2e9bb0b24af2",
-          "label": "Untitled Trigger",
-          "description": "",
-          "kind": "trigger",
-          "rect": {
-            "x": 600.23,
-            "y": 396,
-            "width": 454.53,
-            "height": 17
-          },
-          "actionType": null,
-          "targetSnapshotId": null,
-          "hasNavigationAction": false,
-          "missingDefinition": false
-        },
-        {
-          "id": "trigger-297a7e05-65d9-4693-a0a9-72c4705acc8d",
-          "label": "Untitled Trigger",
-          "description": "",
-          "kind": "trigger",
-          "rect": {
-            "x": 363,
-            "y": 215,
-            "width": 283,
-            "height": 161
-          },
-          "actionType": null,
-          "targetSnapshotId": null,
-          "hasNavigationAction": false,
-          "missingDefinition": false
-        }
-      ]
-    },
-    {
-      "id": "14e8663e-175c-4d4f-a51b-34a3e982a5d2",
-      "snapshotId": "14e8663e-175c-4d4f-a51b-34a3e982a5d2",
-      "label": "Google",
-      "url": "https://www.google.com/?zx=1781198740907",
-      "namespace": "snapshots.Google",
-      "kind": "HTML",
-      "scope": "screen",
-      "filePath": "/src/snapshots/Google/test1.html",
-      "imgPath": null,
-      "created": "2026-06-11T17:26:51.849Z",
-      "triggers": []
-    },
-    {
-      "id": "e4d30fb8-f77c-4593-b831-4c41028a799d",
-      "snapshotId": "e4d30fb8-f77c-4593-b831-4c41028a799d",
-      "label": "Google",
-      "url": "https://www.google.com/?zx=1781198740907",
-      "namespace": "snapshots.Google",
-      "kind": "HTML",
-      "scope": "screen",
-      "filePath": "/src/snapshots/Google/test2.html",
-      "imgPath": null,
-      "created": "2026-06-11T17:27:00.689Z",
-      "triggers": []
-    },
-    {
-      "id": "ae8c26fb-91f4-464b-a10c-427c0e3d56bf",
-      "snapshotId": "ae8c26fb-91f4-464b-a10c-427c0e3d56bf",
+      "id": "886c7226-3ca1-424a-8799-7e9739a7acd1",
+      "snapshotId": "886c7226-3ca1-424a-8799-7e9739a7acd1",
       "label": "Payroll, HR and Tax Services | ADP Official Site",
-      "url": "https://www.adp.com/?zx=1781201666507",
+      "url": "https://www.adp.com/",
       "namespace": "snapshots.Adp",
       "kind": "HTML",
       "scope": "screen",
       "filePath": "/src/snapshots/Adp/index2.html",
       "imgPath": null,
-      "created": "2026-06-11T18:15:09.265Z",
+      "created": "2026-06-15T12:29:50.614Z",
       "triggers": []
     },
     {
-      "id": "354c7d3e-8f19-41c6-9088-85225f5a0037",
-      "snapshotId": "354c7d3e-8f19-41c6-9088-85225f5a0037",
+      "id": "86b0b1c1-48cd-4199-9bc8-2e1d4d7abb25",
+      "snapshotId": "86b0b1c1-48cd-4199-9bc8-2e1d4d7abb25",
       "label": "Payroll, HR and Tax Services | ADP Official Site",
       "url": "https://www.adp.com/",
       "namespace": "snapshots.Adp",
@@ -297,605 +111,112 @@
       "scope": "screen",
       "filePath": "/src/snapshots/Adp/index3.html",
       "imgPath": null,
-      "created": "2026-06-11T18:28:36.336Z",
-      "triggers": [
-        {
-          "id": "trigger-9fd05f0f-3cf4-460d-ad07-fe33ef188edf",
-          "label": "Untitled Trigger",
-          "description": "",
-          "kind": "trigger",
-          "rect": {
-            "x": 207.5,
-            "y": 290,
-            "width": 1240,
-            "height": 100
-          },
-          "actionType": null,
-          "targetSnapshotId": null,
-          "hasNavigationAction": false,
-          "missingDefinition": false
-        }
-      ]
-    },
-    {
-      "id": "d496845d-fd8d-48ef-8cba-6642e408040d",
-      "snapshotId": "d496845d-fd8d-48ef-8cba-6642e408040d",
-      "label": "Google",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.Google",
-      "kind": "PNG",
-      "scope": "screen",
-      "filePath": "/src/snapshots/Google/index11.html",
-      "imgPath": "index11_files/screenshot.png",
-      "created": "2026-06-14T12:32:26.947Z",
+      "created": "2026-06-15T12:33:01.879Z",
       "triggers": []
     },
     {
-      "id": "283e62ad-56f6-4465-aaf6-5cbd8ef4f9cb",
-      "snapshotId": "283e62ad-56f6-4465-aaf6-5cbd8ef4f9cb",
-      "label": "Google",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.Google",
-      "kind": "PNG",
-      "scope": "screen",
-      "filePath": "/src/snapshots/Google/index12.html",
-      "imgPath": "index12_files/screenshot.png",
-      "created": "2026-06-14T12:53:40.809Z",
-      "triggers": [
-        {
-          "id": "trigger-7e84cec3-856c-4bd2-ade9-9a7e957574eb",
-          "label": "Untitled Trigger",
-          "description": "",
-          "kind": "trigger",
-          "rect": {
-            "x": 664,
-            "y": 38,
-            "width": 320,
-            "height": 144
-          },
-          "actionType": null,
-          "targetSnapshotId": null,
-          "hasNavigationAction": false,
-          "missingDefinition": false
-        },
-        {
-          "id": "trigger-84484ccc-7c18-48bf-835e-2e1d8092e090",
-          "label": "Untitled Trigger",
-          "description": "",
-          "kind": "trigger",
-          "rect": {
-            "x": 618,
-            "y": 26,
-            "width": 358,
-            "height": 159
-          },
-          "actionType": null,
-          "targetSnapshotId": null,
-          "hasNavigationAction": false,
-          "missingDefinition": false
-        }
-      ]
-    },
-    {
-      "id": "0bb11225-e022-4a95-83d5-9181ba6712f8",
-      "snapshotId": "0bb11225-e022-4a95-83d5-9181ba6712f8",
-      "label": "Payroll, HR and Tax Services | ADP Official Site",
-      "url": "https://www.adp.com/",
-      "namespace": "snapshots.Adp",
-      "kind": "PNG",
-      "scope": "screen",
-      "filePath": "/src/snapshots/Adp/index4.html",
-      "imgPath": "index4_files/screenshot.png",
-      "created": "2026-06-14T12:56:29.421Z",
-      "triggers": []
-    },
-    {
-      "id": "17eeacd7-3b28-4d03-9bf5-5749088c11d9",
-      "snapshotId": "17eeacd7-3b28-4d03-9bf5-5749088c11d9",
-      "label": "Payroll, HR and Tax Services | ADP Official Site",
-      "url": "https://www.adp.com/",
-      "namespace": "snapshots.Adp",
-      "kind": "PNG",
-      "scope": "screen",
-      "filePath": "/src/snapshots/Adp/index5.html",
-      "imgPath": "index5_files/screenshot.png",
-      "created": "2026-06-14T12:57:25.966Z",
-      "triggers": []
-    },
-    {
-      "id": "21c9c785-d392-4221-822b-9f34ce6a6685",
-      "snapshotId": "21c9c785-d392-4221-822b-9f34ce6a6685",
-      "label": "Payroll, HR and Tax Services | ADP Official Site",
-      "url": "https://www.adp.com/",
-      "namespace": "snapshots.Adp",
-      "kind": "PNG",
-      "scope": "screen",
-      "filePath": "/src/snapshots/Adp/index6.html",
-      "imgPath": "index6_files/screenshot.png",
-      "created": "2026-06-14T12:57:59.931Z",
-      "triggers": []
-    },
-    {
-      "id": "0de6672c-19bc-478e-9241-5dbd66111496",
-      "snapshotId": "0de6672c-19bc-478e-9241-5dbd66111496",
-      "label": "Alodokter - Info Kesehatan, Booking dan Chat Dokter",
-      "url": "https://www.alodokter.com/",
-      "namespace": "snapshots.Alo",
-      "kind": "PNG",
-      "scope": "screen",
-      "filePath": "/src/snapshots/Alo/index7.html",
-      "imgPath": "index7_files/screenshot.png",
-      "created": "2026-06-14T12:59:31.376Z",
-      "triggers": [
-        {
-          "id": "trigger-7ff5e76d-dd44-4023-aa54-349f28438ac8",
-          "label": "Untitled Trigger",
-          "description": "",
-          "kind": "trigger",
-          "rect": {
-            "x": 316.5,
-            "y": 2617,
-            "width": 687,
-            "height": 190
-          },
-          "actionType": null,
-          "targetSnapshotId": null,
-          "hasNavigationAction": false,
-          "missingDefinition": false
-        },
-        {
-          "id": "trigger-e6af3420-0f20-4122-a98a-141fc94af81a",
-          "label": "Untitled Trigger",
-          "description": "",
-          "kind": "trigger",
-          "rect": {
-            "x": 650.5,
-            "y": 19,
-            "width": 118,
-            "height": 45
-          },
-          "actionType": null,
-          "targetSnapshotId": null,
-          "hasNavigationAction": false,
-          "missingDefinition": false
-        },
-        {
-          "id": "trigger-61d485d1-7e3c-4d7a-a88d-8bee76e1bd2b",
-          "label": "Untitled Trigger",
-          "description": "",
-          "kind": "trigger",
-          "rect": {
-            "x": 569.5,
-            "y": 726,
-            "width": 147,
-            "height": 70
-          },
-          "actionType": null,
-          "targetSnapshotId": null,
-          "hasNavigationAction": false,
-          "missingDefinition": false
-        }
-      ]
-    },
-    {
-      "id": "64b5ec20-ce39-467e-8cba-4443ac38b903",
-      "snapshotId": "64b5ec20-ce39-467e-8cba-4443ac38b903",
-      "label": "Payroll, HR and Tax Services | ADP Official Site",
-      "url": "https://www.adp.com/",
-      "namespace": "snapshots.Adp",
-      "kind": "PNG",
-      "scope": "screen",
-      "filePath": "/src/snapshots/Adp/index7.html",
-      "imgPath": "index7_files/screenshot.png",
-      "created": "2026-06-14T13:13:58.655Z",
-      "triggers": []
-    },
-    {
-      "id": "9d1e8c37-80fb-48a4-b044-f9c60b497942",
-      "snapshotId": "9d1e8c37-80fb-48a4-b044-f9c60b497942",
-      "label": "Payroll, HR and Tax Services | ADP Official Site",
-      "url": "https://www.adp.com/",
-      "namespace": "snapshots.Adp",
-      "kind": "PNG",
-      "scope": "screen",
-      "filePath": "/src/snapshots/Adp/index8.html",
-      "imgPath": "index8_files/screenshot.png",
-      "created": "2026-06-14T13:14:20.172Z",
-      "triggers": [
-        {
-          "id": "trigger-8f2b20b3-4bf1-4688-8961-61a70ea3aa97",
-          "label": "Untitled Trigger",
-          "description": "",
-          "kind": "trigger",
-          "rect": {
-            "x": 252,
-            "y": 126,
-            "width": 1020,
-            "height": 390
-          },
-          "actionType": null,
-          "targetSnapshotId": null,
-          "hasNavigationAction": false,
-          "missingDefinition": false
-        }
-      ]
-    },
-    {
-      "id": "cdc18b52-660a-4f86-ae5b-7fefcac70a28",
-      "snapshotId": "cdc18b52-660a-4f86-ae5b-7fefcac70a28",
-      "label": "Google",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.Google",
-      "kind": "PNG",
-      "scope": "screen",
-      "filePath": "/src/snapshots/Google/index13.html",
-      "imgPath": "index13_files/screenshot.png",
-      "created": "2026-06-14T14:52:36.678Z",
-      "triggers": [
-        {
-          "id": "trigger-48332a4d-8a29-4ca7-86ec-56610e6e5e93",
-          "label": "Untitled Trigger",
-          "description": "",
-          "kind": "trigger",
-          "rect": {
-            "x": 659,
-            "y": 237,
-            "width": 323,
-            "height": 149
-          },
-          "actionType": null,
-          "targetSnapshotId": null,
-          "hasNavigationAction": false,
-          "missingDefinition": false
-        }
-      ]
-    },
-    {
-      "id": "697e0436-17db-4fae-bd05-4806cf5bc465",
-      "snapshotId": "697e0436-17db-4fae-bd05-4806cf5bc465",
-      "label": "Google",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.Google",
-      "kind": "PNG",
-      "scope": "screen",
-      "filePath": "/src/snapshots/Google/index14.html",
-      "imgPath": "index14_files/screenshot.png",
-      "created": "2026-06-14T14:58:09.152Z",
-      "triggers": [
-        {
-          "id": "trigger-4c55fb60-5243-4d62-a28f-7d3a1be4a8f1",
-          "label": "Untitled Trigger",
-          "description": "",
-          "kind": "trigger",
-          "rect": {
-            "x": 496,
-            "y": 113,
-            "width": 271,
-            "height": 191
-          },
-          "actionType": null,
-          "targetSnapshotId": null,
-          "hasNavigationAction": false,
-          "missingDefinition": false
-        },
-        {
-          "id": "trigger-f9e2fc5b-c867-4399-99b7-cad8282ac1b5",
-          "label": "Untitled Trigger",
-          "description": "",
-          "kind": "trigger",
-          "rect": {
-            "x": 822,
-            "y": 90,
-            "width": 485,
-            "height": 257
-          },
-          "actionType": null,
-          "targetSnapshotId": null,
-          "hasNavigationAction": false,
-          "missingDefinition": false
-        },
-        {
-          "id": "trigger-2965f9e9-01fa-432a-bc0f-602385fa5495",
-          "label": "Untitled Trigger",
-          "description": "",
-          "kind": "trigger",
-          "rect": {
-            "x": 70.5,
-            "y": 349,
-            "width": 227,
-            "height": 51
-          },
-          "actionType": null,
-          "targetSnapshotId": null,
-          "hasNavigationAction": false,
-          "missingDefinition": false
-        },
-        {
-          "id": "trigger-b3b01733-cf3c-47f6-addc-cec9ddcd6122",
-          "label": "Untitled Trigger",
-          "description": "",
-          "kind": "trigger",
-          "rect": {
-            "x": 166,
-            "y": 408,
-            "width": 193,
-            "height": 90
-          },
-          "actionType": null,
-          "targetSnapshotId": null,
-          "hasNavigationAction": false,
-          "missingDefinition": false
-        },
-        {
-          "id": "trigger-92e959df-83e5-4060-8aa7-96d84d3615c2",
-          "label": "Untitled Trigger",
-          "description": "",
-          "kind": "trigger",
-          "rect": {
-            "x": 608,
-            "y": 405,
-            "width": 324,
-            "height": 204
-          },
-          "actionType": null,
-          "targetSnapshotId": null,
-          "hasNavigationAction": false,
-          "missingDefinition": false
-        },
-        {
-          "id": "trigger-62fcadf3-862c-40c1-b195-08b281f6f86f",
-          "label": "Untitled Trigger",
-          "description": "",
-          "kind": "trigger",
-          "rect": {
-            "x": 591,
-            "y": 179,
-            "width": 128,
-            "height": 72
-          },
-          "actionType": null,
-          "targetSnapshotId": null,
-          "hasNavigationAction": false,
-          "missingDefinition": false
-        },
-        {
-          "id": "trigger-994b392c-b2a0-44ba-97e6-d6b9f5e4bd92",
-          "label": "Untitled Trigger",
-          "description": "",
-          "kind": "trigger",
-          "rect": {
-            "x": 89.5,
-            "y": 140,
-            "width": 188,
-            "height": 57
-          },
-          "actionType": null,
-          "targetSnapshotId": null,
-          "hasNavigationAction": false,
-          "missingDefinition": false
-        },
-        {
-          "id": "trigger-b93141ae-3593-486e-b427-c79c39583f68",
-          "label": "Untitled Trigger",
-          "description": "",
-          "kind": "trigger",
-          "rect": {
-            "x": 118,
-            "y": 78,
-            "width": 188,
-            "height": 57
-          },
-          "actionType": null,
-          "targetSnapshotId": null,
-          "hasNavigationAction": false,
-          "missingDefinition": false
-        },
-        {
-          "id": "trigger-39ff0ad4-5b93-4a8f-a896-5b92281dad39",
-          "label": "Untitled Trigger",
-          "description": "",
-          "kind": "trigger",
-          "rect": {
-            "x": 322.5,
-            "y": 142,
-            "width": 146,
-            "height": 77
-          },
-          "actionType": null,
-          "targetSnapshotId": null,
-          "hasNavigationAction": false,
-          "missingDefinition": false
-        },
-        {
-          "id": "trigger-3a2ca3e7-b29e-47de-b5e2-f996660a708e",
-          "label": "Untitled Trigger",
-          "description": "",
-          "kind": "trigger",
-          "rect": {
-            "x": 531.5,
-            "y": 179,
-            "width": 446.86,
-            "height": 50
-          },
-          "actionType": null,
-          "targetSnapshotId": null,
-          "hasNavigationAction": false,
-          "missingDefinition": false
-        }
-      ]
-    },
-    {
-      "id": "cbfd3d71-4ed6-467b-8e92-740d791040d7",
-      "snapshotId": "cbfd3d71-4ed6-467b-8e92-740d791040d7",
-      "label": "Google",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.Google",
+      "id": "b0bfdb1e-ee0f-4cd6-9a0e-e339bea187ad",
+      "snapshotId": "b0bfdb1e-ee0f-4cd6-9a0e-e339bea187ad",
+      "label": "YouTube",
+      "url": "https://www.youtube.com/",
+      "namespace": "snapshots.Youtube",
       "kind": "HTML",
       "scope": "screen",
-      "filePath": "/src/snapshots/Google/index15.html",
+      "filePath": "/src/snapshots/Youtube/index.html",
       "imgPath": null,
-      "created": "2026-06-14T17:55:15.034Z",
+      "created": "2026-06-15T17:14:39.637Z",
       "triggers": []
     },
     {
-      "id": "6d624f22-63eb-4a77-963d-69a8f7bd281f",
-      "snapshotId": "6d624f22-63eb-4a77-963d-69a8f7bd281f",
-      "label": "Google",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.Google",
+      "id": "831adb46-794b-47c5-8fec-cfde84db5e30",
+      "snapshotId": "831adb46-794b-47c5-8fec-cfde84db5e30",
+      "label": "Arc Engine : Drag Drop",
+      "url": "http://127.0.0.1:8083/demos/shadow-dom.html",
+      "namespace": "snapshots.Page",
       "kind": "HTML",
       "scope": "screen",
-      "filePath": "/src/snapshots/Google/index16.html",
+      "filePath": "/src/snapshots/Page/index.html",
       "imgPath": null,
-      "created": "2026-06-14T17:56:09.910Z",
+      "created": "2026-06-15T17:35:46.960Z",
       "triggers": []
     },
     {
-      "id": "adf001b9-374f-4743-a8bb-8fd50233925c",
-      "snapshotId": "adf001b9-374f-4743-a8bb-8fd50233925c",
-      "label": "Google",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.Google",
+      "id": "e7376170-d564-4b02-85d1-a7572aba673e",
+      "snapshotId": "e7376170-d564-4b02-85d1-a7572aba673e",
+      "label": "Arc Engine : Drag Drop",
+      "url": "http://127.0.0.1:8083/demos/shadow-dom.html",
+      "namespace": "snapshots.Page",
       "kind": "HTML",
       "scope": "screen",
-      "filePath": "/src/snapshots/Google/index17.html",
+      "filePath": "/src/snapshots/Page/index2.html",
       "imgPath": null,
-      "created": "2026-06-14T17:57:56.802Z",
+      "created": "2026-06-15T17:41:30.011Z",
       "triggers": []
     },
     {
-      "id": "e66adf4f-08ad-4ec4-a2c6-0405918e9857",
-      "snapshotId": "e66adf4f-08ad-4ec4-a2c6-0405918e9857",
-      "label": "Payroll, HR and Tax Services | ADP Official Site",
-      "url": "https://www.adp.com/",
-      "namespace": "snapshots.Adp",
+      "id": "76cd1eed-c31c-4a7c-acaa-b9654ab6953d",
+      "snapshotId": "76cd1eed-c31c-4a7c-acaa-b9654ab6953d",
+      "label": "Arc Engine : Drag Drop",
+      "url": "http://127.0.0.1:8083/demos/shadow-dom.html",
+      "namespace": "snapshots.Page",
       "kind": "HTML",
       "scope": "screen",
-      "filePath": "/src/snapshots/Adp/index18.html",
+      "filePath": "/src/snapshots/Page/index3.html",
       "imgPath": null,
-      "created": "2026-06-14T17:58:48.405Z",
+      "created": "2026-06-15T17:42:22.981Z",
       "triggers": []
     },
     {
-      "id": "85799f9d-daab-41a2-89b2-691a19914c42",
-      "snapshotId": "85799f9d-daab-41a2-89b2-691a19914c42",
-      "label": "Payroll, HR and Tax Services | ADP Official Site",
-      "url": "https://www.adp.com/",
-      "namespace": "snapshots.Adp",
+      "id": "15a10990-7484-4abf-8405-db2a6a66469f",
+      "snapshotId": "15a10990-7484-4abf-8405-db2a6a66469f",
+      "label": "Arc Engine : Drag Drop",
+      "url": "http://127.0.0.1:8083/demos/shadow-dom.html",
+      "namespace": "snapshots.Page",
       "kind": "HTML",
       "scope": "screen",
-      "filePath": "/src/snapshots/Adp/index19.html",
+      "filePath": "/src/snapshots/Page/index.html",
       "imgPath": null,
-      "created": "2026-06-14T18:00:53.942Z",
-      "triggers": [
-        {
-          "id": "trigger-590a3613-6592-48de-9229-f6384da0599b",
-          "label": "Untitled Trigger",
-          "description": "",
-          "kind": "trigger",
-          "rect": {
-            "x": 207.5,
-            "y": 416,
-            "width": 1240,
-            "height": 22
-          },
-          "actionType": null,
-          "targetSnapshotId": null,
-          "hasNavigationAction": false,
-          "missingDefinition": false
-        }
-      ]
-    },
-    {
-      "id": "5ecb9280-ef2c-4424-ba0a-c10499077f33",
-      "snapshotId": "5ecb9280-ef2c-4424-ba0a-c10499077f33",
-      "label": "Google",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.Google",
-      "kind": "HTML",
-      "scope": "screen",
-      "filePath": "/src/snapshots/Google/index20.html",
-      "imgPath": null,
-      "created": "2026-06-14T18:12:24.758Z",
+      "created": "2026-06-15T17:44:15.289Z",
       "triggers": []
     },
     {
-      "id": "1122f337-086b-4125-af9e-c73f282e858f",
-      "snapshotId": "1122f337-086b-4125-af9e-c73f282e858f",
-      "label": "Alodokter - Info Kesehatan, Booking dan Chat Dokter",
-      "url": "https://www.alodokter.com/",
-      "namespace": "snapshots.Alodokter",
+      "id": "366ae275-9b50-41db-b61d-a020fb59dcdf",
+      "snapshotId": "366ae275-9b50-41db-b61d-a020fb59dcdf",
+      "label": "Arc Engine : Drag Drop",
+      "url": "http://127.0.0.1:8083/demos/shadow-dom.html",
+      "namespace": "snapshots.Page",
       "kind": "HTML",
       "scope": "screen",
-      "filePath": "/src/snapshots/Alodokter/index2.html",
+      "filePath": "/src/snapshots/Page/index2.html",
       "imgPath": null,
-      "created": "2026-06-14T18:15:21.920Z",
-      "triggers": [
-        {
-          "id": "trigger-906f9b93-0677-422b-956b-2068bb5429f8",
-          "label": "Untitled Trigger",
-          "description": "",
-          "kind": "trigger",
-          "rect": {
-            "x": 665.27,
-            "y": 15.5,
-            "width": 92.3,
-            "height": 49
-          },
-          "actionType": null,
-          "targetSnapshotId": null,
-          "hasNavigationAction": false,
-          "missingDefinition": false
-        },
-        {
-          "id": "trigger-adbb35d4-c952-426f-8579-6f35ac6503f9",
-          "label": "Untitled Trigger",
-          "description": "",
-          "kind": "trigger",
-          "rect": {
-            "x": 386,
-            "y": 8,
-            "width": 247,
-            "height": 64
-          },
-          "actionType": null,
-          "targetSnapshotId": null,
-          "hasNavigationAction": false,
-          "missingDefinition": false
-        },
-        {
-          "id": "trigger-a7db4d5f-7064-4b48-b535-0558e9c959da",
-          "label": "Untitled Trigger",
-          "description": "",
-          "kind": "trigger",
-          "rect": {
-            "x": 66,
-            "y": 164,
-            "width": 152,
-            "height": 131
-          },
-          "actionType": null,
-          "targetSnapshotId": null,
-          "hasNavigationAction": false,
-          "missingDefinition": false
-        },
-        {
-          "id": "trigger-3f565b52-a48e-420a-8deb-6304b3c97a48",
-          "label": "Untitled Trigger",
-          "description": "",
-          "kind": "trigger",
-          "rect": {
-            "x": 67,
-            "y": 309,
-            "width": 151,
-            "height": 40
-          },
-          "actionType": null,
-          "targetSnapshotId": null,
-          "hasNavigationAction": false,
-          "missingDefinition": false
-        }
-      ]
+      "created": "2026-06-15T18:31:12.434Z",
+      "triggers": []
+    },
+    {
+      "id": "f8c8bdb5-37df-4123-8499-051c1e6323d2",
+      "snapshotId": "f8c8bdb5-37df-4123-8499-051c1e6323d2",
+      "label": "Arc Engine : Drag Drop",
+      "url": "http://127.0.0.1:8083/demos/shadow-dom.html",
+      "namespace": "snapshots.Page",
+      "kind": "HTML",
+      "scope": "screen",
+      "filePath": "/src/snapshots/Page/index3.html",
+      "imgPath": null,
+      "created": "2026-06-15T18:36:49.119Z",
+      "triggers": []
+    },
+    {
+      "id": "173554b0-1d24-46ff-a97e-01e6a8bc1259",
+      "snapshotId": "173554b0-1d24-46ff-a97e-01e6a8bc1259",
+      "label": "Arc Engine : Drag Drop",
+      "url": "http://127.0.0.1:8083/demos/shadow-dom.html",
+      "namespace": "snapshots.Page",
+      "kind": "HTML",
+      "scope": "screen",
+      "filePath": "/src/snapshots/Page/index4.html",
+      "imgPath": null,
+      "created": "2026-06-15T18:39:08.723Z",
+      "triggers": []
     }
   ],
   "edges": [],

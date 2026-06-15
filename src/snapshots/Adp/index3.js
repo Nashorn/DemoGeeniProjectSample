@@ -1,13 +1,11 @@
-import * as runtime from "runtime";
-import 'applications.OfflineApplication';
-import 'core.ui.BaseComponent';
-
+import { Snapshot } from "runtime";
 
 namespace `snapshots` 
 (
-    class Adp extends runtime.Controller {
+    class Adp extends Snapshot {
         async onConnected() {
             await super.onConnected();
+            alert("index3 connected");
         }
     }
 );

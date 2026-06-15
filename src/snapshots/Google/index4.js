@@ -1,11 +1,10 @@
-import * as runtime from "runtime";
-import 'applications.OfflineApplication';
-import 'core.ui.BaseComponent';
-
+import { Snapshot } from "runtime";
 
 namespace `snapshots` 
 (
-    class Google extends runtime.Controller {
+    class Google extends Snapshot {
+        styles = ["index4.css"];
+        
         async onConnected() {
             await super.onConnected();
         }

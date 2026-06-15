@@ -2,7 +2,7 @@
 
 export { default as ConditionEvaluator } from './ConditionEvaluator.js';
 export { default as Player } from './Player.js';
-export { default as Controller } from './Controller.js';
+export { default as Snapshot } from './Snapshot.js';
 export { default as RenderService } from './RenderService.js';
 export { default as SnapshotRepository } from './SnapshotRepository.js';
 export { default as TriggerBinder } from './TriggerBinder.js';

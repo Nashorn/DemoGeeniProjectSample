@@ -1,10 +1,10 @@
-import * as runtime from "runtime";
+import { Snapshot } from "runtime";
 
 
 
 namespace `snapshots` 
 (
-    class Youtube extends runtime.Controller {
+    class Youtube extends Snapshot {
         async onConnected() {
             await super.onConnected();
         }

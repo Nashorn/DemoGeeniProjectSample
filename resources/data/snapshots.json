@@ -1,8 +1,8 @@
 {
   "snapshots": [
     {
-      "id": "e6b34543-813c-4c5d-a3e3-c6cd90471ec4",
-      "url": "https://www.google.com/?zx=1780073231644",
+      "id": "38104e3b-2640-4781-ba83-53c9902a231e",
+      "url": "https://www.google.com/",
       "namespace": "snapshots.Google",
       "kind": "PNG",
       "scope": "screen",
@@ -10,109 +10,89 @@
         "x": 0,
         "y": 0,
         "width": 3420,
-        "height": 1828
+        "height": 1826
       },
       "filePath": "/src/snapshots/Google/index.html",
       "imgPath": "index_files/screenshot.png",
       "meta": {
-        "label": "Tool Tray",
-        "created": "2026-05-29T16:48:31.807Z",
+        "label": "Google",
+        "created": "2026-06-15T11:47:37.979Z",
         "tags": []
       },
       "triggers": [
-        "trigger-dfeccb93-fd64-4a65-bd90-2dc802264adc"
+        "trigger-55536c65-9359-4b07-b8e3-297979a07f85"
       ],
       "dpr": 2
     },
     {
-      "id": "a368b239-febb-48a3-aa73-87f8b4139940",
-      "url": "https://www.alodokter.com/",
-      "namespace": "snapshots.Alo",
-      "kind": "HTML",
-      "scope": "screen",
-      "sourceRect": {
-        "x": 0,
-        "y": 0,
-        "width": 1440,
-        "height": 900
-      },
-      "filePath": "/src/snapshots/Alo/index.html",
-      "imgPath": "",
-      "meta": {
-        "label": "Tool Tray",
-        "created": "2026-06-04T15:27:23.894Z",
-        "tags": []
-      },
-      "triggers": []
-    },
-    {
-      "id": "12661109-6dfc-4308-89d2-ade57002157a",
-      "url": "https://www.google.com/?zx=1781194309783",
+      "id": "392fdd2f-c4bc-434e-ad1b-d7fe6a68e871",
+      "url": "https://www.google.com/",
       "namespace": "snapshots.Google",
-      "kind": "HTML",
+      "kind": "PNG",
       "scope": "screen",
       "sourceRect": {
         "x": 0,
         "y": 0,
-        "width": 1440,
-        "height": 900
+        "width": 3420,
+        "height": 1826
       },
       "filePath": "/src/snapshots/Google/index2.html",
-      "imgPath": "",
+      "imgPath": "index2_files/screenshot.png",
       "meta": {
         "label": "Google",
-        "created": "2026-06-11T16:12:34.251Z",
+        "created": "2026-06-15T12:01:14.682Z",
         "tags": []
       },
-      "triggers": [
-        "trigger-1510a25b-5e2b-49d0-9a6e-bf70dd519583"
-      ]
+      "triggers": [],
+      "dpr": 2
     },
     {
-      "id": "8c4db5e6-f871-4ed9-8ae9-bee11f484eb1",
-      "url": "https://www.google.com/?zx=1781197116143",
+      "id": "23d098fc-9728-4694-8fff-7a5109cf20a3",
+      "url": "https://www.google.com/",
       "namespace": "snapshots.Google",
-      "kind": "HTML",
+      "kind": "PNG",
       "scope": "screen",
       "sourceRect": {
         "x": 0,
         "y": 0,
-        "width": 1440,
-        "height": 900
+        "width": 3420,
+        "height": 1826
       },
       "filePath": "/src/snapshots/Google/index3.html",
-      "imgPath": "",
+      "imgPath": "index3_files/screenshot.png",
       "meta": {
         "label": "Google",
-        "created": "2026-06-11T16:59:06.672Z",
+        "created": "2026-06-15T12:04:56.426Z",
         "tags": []
       },
-      "triggers": []
+      "triggers": [],
+      "dpr": 2
     },
     {
-      "id": "ca54d9e3-c4f0-4307-95a1-45feec3b1790",
-      "url": "https://www.google.com/?zx=1781197507846",
+      "id": "6a62b02c-1081-4c39-bd3f-cafb1fa582b5",
+      "url": "https://www.google.com/",
       "namespace": "snapshots.Google",
-      "kind": "HTML",
+      "kind": "PNG",
       "scope": "screen",
       "sourceRect": {
         "x": 0,
         "y": 0,
-        "width": 1440,
-        "height": 900
+        "width": 3420,
+        "height": 1826
       },
       "filePath": "/src/snapshots/Google/index4.html",
-      "imgPath": "",
+      "imgPath": "index4_files/screenshot.png",
       "meta": {
         "label": "Google",
-        "created": "2026-06-11T17:05:38.806Z",
+        "created": "2026-06-15T12:12:28.253Z",
         "tags": []
       },
-      "triggers": []
+      "triggers": [],
+      "dpr": 2
     },
     {
-      "id": "82d4e045-2a99-45b1-836f-d2ea6f4b4f62",
-      "url": "https://www.google.com/?zx=1781197723930",
+      "id": "fde92dd4-f5ae-4125-a840-cdf18c6e5543",
+      "url": "https://www.google.com/",
       "namespace": "snapshots.Google",
       "kind": "HTML",
       "scope": "screen",
@@ -122,170 +102,18 @@
         "width": 1440,
         "height": 900
       },
-      "filePath": "/src/snapshots/Google/index5.html",
+      "filePath": "/src/snapshots/Google/index.html",
       "imgPath": "",
       "meta": {
         "label": "Google",
-        "created": "2026-06-11T17:09:14.799Z",
+        "created": "2026-06-15T12:28:30.741Z",
         "tags": []
       },
       "triggers": []
     },
     {
-      "id": "4b6e5f79-224e-42d9-bb58-a63f1980a15d",
-      "url": "https://www.google.com/?zx=1781198431910",
-      "namespace": "snapshots.Google",
-      "kind": "HTML",
-      "scope": "screen",
-      "sourceRect": {
-        "x": 0,
-        "y": 0,
-        "width": 1440,
-        "height": 900
-      },
-      "filePath": "/src/snapshots/Google/index6.html",
-      "imgPath": "",
-      "meta": {
-        "label": "Google",
-        "created": "2026-06-11T17:21:03.207Z",
-        "tags": []
-      },
-      "triggers": []
-    },
-    {
-      "id": "1c0f3a7f-16f1-4bd0-ac9b-8eafc81a71ba",
-      "url": "https://www.google.com/?zx=1781198598949",
-      "namespace": "snapshots.Google",
-      "kind": "HTML",
-      "scope": "screen",
-      "sourceRect": {
-        "x": 0,
-        "y": 0,
-        "width": 1440,
-        "height": 900
-      },
-      "filePath": "/src/snapshots/Google/index7.html",
-      "imgPath": "",
-      "meta": {
-        "label": "Google",
-        "created": "2026-06-11T17:23:50.081Z",
-        "tags": []
-      },
-      "triggers": []
-    },
-    {
-      "id": "ff708e9c-bb0c-4ad3-8499-ba2fb1967f4b",
-      "url": "https://www.google.com/?zx=1781198740907",
-      "namespace": "snapshots.Google",
-      "kind": "HTML",
-      "scope": "screen",
-      "sourceRect": {
-        "x": 0,
-        "y": 0,
-        "width": 1440,
-        "height": 900
-      },
-      "filePath": "/src/snapshots/Google/index8.html",
-      "imgPath": "",
-      "meta": {
-        "label": "Google",
-        "created": "2026-06-11T17:26:11.515Z",
-        "tags": []
-      },
-      "triggers": []
-    },
-    {
-      "id": "d497c5bd-925d-4783-b1ae-1a6f094dca35",
-      "url": "https://www.google.com/?zx=1781198740907",
-      "namespace": "snapshots.Google",
-      "kind": "HTML",
-      "scope": "screen",
-      "sourceRect": {
-        "x": 0,
-        "y": 0,
-        "width": 1440,
-        "height": 900
-      },
-      "filePath": "/src/snapshots/Google/index9.html",
-      "imgPath": "",
-      "meta": {
-        "label": "Google",
-        "created": "2026-06-11T17:26:24.583Z",
-        "tags": []
-      },
-      "triggers": []
-    },
-    {
-      "id": "8f904db0-541b-4746-be36-a9b84c6ca4df",
-      "url": "https://www.google.com/?zx=1781198740907",
-      "namespace": "snapshots.Google",
-      "kind": "HTML",
-      "scope": "screen",
-      "sourceRect": {
-        "x": 0,
-        "y": 0,
-        "width": 1440,
-        "height": 900
-      },
-      "filePath": "/src/snapshots/Google/index10.html",
-      "imgPath": "",
-      "meta": {
-        "label": "Google",
-        "created": "2026-06-11T17:26:36.507Z",
-        "tags": []
-      },
-      "triggers": [
-        "trigger-b722e697-532e-429c-9103-a0863bc04092",
-        "trigger-56a76edc-d31f-4076-91f8-f3a3c07d4941",
-        "trigger-f7c8c9b7-0618-414e-8963-2e9bb0b24af2",
-        "trigger-297a7e05-65d9-4693-a0a9-72c4705acc8d"
-      ]
-    },
-    {
-      "id": "14e8663e-175c-4d4f-a51b-34a3e982a5d2",
-      "url": "https://www.google.com/?zx=1781198740907",
-      "namespace": "snapshots.Google",
-      "kind": "HTML",
-      "scope": "screen",
-      "sourceRect": {
-        "x": 0,
-        "y": 0,
-        "width": 1440,
-        "height": 900
-      },
-      "filePath": "/src/snapshots/Google/test1.html",
-      "imgPath": "",
-      "meta": {
-        "label": "Google",
-        "created": "2026-06-11T17:26:51.849Z",
-        "tags": []
-      },
-      "triggers": []
-    },
-    {
-      "id": "e4d30fb8-f77c-4593-b831-4c41028a799d",
-      "url": "https://www.google.com/?zx=1781198740907",
-      "namespace": "snapshots.Google",
-      "kind": "HTML",
-      "scope": "screen",
-      "sourceRect": {
-        "x": 0,
-        "y": 0,
-        "width": 1440,
-        "height": 900
-      },
-      "filePath": "/src/snapshots/Google/test2.html",
-      "imgPath": "",
-      "meta": {
-        "label": "Google",
-        "created": "2026-06-11T17:27:00.689Z",
-        "tags": []
-      },
-      "triggers": []
-    },
-    {
-      "id": "ae8c26fb-91f4-464b-a10c-427c0e3d56bf",
-      "url": "https://www.adp.com/?zx=1781201666507",
+      "id": "886c7226-3ca1-424a-8799-7e9739a7acd1",
+      "url": "https://www.adp.com/",
       "namespace": "snapshots.Adp",
       "kind": "HTML",
       "scope": "screen",
@@ -299,13 +127,13 @@
       "imgPath": "",
       "meta": {
         "label": "Payroll, HR and Tax Services | ADP Official Site",
-        "created": "2026-06-11T18:15:09.265Z",
+        "created": "2026-06-15T12:29:50.614Z",
         "tags": []
       },
       "triggers": []
     },
     {
-      "id": "354c7d3e-8f19-41c6-9088-85225f5a0037",
+      "id": "86b0b1c1-48cd-4199-9bc8-2e1d4d7abb25",
       "url": "https://www.adp.com/",
       "namespace": "snapshots.Adp",
       "kind": "HTML",
@@ -320,780 +148,15 @@
       "imgPath": "",
       "meta": {
         "label": "Payroll, HR and Tax Services | ADP Official Site",
-        "created": "2026-06-11T18:28:36.336Z",
-        "tags": []
-      },
-      "triggers": [
-        "trigger-9fd05f0f-3cf4-460d-ad07-fe33ef188edf"
-      ]
-    },
-    {
-      "id": "d496845d-fd8d-48ef-8cba-6642e408040d",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.Google",
-      "kind": "PNG",
-      "scope": "screen",
-      "sourceRect": {
-        "x": 0,
-        "y": 0,
-        "width": 3420,
-        "height": 1826
-      },
-      "filePath": "/src/snapshots/Google/index11.html",
-      "imgPath": "index11_files/screenshot.png",
-      "meta": {
-        "label": "Google",
-        "created": "2026-06-14T12:32:26.947Z",
-        "tags": []
-      },
-      "triggers": [],
-      "dpr": 2
-    },
-    {
-      "id": "283e62ad-56f6-4465-aaf6-5cbd8ef4f9cb",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.Google",
-      "kind": "PNG",
-      "scope": "screen",
-      "sourceRect": {
-        "x": 0,
-        "y": 0,
-        "width": 3420,
-        "height": 1826
-      },
-      "filePath": "/src/snapshots/Google/index12.html",
-      "imgPath": "index12_files/screenshot.png",
-      "meta": {
-        "label": "Google",
-        "created": "2026-06-14T12:53:40.809Z",
-        "tags": []
-      },
-      "triggers": [
-        "trigger-7e84cec3-856c-4bd2-ade9-9a7e957574eb",
-        "trigger-84484ccc-7c18-48bf-835e-2e1d8092e090"
-      ],
-      "dpr": 2
-    },
-    {
-      "id": "0bb11225-e022-4a95-83d5-9181ba6712f8",
-      "url": "https://www.adp.com/",
-      "namespace": "snapshots.Adp",
-      "kind": "PNG",
-      "scope": "screen",
-      "sourceRect": {
-        "x": 0,
-        "y": 0,
-        "width": 3420,
-        "height": 11296
-      },
-      "filePath": "/src/snapshots/Adp/index4.html",
-      "imgPath": "index4_files/screenshot.png",
-      "meta": {
-        "label": "Payroll, HR and Tax Services | ADP Official Site",
-        "created": "2026-06-14T12:56:29.421Z",
-        "tags": []
-      },
-      "triggers": [],
-      "dpr": 2
-    },
-    {
-      "id": "17eeacd7-3b28-4d03-9bf5-5749088c11d9",
-      "url": "https://www.adp.com/",
-      "namespace": "snapshots.Adp",
-      "kind": "PNG",
-      "scope": "screen",
-      "sourceRect": {
-        "x": 0,
-        "y": 0,
-        "width": 3420,
-        "height": 11682
-      },
-      "filePath": "/src/snapshots/Adp/index5.html",
-      "imgPath": "index5_files/screenshot.png",
-      "meta": {
-        "label": "Payroll, HR and Tax Services | ADP Official Site",
-        "created": "2026-06-14T12:57:25.966Z",
-        "tags": []
-      },
-      "triggers": [],
-      "dpr": 2
-    },
-    {
-      "id": "21c9c785-d392-4221-822b-9f34ce6a6685",
-      "url": "https://www.adp.com/",
-      "namespace": "snapshots.Adp",
-      "kind": "PNG",
-      "scope": "screen",
-      "sourceRect": {
-        "x": 0,
-        "y": 0,
-        "width": 3420,
-        "height": 11682
-      },
-      "filePath": "/src/snapshots/Adp/index6.html",
-      "imgPath": "index6_files/screenshot.png",
-      "meta": {
-        "label": "Payroll, HR and Tax Services | ADP Official Site",
-        "created": "2026-06-14T12:57:59.931Z",
-        "tags": []
-      },
-      "triggers": [],
-      "dpr": 2
-    },
-    {
-      "id": "0de6672c-19bc-478e-9241-5dbd66111496",
-      "url": "https://www.alodokter.com/",
-      "namespace": "snapshots.Alo",
-      "kind": "PNG",
-      "scope": "screen",
-      "sourceRect": {
-        "x": 0,
-        "y": 0,
-        "width": 3420,
-        "height": 9590
-      },
-      "filePath": "/src/snapshots/Alo/index7.html",
-      "imgPath": "index7_files/screenshot.png",
-      "meta": {
-        "label": "Alodokter - Info Kesehatan, Booking dan Chat Dokter",
-        "created": "2026-06-14T12:59:31.376Z",
-        "tags": []
-      },
-      "triggers": [
-        "trigger-7ff5e76d-dd44-4023-aa54-349f28438ac8",
-        "trigger-e6af3420-0f20-4122-a98a-141fc94af81a",
-        "trigger-61d485d1-7e3c-4d7a-a88d-8bee76e1bd2b"
-      ],
-      "dpr": 2
-    },
-    {
-      "id": "64b5ec20-ce39-467e-8cba-4443ac38b903",
-      "url": "https://www.adp.com/",
-      "namespace": "snapshots.Adp",
-      "kind": "PNG",
-      "scope": "screen",
-      "sourceRect": {
-        "x": 0,
-        "y": 0,
-        "width": 3420,
-        "height": 1826
-      },
-      "filePath": "/src/snapshots/Adp/index7.html",
-      "imgPath": "index7_files/screenshot.png",
-      "meta": {
-        "label": "Payroll, HR and Tax Services | ADP Official Site",
-        "created": "2026-06-14T13:13:58.655Z",
-        "tags": []
-      },
-      "triggers": [],
-      "dpr": 2
-    },
-    {
-      "id": "9d1e8c37-80fb-48a4-b044-f9c60b497942",
-      "url": "https://www.adp.com/",
-      "namespace": "snapshots.Adp",
-      "kind": "PNG",
-      "scope": "screen",
-      "sourceRect": {
-        "x": 0,
-        "y": 0,
-        "width": 3420,
-        "height": 11048
-      },
-      "filePath": "/src/snapshots/Adp/index8.html",
-      "imgPath": "index8_files/screenshot.png",
-      "meta": {
-        "label": "Payroll, HR and Tax Services | ADP Official Site",
-        "created": "2026-06-14T13:14:20.172Z",
-        "tags": []
-      },
-      "triggers": [
-        "trigger-8f2b20b3-4bf1-4688-8961-61a70ea3aa97"
-      ],
-      "dpr": 2
-    },
-    {
-      "id": "49d1d172-1d54-457a-b127-afc61c0d39ed",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.49d1d172-1d54-457a-b127-afc61c0d39ed",
-      "kind": "PNG",
-      "scope": "region",
-      "sourceRect": {
-        "x": 645.5,
-        "y": 26,
-        "width": 358,
-        "height": 159
-      },
-      "filePath": "",
-      "imgPath": "resources/images/snapshots/regions/region_645.5_26_358x159.png",
-      "meta": {
-        "label": "Region Screenshot 358x159",
-        "created": "2026-06-14T13:45:59.014Z",
-        "tags": []
-      },
-      "triggers": [],
-      "parent_id": "283e62ad-56f6-4465-aaf6-5cbd8ef4f9cb",
-      "dpr": 2
-    },
-    {
-      "id": "cdc18b52-660a-4f86-ae5b-7fefcac70a28",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.Google",
-      "kind": "PNG",
-      "scope": "screen",
-      "sourceRect": {
-        "x": 0,
-        "y": 0,
-        "width": 3420,
-        "height": 1826
-      },
-      "filePath": "/src/snapshots/Google/index13.html",
-      "imgPath": "index13_files/screenshot.png",
-      "meta": {
-        "label": "Google",
-        "created": "2026-06-14T14:52:36.678Z",
-        "tags": []
-      },
-      "triggers": [
-        "trigger-48332a4d-8a29-4ca7-86ec-56610e6e5e93"
-      ],
-      "dpr": 2
-    },
-    {
-      "id": "935d5a5a-c931-42a8-a19b-2879c0d991ae",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.935d5a5a-c931-42a8-a19b-2879c0d991ae",
-      "kind": "PNG",
-      "scope": "region",
-      "sourceRect": {
-        "x": 686.5,
-        "y": 237,
-        "width": 323,
-        "height": 149
-      },
-      "filePath": "",
-      "imgPath": "resources/images/snapshots/regions/region_686.5_237_323x149.png",
-      "meta": {
-        "label": "Region Screenshot 323x149",
-        "created": "2026-06-14T14:52:57.632Z",
-        "tags": []
-      },
-      "triggers": [],
-      "parent_id": "cdc18b52-660a-4f86-ae5b-7fefcac70a28",
-      "dpr": 2
-    },
-    {
-      "id": "697e0436-17db-4fae-bd05-4806cf5bc465",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.Google",
-      "kind": "PNG",
-      "scope": "screen",
-      "sourceRect": {
-        "x": 0,
-        "y": 0,
-        "width": 3420,
-        "height": 1826
-      },
-      "filePath": "/src/snapshots/Google/index14.html",
-      "imgPath": "index14_files/screenshot.png",
-      "meta": {
-        "label": "Google",
-        "created": "2026-06-14T14:58:09.152Z",
-        "tags": []
-      },
-      "triggers": [
-        "trigger-4c55fb60-5243-4d62-a28f-7d3a1be4a8f1",
-        "trigger-f9e2fc5b-c867-4399-99b7-cad8282ac1b5",
-        "trigger-2965f9e9-01fa-432a-bc0f-602385fa5495",
-        "trigger-b3b01733-cf3c-47f6-addc-cec9ddcd6122",
-        "trigger-92e959df-83e5-4060-8aa7-96d84d3615c2",
-        "trigger-62fcadf3-862c-40c1-b195-08b281f6f86f",
-        "trigger-994b392c-b2a0-44ba-97e6-d6b9f5e4bd92",
-        "trigger-b93141ae-3593-486e-b427-c79c39583f68",
-        "trigger-39ff0ad4-5b93-4a8f-a896-5b92281dad39",
-        "trigger-3a2ca3e7-b29e-47de-b5e2-f996660a708e"
-      ],
-      "dpr": 2
-    },
-    {
-      "id": "9d77da26-6a47-4131-a996-f073df048eeb",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.9d77da26-6a47-4131-a996-f073df048eeb",
-      "kind": "PNG",
-      "scope": "region",
-      "sourceRect": {
-        "x": 693.5,
-        "y": 245,
-        "width": 308,
-        "height": 136
-      },
-      "filePath": "",
-      "imgPath": "Google/index14_files/region_693.5_245_308x136.png",
-      "meta": {
-        "label": "Region Screenshot 308x136",
-        "created": "2026-06-14T14:58:34.483Z",
-        "tags": []
-      },
-      "triggers": [],
-      "parent_id": "697e0436-17db-4fae-bd05-4806cf5bc465",
-      "dpr": 2
-    },
-    {
-      "id": "9dcad8e7-0f98-449f-8334-c7b59d931d9d",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.9dcad8e7-0f98-449f-8334-c7b59d931d9d",
-      "kind": "PNG",
-      "scope": "region",
-      "sourceRect": {
-        "x": 693.5,
-        "y": 245,
-        "width": 308,
-        "height": 136
-      },
-      "filePath": "",
-      "imgPath": "Google/index14_files/region_693.5_245_308x136.png",
-      "meta": {
-        "label": "Region Screenshot 308x136",
-        "created": "2026-06-14T15:00:32.123Z",
-        "tags": []
-      },
-      "triggers": [],
-      "parent_id": "697e0436-17db-4fae-bd05-4806cf5bc465",
-      "dpr": 2
-    },
-    {
-      "id": "307cd03b-dbd1-4f93-a6a6-517fc3ef8d0e",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.307cd03b-dbd1-4f93-a6a6-517fc3ef8d0e",
-      "kind": "PNG",
-      "scope": "region",
-      "sourceRect": {
-        "x": 509.5,
-        "y": 373,
-        "width": 335,
-        "height": 140
-      },
-      "filePath": "",
-      "imgPath": "Google/index14_files/region_509.5_373_335x140.png",
-      "meta": {
-        "label": "Region Screenshot 335x140",
-        "created": "2026-06-14T15:06:15.030Z",
-        "tags": []
-      },
-      "triggers": [],
-      "parent_id": "697e0436-17db-4fae-bd05-4806cf5bc465",
-      "dpr": 2
-    },
-    {
-      "id": "30a57dd6-0cbd-41ea-a1bf-5cd5b9e6878a",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.30a57dd6-0cbd-41ea-a1bf-5cd5b9e6878a",
-      "kind": "PNG",
-      "scope": "region",
-      "sourceRect": {
-        "x": 509.5,
-        "y": 373,
-        "width": 335,
-        "height": 140
-      },
-      "filePath": "",
-      "imgPath": "Google/index14_files/region_509.5_373_335x140.png",
-      "meta": {
-        "label": "Region Screenshot 335x140",
-        "created": "2026-06-14T15:06:42.748Z",
-        "tags": []
-      },
-      "triggers": [],
-      "parent_id": "697e0436-17db-4fae-bd05-4806cf5bc465",
-      "dpr": 2
-    },
-    {
-      "id": "0187b320-b3bd-463f-9624-139c2a964fbc",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.0187b320-b3bd-463f-9624-139c2a964fbc",
-      "kind": "PNG",
-      "scope": "region",
-      "sourceRect": {
-        "x": 366.5,
-        "y": 193,
-        "width": 159,
-        "height": 87
-      },
-      "filePath": "",
-      "imgPath": "Google/index14_files/region_366.5_193_159x87.png",
-      "meta": {
-        "label": "Region Screenshot 159x87",
-        "created": "2026-06-14T15:55:25.956Z",
-        "tags": []
-      },
-      "triggers": [],
-      "parent_id": "697e0436-17db-4fae-bd05-4806cf5bc465",
-      "dpr": 2
-    },
-    {
-      "id": "afd8953d-70d1-40c8-b783-0cb26895e469",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.afd8953d-70d1-40c8-b783-0cb26895e469",
-      "kind": "PNG",
-      "scope": "region",
-      "sourceRect": {
-        "x": 366.5,
-        "y": 193,
-        "width": 159,
-        "height": 87
-      },
-      "filePath": "",
-      "imgPath": "Google/index14_files/region_366.5_193_159x87.png",
-      "meta": {
-        "label": "Region Screenshot 159x87",
-        "created": "2026-06-14T15:55:27.708Z",
-        "tags": []
-      },
-      "triggers": [],
-      "parent_id": "697e0436-17db-4fae-bd05-4806cf5bc465",
-      "dpr": 2
-    },
-    {
-      "id": "16237ab8-022b-41ba-95a3-091a5df618f7",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.16237ab8-022b-41ba-95a3-091a5df618f7",
-      "kind": "PNG",
-      "scope": "region",
-      "sourceRect": {
-        "x": 624.5,
-        "y": 254,
-        "width": 159,
-        "height": 87
-      },
-      "filePath": "",
-      "imgPath": "Google/index14_files/region_624.5_254_159x87.png",
-      "meta": {
-        "label": "Region Screenshot 159x87",
-        "created": "2026-06-14T15:55:34.665Z",
-        "tags": []
-      },
-      "triggers": [],
-      "parent_id": "697e0436-17db-4fae-bd05-4806cf5bc465",
-      "dpr": 2
-    },
-    {
-      "id": "4528ffdf-575d-4368-9d90-2d30eea39672",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.4528ffdf-575d-4368-9d90-2d30eea39672",
-      "kind": "PNG",
-      "scope": "region",
-      "sourceRect": {
-        "x": 624.5,
-        "y": 254,
-        "width": 159,
-        "height": 87
-      },
-      "filePath": "",
-      "imgPath": "Google/index14_files/region_624.5_254_159x87.png",
-      "meta": {
-        "label": "Region Screenshot 159x87",
-        "created": "2026-06-14T15:56:53.731Z",
-        "tags": []
-      },
-      "triggers": [],
-      "parent_id": "697e0436-17db-4fae-bd05-4806cf5bc465",
-      "dpr": 2
-    },
-    {
-      "id": "a4110d6f-6bdd-4469-9cfd-231e936cba65",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.a4110d6f-6bdd-4469-9cfd-231e936cba65",
-      "kind": "PNG",
-      "scope": "region",
-      "sourceRect": {
-        "x": 332.5,
-        "y": 125,
-        "width": 168,
-        "height": 122
-      },
-      "filePath": "",
-      "imgPath": "Google/index14_files/region_332.5_125_168x122.png",
-      "meta": {
-        "label": "Region Screenshot 168x122",
-        "created": "2026-06-14T16:03:30.828Z",
-        "tags": []
-      },
-      "triggers": [],
-      "parent_id": "697e0436-17db-4fae-bd05-4806cf5bc465",
-      "dpr": 2
-    },
-    {
-      "id": "ccfa952f-d975-4250-bd7d-7eedf95b8136",
-      "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Google/index14.html",
-      "namespace": "snapshots.ccfa952f-d975-4250-bd7d-7eedf95b8136",
-      "kind": "PNG",
-      "scope": "region",
-      "sourceRect": {
-        "x": 694.5,
-        "y": 236,
-        "width": 356,
-        "height": 130
-      },
-      "filePath": "",
-      "imgPath": "Google/index14_files/region_694.5_236_356x130.png",
-      "meta": {
-        "label": "Region Screenshot 356x130",
-        "created": "2026-06-14T16:09:24.834Z",
-        "tags": []
-      },
-      "triggers": [],
-      "dpr": 2
-    },
-    {
-      "id": "d5cddec0-9722-4aea-944f-fecfd48ed707",
-      "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Google/index14.html",
-      "namespace": "snapshots.d5cddec0-9722-4aea-944f-fecfd48ed707",
-      "kind": "PNG",
-      "scope": "region",
-      "sourceRect": {
-        "x": 694.5,
-        "y": 236,
-        "width": 356,
-        "height": 130
-      },
-      "filePath": "",
-      "imgPath": "Google/index14_files/region_694.5_236_356x130.png",
-      "meta": {
-        "label": "Region Screenshot 356x130",
-        "created": "2026-06-14T16:09:27.750Z",
-        "tags": []
-      },
-      "triggers": [],
-      "dpr": 2
-    },
-    {
-      "id": "b7b98622-9633-4748-9352-93a5b6b0db97",
-      "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Google/index14.html",
-      "namespace": "snapshots.b7b98622-9633-4748-9352-93a5b6b0db97",
-      "kind": "PNG",
-      "scope": "region",
-      "sourceRect": {
-        "x": 694.5,
-        "y": 236,
-        "width": 356,
-        "height": 130
-      },
-      "filePath": "",
-      "imgPath": "Google/index14_files/region_694.5_236_356x130.png",
-      "meta": {
-        "label": "Region Screenshot 356x130",
-        "created": "2026-06-14T16:09:29.167Z",
-        "tags": []
-      },
-      "triggers": [],
-      "dpr": 2
-    },
-    {
-      "id": "5a5aab25-30b1-43a5-a081-a6befef8d4ab",
-      "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Google/index14.html",
-      "namespace": "snapshots.5a5aab25-30b1-43a5-a081-a6befef8d4ab",
-      "kind": "PNG",
-      "scope": "region",
-      "sourceRect": {
-        "x": 694.5,
-        "y": 236,
-        "width": 245,
-        "height": 123
-      },
-      "filePath": "",
-      "imgPath": "Google/index14_files/region_694.5_236_245x123.png",
-      "meta": {
-        "label": "Region Screenshot 245x123",
-        "created": "2026-06-14T16:09:57.779Z",
-        "tags": []
-      },
-      "triggers": [],
-      "dpr": 2
-    },
-    {
-      "id": "76845084-391b-47b0-925e-74b2351e8d03",
-      "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Google/index14.html",
-      "namespace": "snapshots.76845084-391b-47b0-925e-74b2351e8d03",
-      "kind": "PNG",
-      "scope": "region",
-      "sourceRect": {
-        "x": 468.5,
-        "y": 270,
-        "width": 109,
-        "height": 62
-      },
-      "filePath": "",
-      "imgPath": "Google/index14_files/region_468.5_270_109x62.png",
-      "meta": {
-        "label": "Region Screenshot 109x62",
-        "created": "2026-06-14T17:01:11.638Z",
-        "tags": []
-      },
-      "triggers": [],
-      "dpr": 2
-    },
-    {
-      "id": "90c76d97-420d-423e-9f26-a90f108b6975",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.90c76d97-420d-423e-9f26-a90f108b6975",
-      "kind": "PNG",
-      "scope": "region",
-      "sourceRect": {
-        "x": 497.5,
-        "y": 312,
-        "width": 179,
-        "height": 148
-      },
-      "filePath": "",
-      "imgPath": "Google/index14_files/region_497.5_312_179x148.png",
-      "meta": {
-        "label": "Region Screenshot 179x148",
-        "created": "2026-06-14T17:35:51.486Z",
-        "tags": []
-      },
-      "triggers": [],
-      "parent_id": "697e0436-17db-4fae-bd05-4806cf5bc465",
-      "dpr": 2
-    },
-    {
-      "id": "4a2c3f8b-6d9a-4ad9-865d-80e1445b19a6",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.4a2c3f8b-6d9a-4ad9-865d-80e1445b19a6",
-      "kind": "PNG",
-      "scope": "region",
-      "sourceRect": {
-        "x": 497.5,
-        "y": 312,
-        "width": 179,
-        "height": 148
-      },
-      "filePath": "",
-      "imgPath": "Google/index14_files/region_497.5_312_179x148.png",
-      "meta": {
-        "label": "Region Screenshot 179x148",
-        "created": "2026-06-14T17:36:00.234Z",
-        "tags": []
-      },
-      "triggers": [],
-      "parent_id": "697e0436-17db-4fae-bd05-4806cf5bc465",
-      "dpr": 2
-    },
-    {
-      "id": "87193cbe-b60d-45b7-805e-e5bd7cd9a506",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.87193cbe-b60d-45b7-805e-e5bd7cd9a506",
-      "kind": "PNG",
-      "scope": "region",
-      "sourceRect": {
-        "x": 497.5,
-        "y": 312,
-        "width": 179,
-        "height": 148
-      },
-      "filePath": "",
-      "imgPath": "Google/index14_files/region_497.5_312_179x148.png",
-      "meta": {
-        "label": "Region Screenshot 179x148",
-        "created": "2026-06-14T17:36:03.775Z",
-        "tags": []
-      },
-      "triggers": [],
-      "parent_id": "697e0436-17db-4fae-bd05-4806cf5bc465",
-      "dpr": 2
-    },
-    {
-      "id": "2365759b-cd9d-4c14-a8ee-96a4b1ea50ca",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.2365759b-cd9d-4c14-a8ee-96a4b1ea50ca",
-      "kind": "PNG",
-      "scope": "region",
-      "sourceRect": {
-        "x": 497.5,
-        "y": 312,
-        "width": 179,
-        "height": 148
-      },
-      "filePath": "",
-      "imgPath": "Google/index14_files/region_497.5_312_179x148.png",
-      "meta": {
-        "label": "Region Screenshot 179x148",
-        "created": "2026-06-14T17:36:05.024Z",
-        "tags": []
-      },
-      "triggers": [],
-      "parent_id": "697e0436-17db-4fae-bd05-4806cf5bc465",
-      "dpr": 2
-    },
-    {
-      "id": "4030fe82-3d9e-4fa3-a61e-f50790abb568",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.4030fe82-3d9e-4fa3-a61e-f50790abb568",
-      "kind": "PNG",
-      "scope": "region",
-      "sourceRect": {
-        "x": 497.5,
-        "y": 312,
-        "width": 179,
-        "height": 148
-      },
-      "filePath": "",
-      "imgPath": "Google/index14_files/region_497.5_312_179x148.png",
-      "meta": {
-        "label": "Region Screenshot 179x148",
-        "created": "2026-06-14T17:36:06.291Z",
-        "tags": []
-      },
-      "triggers": [],
-      "parent_id": "697e0436-17db-4fae-bd05-4806cf5bc465",
-      "dpr": 2
-    },
-    {
-      "id": "9262cf17-3751-4e05-ba3b-3fdee6a9cb70",
-      "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Google/index14.html",
-      "namespace": "snapshots.9262cf17-3751-4e05-ba3b-3fdee6a9cb70",
-      "kind": "PNG",
-      "scope": "region",
-      "sourceRect": {
-        "x": 342.5,
-        "y": 236,
-        "width": 187,
-        "height": 92
-      },
-      "filePath": "",
-      "imgPath": "Google/index14_files/region_342.5_236_187x92.png",
-      "meta": {
-        "label": "Region Screenshot 187x92",
-        "created": "2026-06-14T17:52:12.735Z",
-        "tags": []
-      },
-      "triggers": [],
-      "dpr": 2
-    },
-    {
-      "id": "cbfd3d71-4ed6-467b-8e92-740d791040d7",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.Google",
-      "kind": "HTML",
-      "scope": "screen",
-      "sourceRect": {
-        "x": 0,
-        "y": 0,
-        "width": 1440,
-        "height": 900
-      },
-      "filePath": "/src/snapshots/Google/index15.html",
-      "imgPath": "",
-      "meta": {
-        "label": "Google",
-        "created": "2026-06-14T17:55:15.034Z",
+        "created": "2026-06-15T12:33:01.879Z",
         "tags": []
       },
       "triggers": []
     },
     {
-      "id": "6d624f22-63eb-4a77-963d-69a8f7bd281f",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.Google",
+      "id": "b0bfdb1e-ee0f-4cd6-9a0e-e339bea187ad",
+      "url": "https://www.youtube.com/",
+      "namespace": "snapshots.Youtube",
       "kind": "HTML",
       "scope": "screen",
       "sourceRect": {
@@ -1102,19 +165,19 @@
         "width": 1440,
         "height": 900
       },
-      "filePath": "/src/snapshots/Google/index16.html",
+      "filePath": "/src/snapshots/Youtube/index.html",
       "imgPath": "",
       "meta": {
-        "label": "Google",
-        "created": "2026-06-14T17:56:09.910Z",
+        "label": "YouTube",
+        "created": "2026-06-15T17:14:39.637Z",
         "tags": []
       },
       "triggers": []
     },
     {
-      "id": "adf001b9-374f-4743-a8bb-8fd50233925c",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.Google",
+      "id": "831adb46-794b-47c5-8fec-cfde84db5e30",
+      "url": "http://127.0.0.1:8083/demos/shadow-dom.html",
+      "namespace": "snapshots.Page",
       "kind": "HTML",
       "scope": "screen",
       "sourceRect": {
@@ -1123,19 +186,19 @@
         "width": 1440,
         "height": 900
       },
-      "filePath": "/src/snapshots/Google/index17.html",
+      "filePath": "/src/snapshots/Page/index.html",
       "imgPath": "",
       "meta": {
-        "label": "Google",
-        "created": "2026-06-14T17:57:56.802Z",
+        "label": "Arc Engine : Drag Drop",
+        "created": "2026-06-15T17:35:46.960Z",
         "tags": []
       },
       "triggers": []
     },
     {
-      "id": "e66adf4f-08ad-4ec4-a2c6-0405918e9857",
-      "url": "https://www.adp.com/",
-      "namespace": "snapshots.Adp",
+      "id": "e7376170-d564-4b02-85d1-a7572aba673e",
+      "url": "http://127.0.0.1:8083/demos/shadow-dom.html",
+      "namespace": "snapshots.Page",
       "kind": "HTML",
       "scope": "screen",
       "sourceRect": {
@@ -1144,19 +207,19 @@
         "width": 1440,
         "height": 900
       },
-      "filePath": "/src/snapshots/Adp/index18.html",
+      "filePath": "/src/snapshots/Page/index2.html",
       "imgPath": "",
       "meta": {
-        "label": "Payroll, HR and Tax Services | ADP Official Site",
-        "created": "2026-06-14T17:58:48.405Z",
+        "label": "Arc Engine : Drag Drop",
+        "created": "2026-06-15T17:41:30.011Z",
         "tags": []
       },
       "triggers": []
     },
     {
-      "id": "85799f9d-daab-41a2-89b2-691a19914c42",
-      "url": "https://www.adp.com/",
-      "namespace": "snapshots.Adp",
+      "id": "76cd1eed-c31c-4a7c-acaa-b9654ab6953d",
+      "url": "http://127.0.0.1:8083/demos/shadow-dom.html",
+      "namespace": "snapshots.Page",
       "kind": "HTML",
       "scope": "screen",
       "sourceRect": {
@@ -1165,42 +228,19 @@
         "width": 1440,
         "height": 900
       },
-      "filePath": "/src/snapshots/Adp/index19.html",
+      "filePath": "/src/snapshots/Page/index3.html",
       "imgPath": "",
       "meta": {
-        "label": "Payroll, HR and Tax Services | ADP Official Site",
-        "created": "2026-06-14T18:00:53.942Z",
-        "tags": []
-      },
-      "triggers": [
-        "trigger-590a3613-6592-48de-9229-f6384da0599b"
-      ]
-    },
-    {
-      "id": "5ecb9280-ef2c-4424-ba0a-c10499077f33",
-      "url": "https://www.google.com/",
-      "namespace": "snapshots.Google",
-      "kind": "HTML",
-      "scope": "screen",
-      "sourceRect": {
-        "x": 0,
-        "y": 0,
-        "width": 1440,
-        "height": 900
-      },
-      "filePath": "/src/snapshots/Google/index20.html",
-      "imgPath": "",
-      "meta": {
-        "label": "Google",
-        "created": "2026-06-14T18:12:24.758Z",
+        "label": "Arc Engine : Drag Drop",
+        "created": "2026-06-15T17:42:22.981Z",
         "tags": []
       },
       "triggers": []
     },
     {
-      "id": "1122f337-086b-4125-af9e-c73f282e858f",
-      "url": "https://www.alodokter.com/",
-      "namespace": "snapshots.Alodokter",
+      "id": "15a10990-7484-4abf-8405-db2a6a66469f",
+      "url": "http://127.0.0.1:8083/demos/shadow-dom.html",
+      "namespace": "snapshots.Page",
       "kind": "HTML",
       "scope": "screen",
       "sourceRect": {
@@ -1209,63 +249,77 @@
         "width": 1440,
         "height": 900
       },
-      "filePath": "/src/snapshots/Alodokter/index2.html",
+      "filePath": "/src/snapshots/Page/index.html",
       "imgPath": "",
       "meta": {
-        "label": "Alodokter - Info Kesehatan, Booking dan Chat Dokter",
-        "created": "2026-06-14T18:15:21.920Z",
+        "label": "Arc Engine : Drag Drop",
+        "created": "2026-06-15T17:44:15.289Z",
         "tags": []
       },
-      "triggers": [
-        "trigger-906f9b93-0677-422b-956b-2068bb5429f8",
-        "trigger-adbb35d4-c952-426f-8579-6f35ac6503f9",
-        "trigger-a7db4d5f-7064-4b48-b535-0558e9c959da",
-        "trigger-3f565b52-a48e-420a-8deb-6304b3c97a48"
-      ]
+      "triggers": []
     },
     {
-      "id": "7a4e4a33-2fd8-454d-a409-e5872e2d83cc",
-      "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Alodokter/index2.html",
-      "namespace": "snapshots.7a4e4a33-2fd8-454d-a409-e5872e2d83cc",
-      "kind": "PNG",
-      "scope": "region",
+      "id": "366ae275-9b50-41db-b61d-a020fb59dcdf",
+      "url": "http://127.0.0.1:8083/demos/shadow-dom.html",
+      "namespace": "snapshots.Page",
+      "kind": "HTML",
+      "scope": "screen",
       "sourceRect": {
-        "x": 291.5,
-        "y": 330,
-        "width": 132,
-        "height": 119
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
       },
-      "filePath": "",
-      "imgPath": "Alodokter/index2_files/region_291.5_330_132x119.png",
+      "filePath": "/src/snapshots/Page/index2.html",
+      "imgPath": "",
       "meta": {
-        "label": "Region Screenshot 132x119",
-        "created": "2026-06-14T19:29:10.819Z",
+        "label": "Arc Engine : Drag Drop",
+        "created": "2026-06-15T18:31:12.434Z",
         "tags": []
       },
-      "triggers": [],
-      "dpr": 2
+      "triggers": []
     },
     {
-      "id": "998d1269-bab7-45e9-aa33-e1b77885ce5b",
-      "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Alodokter/index2.html",
-      "namespace": "snapshots.998d1269-bab7-45e9-aa33-e1b77885ce5b",
-      "kind": "PNG",
-      "scope": "region",
+      "id": "f8c8bdb5-37df-4123-8499-051c1e6323d2",
+      "url": "http://127.0.0.1:8083/demos/shadow-dom.html",
+      "namespace": "snapshots.Page",
+      "kind": "HTML",
+      "scope": "screen",
       "sourceRect": {
-        "x": 291.5,
-        "y": 330,
-        "width": 132,
-        "height": 119
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
       },
-      "filePath": "",
-      "imgPath": "Alodokter/index2_files/region_291.5_330_132x119.png",
+      "filePath": "/src/snapshots/Page/index3.html",
+      "imgPath": "",
       "meta": {
-        "label": "Region Screenshot 132x119",
-        "created": "2026-06-14T19:29:55.576Z",
+        "label": "Arc Engine : Drag Drop",
+        "created": "2026-06-15T18:36:49.119Z",
         "tags": []
       },
-      "triggers": [],
-      "dpr": 2
+      "triggers": []
+    },
+    {
+      "id": "173554b0-1d24-46ff-a97e-01e6a8bc1259",
+      "url": "http://127.0.0.1:8083/demos/shadow-dom.html",
+      "namespace": "snapshots.Page",
+      "kind": "HTML",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "filePath": "/src/snapshots/Page/index4.html",
+      "imgPath": "",
+      "meta": {
+        "label": "Arc Engine : Drag Drop",
+        "created": "2026-06-15T18:39:08.723Z",
+        "tags": []
+      },
+      "triggers": []
     }
   ]
 }

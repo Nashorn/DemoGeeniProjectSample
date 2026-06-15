@@ -1,8 +1,10 @@
-import * as runtime from "runtime";
+import { Snapshot } from "runtime";
+
+
 
 namespace `snapshots` 
 (
-    class Google extends runtime.Controller {
+    class Google extends Snapshot {
         async onConnected() {
             await super.onConnected();
         }
