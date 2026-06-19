@@ -1,4 +1,1159 @@
 {
   "version": 1,
-  "recordings": []
+  "recordings": [
+    {
+      "version": 1,
+      "id": "recording-1781901370870",
+      "name": "Recording 1",
+      "url": "https://www.adp.com/",
+      "createdAt": "2026-06-19T20:36:10.870Z",
+      "stoppedAt": "2026-06-19T20:36:17.488Z",
+      "recorder": {
+        "kind": "custom-dom",
+        "version": 1
+      },
+      "clips": [
+        {
+          "id": "clip-1",
+          "name": "Clip1",
+          "trigger": {
+            "event": "click",
+            "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > a"
+          },
+          "events": [
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > a",
+              "name": "aria-expanded",
+              "newValue": "true"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(5) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > div",
+              "name": "class",
+              "newValue": "drop-menu active fade-in"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > a",
+              "name": "class",
+              "newValue": "level-1 plus js-section-buyer active"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(1) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(1) > a:nth-of-type(1)",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(1) > a:nth-of-type(2)",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(1) > a:nth-of-type(3)",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(1) > a:nth-of-type(4)",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(2) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(3) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(4) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(5) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(6) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(7) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(8) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(9) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(10) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(11) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > div > ul > li:nth-of-type(1) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > div > ul > li:nth-of-type(2) > a",
+              "name": "aria-expanded",
+              "newValue": "true"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > div > ul > li:nth-of-type(3) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > div > ul > li:nth-of-type(4) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > div > ul > li:nth-of-type(5) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > div > ul > li:nth-of-type(6) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > div > ul > li:nth-of-type(7) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > div > ul > li:nth-of-type(1) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > div > ul > li:nth-of-type(2) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > div > ul > li:nth-of-type(3) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > div > ul > li:nth-of-type(4) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > div > ul > li:nth-of-type(5) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > div > ul > li:nth-of-type(6) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > div > ul > li:nth-of-type(7) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > div > ul > li:nth-of-type(8) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > div > ul > li:nth-of-type(9) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > div > ul > li:nth-of-type(10) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > div > ul > li:nth-of-type(11) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > div > ul > li:nth-of-type(12) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(5) > div > ul > li:nth-of-type(1) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(5) > div > ul > li:nth-of-type(2) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(5) > div > ul > li:nth-of-type(3) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(5) > div > ul > li:nth-of-type(4) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(5) > div > ul > li:nth-of-type(5) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(5) > div > ul > li:nth-of-type(6) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(5) > div > ul > li:nth-of-type(7) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > div > ul > li:nth-of-type(1) > ul:nth-of-type(1)",
+              "name": "class",
+              "newValue": "drop-menu-panel-preview"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(9) > a",
+              "name": "class",
+              "newValue": "level-2"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(10) > a",
+              "name": "class",
+              "newValue": "level-2"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > div > ul > li:nth-of-type(1) > a",
+              "name": "class",
+              "newValue": "level-2"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > div > ul > li:nth-of-type(2) > a",
+              "name": "class",
+              "newValue": "level-2 active-inline-link"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > div > ul > li:nth-of-type(3) > a",
+              "name": "class",
+              "newValue": "level-2"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > div > ul > li:nth-of-type(4) > a",
+              "name": "class",
+              "newValue": "level-2"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > div > ul > li:nth-of-type(1) > a",
+              "name": "class",
+              "newValue": "level-2"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > div > ul > li:nth-of-type(7) > a",
+              "name": "class",
+              "newValue": "level-2"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > div > ul > li:nth-of-type(8) > a",
+              "name": "class",
+              "newValue": "level-2"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > div > ul > li:nth-of-type(9) > a",
+              "name": "class",
+              "newValue": "level-2"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > div > ul > li:nth-of-type(10) > a",
+              "name": "class",
+              "newValue": "level-2"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(5) > div > ul > li:nth-of-type(1) > a",
+              "name": "class",
+              "newValue": "level-2"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(5) > div > ul > li:nth-of-type(3) > a",
+              "name": "class",
+              "newValue": "level-2"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(5) > div > ul > li:nth-of-type(4) > a",
+              "name": "class",
+              "newValue": "level-2"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > div > ul > li:nth-of-type(2) > ul#panel_852fc2b8789a4db2a0f512ea87ffb722",
+              "name": "class",
+              "newValue": "drop-menu-panel active-inline"
+            },
+            {
+              "type": "childList",
+              "target": "body > div#ph-pre-header > div#ADP_6d8c8cebac6b45b993466582eaa2dd35 > section > div:nth-of-type(1) > div#countdown > div:nth-of-type(1) > span:nth-of-type(1)",
+              "adds": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "6"
+                  }
+                }
+              ],
+              "removes": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "6"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "childList",
+              "target": "body > div#ph-pre-header > div#ADP_6d8c8cebac6b45b993466582eaa2dd35 > section > div:nth-of-type(1) > div#countdown > div:nth-of-type(2) > span",
+              "adds": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "07"
+                  }
+                }
+              ],
+              "removes": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "07"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "childList",
+              "target": "body > div#ph-pre-header > div#ADP_6d8c8cebac6b45b993466582eaa2dd35 > section > div:nth-of-type(1) > div#countdown > div:nth-of-type(3) > span",
+              "adds": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "23"
+                  }
+                }
+              ],
+              "removes": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "23"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "childList",
+              "target": "body > div#ph-pre-header > div#ADP_6d8c8cebac6b45b993466582eaa2dd35 > section > div:nth-of-type(1) > div#countdown > div:nth-of-type(4) > span",
+              "adds": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "48"
+                  }
+                }
+              ],
+              "removes": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "49"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div#ADP_2f79cf0679cd44ea8db22774b62c0627 > div > span > strong > a",
+              "name": "href",
+              "newValue": "tel:+18886051023"
+            },
+            {
+              "type": "characterData",
+              "target": {
+                "selector": "body > header > div > div#ADP_2f79cf0679cd44ea8db22774b62c0627 > div > span > strong > a",
+                "childIndex": 0,
+                "nodeType": 3,
+                "textHint": "888-605-1023"
+              },
+              "newValue": "888-605-1023"
+            },
+            {
+              "type": "attributes",
+              "target": "body > div#ph-body > div:nth-of-type(11) > div > div:nth-of-type(1) > p:nth-of-type(2) > a",
+              "name": "href",
+              "newValue": "tel:+18886051023"
+            },
+            {
+              "type": "characterData",
+              "target": {
+                "selector": "body > div#ph-body > div:nth-of-type(11) > div > div:nth-of-type(1) > p:nth-of-type(2) > a",
+                "childIndex": 0,
+                "nodeType": 3,
+                "textHint": "888-605-1023"
+              },
+              "newValue": "888-605-1023"
+            },
+            {
+              "type": "attributes",
+              "target": "body > footer#footer-static > nav > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+              "name": "href",
+              "newValue": "tel:+18886051023"
+            },
+            {
+              "type": "characterData",
+              "target": {
+                "selector": "body > footer#footer-static > nav > div:nth-of-type(1) > ul > li:nth-of-type(2) > a > span",
+                "childIndex": 0,
+                "nodeType": 3,
+                "textHint": "888-605-1023"
+              },
+              "newValue": "888-605-1023"
+            },
+            {
+              "type": "attributes",
+              "target": "body > footer#footer-static > div:nth-of-type(2) > div > div > a:nth-of-type(1)",
+              "name": "href",
+              "newValue": "tel:+18886051023"
+            },
+            {
+              "type": "attributes",
+              "target": "body > div:nth-of-type(4) > div > div:nth-of-type(3) > div > div > p:nth-of-type(2) > a",
+              "name": "href",
+              "newValue": "tel:+18886051023"
+            },
+            {
+              "type": "characterData",
+              "target": {
+                "selector": "body > div:nth-of-type(4) > div > div:nth-of-type(3) > div > div > p:nth-of-type(2) > a",
+                "childIndex": 0,
+                "nodeType": 3,
+                "textHint": "888-605-1023"
+              },
+              "newValue": "888-605-1023"
+            },
+            {
+              "type": "childList",
+              "target": "body > div#ph-pre-header > div#ADP_6d8c8cebac6b45b993466582eaa2dd35 > section > div:nth-of-type(1) > div#countdown > div:nth-of-type(1) > span:nth-of-type(1)",
+              "adds": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "6"
+                  }
+                }
+              ],
+              "removes": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "6"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "childList",
+              "target": "body > div#ph-pre-header > div#ADP_6d8c8cebac6b45b993466582eaa2dd35 > section > div:nth-of-type(1) > div#countdown > div:nth-of-type(2) > span",
+              "adds": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "07"
+                  }
+                }
+              ],
+              "removes": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "07"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "childList",
+              "target": "body > div#ph-pre-header > div#ADP_6d8c8cebac6b45b993466582eaa2dd35 > section > div:nth-of-type(1) > div#countdown > div:nth-of-type(3) > span",
+              "adds": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "23"
+                  }
+                }
+              ],
+              "removes": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "23"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "childList",
+              "target": "body > div#ph-pre-header > div#ADP_6d8c8cebac6b45b993466582eaa2dd35 > section > div:nth-of-type(1) > div#countdown > div:nth-of-type(4) > span",
+              "adds": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "47"
+                  }
+                }
+              ],
+              "removes": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "48"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "childList",
+              "target": "body > div#ph-pre-header > div#ADP_6d8c8cebac6b45b993466582eaa2dd35 > section > div:nth-of-type(1) > div#countdown > div:nth-of-type(1) > span:nth-of-type(1)",
+              "adds": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "6"
+                  }
+                }
+              ],
+              "removes": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "6"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "childList",
+              "target": "body > div#ph-pre-header > div#ADP_6d8c8cebac6b45b993466582eaa2dd35 > section > div:nth-of-type(1) > div#countdown > div:nth-of-type(2) > span",
+              "adds": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "07"
+                  }
+                }
+              ],
+              "removes": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "07"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "childList",
+              "target": "body > div#ph-pre-header > div#ADP_6d8c8cebac6b45b993466582eaa2dd35 > section > div:nth-of-type(1) > div#countdown > div:nth-of-type(3) > span",
+              "adds": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "23"
+                  }
+                }
+              ],
+              "removes": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "23"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "childList",
+              "target": "body > div#ph-pre-header > div#ADP_6d8c8cebac6b45b993466582eaa2dd35 > section > div:nth-of-type(1) > div#countdown > div:nth-of-type(4) > span",
+              "adds": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "46"
+                  }
+                }
+              ],
+              "removes": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "47"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "clip-2",
+          "name": "Clip2",
+          "trigger": {
+            "event": "click",
+            "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > div > ul > li:nth-of-type(3) > a"
+          },
+          "events": [
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(1) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(1) > a:nth-of-type(1)",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(1) > a:nth-of-type(2)",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(1) > a:nth-of-type(3)",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(1) > a:nth-of-type(4)",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(2) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(3) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(4) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(5) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(6) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(7) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(8) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(9) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(10) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(1) > div > ul > li:nth-of-type(11) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > div > ul > li:nth-of-type(1) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > div > ul > li:nth-of-type(2) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > div > ul > li:nth-of-type(3) > a",
+              "name": "aria-expanded",
+              "newValue": "true"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > div > ul > li:nth-of-type(4) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > div > ul > li:nth-of-type(5) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > div > ul > li:nth-of-type(6) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > div > ul > li:nth-of-type(7) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > div > ul > li:nth-of-type(1) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > div > ul > li:nth-of-type(2) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > div > ul > li:nth-of-type(3) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > div > ul > li:nth-of-type(4) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > div > ul > li:nth-of-type(5) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > div > ul > li:nth-of-type(6) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > div > ul > li:nth-of-type(7) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > div > ul > li:nth-of-type(8) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > div > ul > li:nth-of-type(9) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > div > ul > li:nth-of-type(10) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > div > ul > li:nth-of-type(11) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(4) > div > ul > li:nth-of-type(12) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(5) > div > ul > li:nth-of-type(1) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(5) > div > ul > li:nth-of-type(2) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(5) > div > ul > li:nth-of-type(3) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(5) > div > ul > li:nth-of-type(4) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(5) > div > ul > li:nth-of-type(5) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(5) > div > ul > li:nth-of-type(6) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(5) > div > ul > li:nth-of-type(7) > a",
+              "name": "aria-expanded",
+              "newValue": "false"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > div > ul > li:nth-of-type(2) > a",
+              "name": "class",
+              "newValue": "level-2"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > div > ul > li:nth-of-type(3) > a",
+              "name": "class",
+              "newValue": "level-2 active-inline-link"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > div > ul > li:nth-of-type(2) > ul#panel_852fc2b8789a4db2a0f512ea87ffb722",
+              "name": "class",
+              "newValue": "drop-menu-panel"
+            },
+            {
+              "type": "attributes",
+              "target": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > div > ul > li:nth-of-type(3) > ul#panel_ed4909f9e9134d908b0e9265996a9206",
+              "name": "class",
+              "newValue": "drop-menu-panel active-inline"
+            },
+            {
+              "type": "childList",
+              "target": "body > div#ph-pre-header > div#ADP_6d8c8cebac6b45b993466582eaa2dd35 > section > div:nth-of-type(1) > div#countdown > div:nth-of-type(1) > span:nth-of-type(1)",
+              "adds": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "6"
+                  }
+                }
+              ],
+              "removes": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "6"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "childList",
+              "target": "body > div#ph-pre-header > div#ADP_6d8c8cebac6b45b993466582eaa2dd35 > section > div:nth-of-type(1) > div#countdown > div:nth-of-type(2) > span",
+              "adds": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "07"
+                  }
+                }
+              ],
+              "removes": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "07"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "childList",
+              "target": "body > div#ph-pre-header > div#ADP_6d8c8cebac6b45b993466582eaa2dd35 > section > div:nth-of-type(1) > div#countdown > div:nth-of-type(3) > span",
+              "adds": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "23"
+                  }
+                }
+              ],
+              "removes": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "23"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "childList",
+              "target": "body > div#ph-pre-header > div#ADP_6d8c8cebac6b45b993466582eaa2dd35 > section > div:nth-of-type(1) > div#countdown > div:nth-of-type(4) > span",
+              "adds": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "45"
+                  }
+                }
+              ],
+              "removes": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "46"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "childList",
+              "target": "body > div#ph-pre-header > div#ADP_6d8c8cebac6b45b993466582eaa2dd35 > section > div:nth-of-type(1) > div#countdown > div:nth-of-type(1) > span:nth-of-type(1)",
+              "adds": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "6"
+                  }
+                }
+              ],
+              "removes": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "6"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "childList",
+              "target": "body > div#ph-pre-header > div#ADP_6d8c8cebac6b45b993466582eaa2dd35 > section > div:nth-of-type(1) > div#countdown > div:nth-of-type(2) > span",
+              "adds": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "07"
+                  }
+                }
+              ],
+              "removes": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "07"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "childList",
+              "target": "body > div#ph-pre-header > div#ADP_6d8c8cebac6b45b993466582eaa2dd35 > section > div:nth-of-type(1) > div#countdown > div:nth-of-type(3) > span",
+              "adds": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "23"
+                  }
+                }
+              ],
+              "removes": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "23"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "childList",
+              "target": "body > div#ph-pre-header > div#ADP_6d8c8cebac6b45b993466582eaa2dd35 > section > div:nth-of-type(1) > div#countdown > div:nth-of-type(4) > span",
+              "adds": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "44"
+                  }
+                }
+              ],
+              "removes": [
+                {
+                  "node": {
+                    "nodeType": 3,
+                    "textContent": "45"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "snapshotId": "86b0b1c1-48cd-4199-9bc8-2e1d4d7abb25",
+      "savedAt": "2026-06-19T20:36:29.493Z"
+    }
+  ]
 }
