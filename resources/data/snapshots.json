@@ -87,7 +87,9 @@
         "created": "2026-06-15T12:12:28.253Z",
         "tags": []
       },
-      "triggers": [],
+      "triggers": [
+        "trigger-ac047787-a976-4193-a392-728dfb787ecf"
+      ],
       "dpr": 2
     },
     {
@@ -340,7 +342,9 @@
         "created": "2026-06-15T19:46:46.592Z",
         "tags": []
       },
-      "triggers": []
+      "triggers": [
+        "trigger-3a117f47-9f6d-4897-bff4-61ba1ea0ae9a"
+      ]
     },
     {
       "id": "c49c784f-f9f3-4020-97c7-6fb9c74df40d",
@@ -383,6 +387,114 @@
         "tags": []
       },
       "triggers": []
+    },
+    {
+      "id": "f9d579f3-968b-40fa-9b7f-8784041111e5",
+      "url": "http://127.0.0.1:8083/demos/shadow-dom.html",
+      "namespace": "snapshots.Arc",
+      "kind": "HTML",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "filePath": "/src/snapshots/Arc/index3.html",
+      "imgPath": "",
+      "meta": {
+        "label": "Arc Engine : Drag Drop",
+        "created": "2026-06-16T12:56:43.822Z",
+        "tags": []
+      },
+      "triggers": []
+    },
+    {
+      "id": "89dd6464-47d2-4a92-ab7e-6ad93a5e6a51",
+      "url": "http://127.0.0.1:8083/demos/shadow-dom.html",
+      "namespace": "snapshots.Arc",
+      "kind": "HTML",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "filePath": "/src/snapshots/Arc/index4.html",
+      "imgPath": "",
+      "meta": {
+        "label": "Arc Engine : Drag Drop",
+        "created": "2026-06-16T13:00:57.429Z",
+        "tags": []
+      },
+      "triggers": []
+    },
+    {
+      "id": "3aea893c-83f6-439b-b242-de6bbb106f41",
+      "url": "http://127.0.0.1:8083/demos/shadow-dom.html",
+      "namespace": "snapshots.Arc",
+      "kind": "HTML",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "filePath": "/src/snapshots/Arc/index5.html",
+      "imgPath": "",
+      "meta": {
+        "label": "Arc Engine : Drag Drop",
+        "created": "2026-06-16T13:03:05.244Z",
+        "tags": []
+      },
+      "triggers": []
+    },
+    {
+      "id": "44d3625b-1c5e-43c9-be78-65772bcdf59e",
+      "url": "http://127.0.0.1:8083/demos/shadow-dom.html",
+      "namespace": "snapshots.Arc",
+      "kind": "HTML",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "filePath": "/src/snapshots/Arc/index6.html",
+      "imgPath": "",
+      "meta": {
+        "label": "Arc Engine : Drag Drop",
+        "created": "2026-06-16T14:45:15.818Z",
+        "tags": []
+      },
+      "triggers": [
+        "trigger-cddfe94b-baab-4511-8ff1-e2e6cc006826"
+      ]
+    },
+    {
+      "id": "0ab60256-8396-4e20-a083-16c4b39ce720",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.Google",
+      "kind": "PNG",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 3420,
+        "height": 1826
+      },
+      "filePath": "/src/snapshots/Google/index3.html",
+      "imgPath": "index3_files/screenshot.png",
+      "meta": {
+        "label": "Google",
+        "created": "2026-06-16T17:14:45.571Z",
+        "tags": []
+      },
+      "triggers": [],
+      "dpr": 2
     }
   ]
 }

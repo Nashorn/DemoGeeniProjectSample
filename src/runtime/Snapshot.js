@@ -11,6 +11,8 @@ export default namespace `runtime` (
             this.triggerBinder = new runtime.TriggerBinder(this);
             this.snapshotRepository = await new runtime.SnapshotRepository;
             this.triggerRepository = await new runtime.TriggerRepository;
+            this.recordingRepository = await new runtime.RecordingRepository;
+            this.recordingPlayer = new runtime.DomMutationPlayer();
             this.renderService = new runtime.RenderService({ component: this });
 
             //get my snapshot

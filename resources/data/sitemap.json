@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-16T12:02:42.140Z",
+  "generatedAt": "2026-06-17T12:11:33.027Z",
   "source": {
     "snapshots": "/resources/data/snapshots.json",
     "triggers": "/resources/data/triggers.json"
@@ -73,7 +73,24 @@
       "filePath": "/src/snapshots/Google/index4.html",
       "imgPath": "index4_files/screenshot.png",
       "created": "2026-06-15T12:12:28.253Z",
-      "triggers": []
+      "triggers": [
+        {
+          "id": "trigger-ac047787-a976-4193-a392-728dfb787ecf",
+          "label": "Untitled Trigger",
+          "description": "",
+          "kind": "trigger",
+          "rect": {
+            "x": 674,
+            "y": 258,
+            "width": 362,
+            "height": 71
+          },
+          "actionType": null,
+          "targetSnapshotId": null,
+          "hasNavigationAction": false,
+          "missingDefinition": false
+        }
+      ]
     },
     {
       "id": "fde92dd4-f5ae-4125-a840-cdf18c6e5543",
@@ -229,7 +246,24 @@
       "filePath": "/src/snapshots/Google/index2.html",
       "imgPath": null,
       "created": "2026-06-15T19:46:46.592Z",
-      "triggers": []
+      "triggers": [
+        {
+          "id": "trigger-3a117f47-9f6d-4897-bff4-61ba1ea0ae9a",
+          "label": "Untitled Trigger",
+          "description": "",
+          "kind": "trigger",
+          "rect": {
+            "x": 357,
+            "y": 106,
+            "width": 120,
+            "height": 78
+          },
+          "actionType": null,
+          "targetSnapshotId": null,
+          "hasNavigationAction": false,
+          "missingDefinition": false
+        }
+      ]
     },
     {
       "id": "c49c784f-f9f3-4020-97c7-6fb9c74df40d",
@@ -255,6 +289,88 @@
       "filePath": "/src/snapshots/Arc/index2.html",
       "imgPath": null,
       "created": "2026-06-16T12:02:42.138Z",
+      "triggers": []
+    },
+    {
+      "id": "f9d579f3-968b-40fa-9b7f-8784041111e5",
+      "snapshotId": "f9d579f3-968b-40fa-9b7f-8784041111e5",
+      "label": "Arc Engine : Drag Drop",
+      "url": "http://127.0.0.1:8083/demos/shadow-dom.html",
+      "namespace": "snapshots.Arc",
+      "kind": "HTML",
+      "scope": "screen",
+      "filePath": "/src/snapshots/Arc/index3.html",
+      "imgPath": null,
+      "created": "2026-06-16T12:56:43.822Z",
+      "triggers": []
+    },
+    {
+      "id": "89dd6464-47d2-4a92-ab7e-6ad93a5e6a51",
+      "snapshotId": "89dd6464-47d2-4a92-ab7e-6ad93a5e6a51",
+      "label": "Arc Engine : Drag Drop",
+      "url": "http://127.0.0.1:8083/demos/shadow-dom.html",
+      "namespace": "snapshots.Arc",
+      "kind": "HTML",
+      "scope": "screen",
+      "filePath": "/src/snapshots/Arc/index4.html",
+      "imgPath": null,
+      "created": "2026-06-16T13:00:57.429Z",
+      "triggers": []
+    },
+    {
+      "id": "3aea893c-83f6-439b-b242-de6bbb106f41",
+      "snapshotId": "3aea893c-83f6-439b-b242-de6bbb106f41",
+      "label": "Arc Engine : Drag Drop",
+      "url": "http://127.0.0.1:8083/demos/shadow-dom.html",
+      "namespace": "snapshots.Arc",
+      "kind": "HTML",
+      "scope": "screen",
+      "filePath": "/src/snapshots/Arc/index5.html",
+      "imgPath": null,
+      "created": "2026-06-16T13:03:05.244Z",
+      "triggers": []
+    },
+    {
+      "id": "44d3625b-1c5e-43c9-be78-65772bcdf59e",
+      "snapshotId": "44d3625b-1c5e-43c9-be78-65772bcdf59e",
+      "label": "Arc Engine : Drag Drop",
+      "url": "http://127.0.0.1:8083/demos/shadow-dom.html",
+      "namespace": "snapshots.Arc",
+      "kind": "HTML",
+      "scope": "screen",
+      "filePath": "/src/snapshots/Arc/index6.html",
+      "imgPath": null,
+      "created": "2026-06-16T14:45:15.818Z",
+      "triggers": [
+        {
+          "id": "trigger-cddfe94b-baab-4511-8ff1-e2e6cc006826",
+          "label": "Untitled Trigger",
+          "description": "",
+          "kind": "trigger",
+          "rect": {
+            "x": 332,
+            "y": 130.98,
+            "width": 129.5,
+            "height": 78
+          },
+          "actionType": null,
+          "targetSnapshotId": null,
+          "hasNavigationAction": false,
+          "missingDefinition": false
+        }
+      ]
+    },
+    {
+      "id": "0ab60256-8396-4e20-a083-16c4b39ce720",
+      "snapshotId": "0ab60256-8396-4e20-a083-16c4b39ce720",
+      "label": "Google",
+      "url": "https://www.google.com/",
+      "namespace": "snapshots.Google",
+      "kind": "PNG",
+      "scope": "screen",
+      "filePath": "/src/snapshots/Google/index3.html",
+      "imgPath": "index3_files/screenshot.png",
+      "created": "2026-06-16T17:14:45.571Z",
       "triggers": []
     }
   ],

@@ -38,6 +38,124 @@
           "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Google/index.html"
         }
       }
+    },
+    {
+      "id": "trigger-cddfe94b-baab-4511-8ff1-e2e6cc006826",
+      "label": "Untitled Trigger",
+      "description": "",
+      "isGlobal": false,
+      "isPseudo": false,
+      "selector": "html > body > section > figure:nth-of-type(3) > div",
+      "rect": {
+        "x": 332,
+        "y": 130.98,
+        "width": 129.5,
+        "height": 78
+      },
+      "condition": null,
+      "binding": null,
+      "style": {
+        "overlayColor": "rgba(0,0,0,0.1)",
+        "border": "1px solid red",
+        "align": "center",
+        "z": 10,
+        "highlightable": true,
+        "highlightState": "off",
+        "highlightStyle": "trigger-highlight",
+        "pulsate": false
+      },
+      "tracking": true,
+      "action": null,
+      "meta": {
+        "status": "draft",
+        "createdBy": "demogeeni",
+        "createdAt": "2026-06-16T14:53:30.039Z",
+        "sourceUrl": "http://127.0.0.1:8083/demos/shadow-dom.html",
+        "snapshotContext": {
+          "snapshotId": null,
+          "namespace": "ui.screens.ShadowDomDemo",
+          "url": "http://127.0.0.1:8083/demos/shadow-dom.html"
+        }
+      }
+    },
+    {
+      "id": "trigger-3a117f47-9f6d-4897-bff4-61ba1ea0ae9a",
+      "label": "Untitled Trigger",
+      "description": "",
+      "isGlobal": false,
+      "isPseudo": true,
+      "selector": null,
+      "rect": {
+        "x": 357,
+        "y": 106,
+        "width": 120,
+        "height": 78
+      },
+      "condition": null,
+      "binding": null,
+      "style": {
+        "overlayColor": "rgba(0,0,0,0.1)",
+        "border": "1px solid red",
+        "align": "center",
+        "z": 10,
+        "highlightable": true,
+        "highlightState": "off",
+        "highlightStyle": "trigger-highlight",
+        "pulsate": false
+      },
+      "tracking": true,
+      "action": null,
+      "meta": {
+        "status": "draft",
+        "createdBy": "demogeeni",
+        "createdAt": "2026-06-16T16:28:46.703Z",
+        "sourceUrl": "https://www.google.com/",
+        "snapshotContext": {
+          "snapshotId": null,
+          "namespace": null,
+          "url": "https://www.google.com/"
+        }
+      }
+    },
+    {
+      "id": "trigger-ac047787-a976-4193-a392-728dfb787ecf",
+      "label": "Untitled Trigger",
+      "description": "",
+      "isGlobal": false,
+      "isPseudo": true,
+      "selector": null,
+      "rect": {
+        "x": 674,
+        "y": 258,
+        "width": 362,
+        "height": 71
+      },
+      "condition": null,
+      "binding": null,
+      "style": {
+        "overlayColor": "rgba(0,0,0,0.1)",
+        "border": "1px solid red",
+        "align": "center",
+        "z": 10,
+        "highlightable": true,
+        "highlightState": "off",
+        "highlightStyle": "trigger-highlight",
+        "pulsate": false
+      },
+      "tracking": true,
+      "action": null,
+      "meta": {
+        "status": "draft",
+        "createdBy": "demogeeni",
+        "createdAt": "2026-06-16T16:29:06.058Z",
+        "sourceUrl": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Google/index4.html",
+        "snapshotContext": {
+          "snapshotId": "6a62b02c-1081-4c39-bd3f-cafb1fa582b5",
+          "namespace": "snapshots.Google",
+          "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Google/index4.html"
+        },
+        "updatedAt": "2026-06-16T16:29:21.276Z"
+      }
     }
   ]
 }

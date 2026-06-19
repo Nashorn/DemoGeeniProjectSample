@@ -5,6 +5,8 @@ export { default as Player } from './Player.js';
 export { default as Snapshot } from './Snapshot.js';
 export { default as RenderService } from './RenderService.js';
 export { default as SnapshotRepository } from './SnapshotRepository.js';
+export { default as RecordingRepository } from './RecordingRepository.js';
+export { default as DomMutationPlayer } from './DomMutationPlayer.js';
 export { default as TriggerBinder } from './TriggerBinder.js';
 export { default as Trigger } from './Trigger.js';
 export { default as TriggerRepository } from './TriggerRepository.js';
@@ -13,6 +15,7 @@ export { default as RedirectToSnapshotAction } from './actions/RedirectToSnapsho
 export { default as RevealAction } from './actions/RevealAction.js';
 export { default as ToggleRevealAction } from './actions/ToggleRevealAction.js';
 export { default as HelloWorldAction } from './actions/HelloWorldAction.js';
+export { default as PlayClipAction } from './actions/PlayClipAction.js';
 export { default as ClickGuard } from './ClickGuard.js';
 export { default as BaseRenderer } from './renderers/BaseRenderer.js';
 export { default as PngScreenRenderer } from './renderers/PngScreenRenderer.js';
