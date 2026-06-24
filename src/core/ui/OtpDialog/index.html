@@ -1,0 +1,423 @@
+<template><style>* {
+  font-family: 'Lato';
+}
+
+::placeholder {
+  color:#000;
+}
+
+.error {
+  border: 1px solid red !important;
+}
+
+.error-message {
+  color: red !important; font-size:12px; margin-bottom: 8px;
+}
+
+.mb_3 {
+  margin-bottom: 3px;
+}
+
+.mb_4 {
+  margin-bottom: 4px;
+}
+
+.mb_8 {
+  margin-bottom: 8px;
+}
+
+.mb_12 {
+  margin-bottom: 12px;
+}
+
+.mb_16 {
+  margin-bottom: 16px;
+}
+
+.mb_24 {
+  margin-bottom: 24px;
+}
+
+.mt_24 {
+  margin-top: 24px;
+}
+
+.font_weight_400 {
+  font-weight: 400;
+}
+
+.font_weight_600 {
+  font-weight: 600;
+}
+
+.font_size_12 {
+  font-size: 12px;
+}
+
+.font_size_16 {
+  font-size: 16px;
+}
+
+.color_595959 {
+  color: #595959;
+}
+
+.color_7f7f7f {
+  color: #7f7f7f;
+}
+
+.color_3570d2 {
+  color: #3570d2;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.color_FFFFFF {
+  color: #FFFFFF
+}
+
+.bg_color_D0021B {
+  background-color: #D0021B;
+}
+
+input[type='checkbox'] {
+  cursor: pointer;
+}
+
+.modal-content-full {
+  background-color: #fefefe;
+          margin: 15% auto; 
+          border: 1px solid #888;
+          width: 420px;
+          height: fit-content;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          position: relative;
+          z-index: 999;
+}
+
+.otp-container-dialog {
+  border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          background-color: #ffffff;
+}
+
+.title {
+  font-size: 24px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+          color: #000000;
+          padding-top: 50px;
+          padding-left: 70px;
+          padding-right: 70px;  
+          margin-bottom: 30px;
+}
+
+.desc {
+  font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: center;
+          color: #7c7c7c;
+          width: 294px;
+          margin: 0 auto;
+          margin-bottom:40px;
+}
+
+.desc-bold {
+  font-weight: 600;
+          color: #3b3738;
+}
+
+.otp-container {
+  display: block;
+          text-align: center;
+}
+
+.input-container {
+  text-align:center;
+          display: inline-block;
+}
+
+.number-input {
+  width: 30px;
+          height: 42px;
+          text-align: center;
+          font-size: 24px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #3570d2;
+          border:0px;
+          border-bottom:2px solid #7f7f7f;
+    
+          
+          border-radius: 0;
+          -webkit-appearance: none;
+    
+          
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          box-sizing:border-box;
+}
+
+#input-1 {
+  margin-right: 7px;
+}
+
+#input-2 {
+  margin-left: 7px;
+          margin-right: 7px;
+}
+
+#input-3 {
+  margin-left: 7px;
+          margin-right: 7px;
+}
+
+#input-4 {
+  margin-left: 7px;
+          margin-right: 7px;
+}
+
+#input-5 {
+  margin-left: 7px;
+          margin-right: 7px;
+}
+
+#input-6 {
+  margin-left: 7px;
+}
+
+.notif {
+  margin-top: 20px;
+          font-size: 14px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+          color: #3570d2;
+}
+
+.error-notif {
+  margin-top: 20px;
+          font-size: 12px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+          color: #d0021b;
+          margin-left: 85px;
+          margin-right: 85px;
+}
+
+.submit-btn-container {
+  display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin: 30px 49px 20px;
+          padding: 12px 16px;
+          gap: 4px;
+          background: #3570D2;
+          border-radius: 8px;
+          cursor: pointer;
+}
+
+.submit-btn-container.inactive {
+  cursor: auto;
+          opacity: 40%;
+}
+
+.submit {
+  font-family: 'Lato';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 24px;
+          text-align: center;
+          color: #FFFFFF;
+}
+
+.footer-login {
+  margin: 0 50px 50px;
+          font-size: 16px;
+          line-height: 24px;
+          text-align: center;
+          color: #7f7f7f;
+}
+
+.icon {
+  width: 16px;
+          height: 16px;
+}
+
+.btn-resend {
+  box-sizing: border-box;
+          cursor: pointer;
+          
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 8px 12px 8px 8px;
+          gap: 4px;
+
+          border: 1px solid #3570D2;
+          border-radius: 8px;
+          
+          font-family: 'Lato';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 20px;
+          text-align: center;
+
+          color: #3570D2;
+}
+
+.error-otp {
+  color:#e02020 !important;
+          border-bottom: 2px solid #e02020 !important;
+}
+
+.error-sms-disable {
+  margin-top: 12px;
+          font-size: 14px;
+          line-height: 20px;
+          text-align: center;
+          color: #d0021b;
+}
+
+.links {
+  font-weight: bold;
+          color: #3570d2;
+          cursor: pointer;
+          display: inline-flex;
+          align-items: center;
+          gap: 4px;
+}
+
+input {
+  outline: none;
+}
+
+.loader {
+  position: absolute;
+          height: 6em;
+          top: 40%;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+}
+
+.modal-container-spinner {
+  position: absolute;
+          z-index: 1000;
+          top: 0;
+          height: 100%;
+          margin: 0 auto;
+          background-color: #ffffff;
+          opacity: 0.9;
+}
+
+.modal-spinner {
+  margin: 15% auto;
+          width: 420px;
+          height: 100%;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+}
+
+</style>
+      
+      <iron-ajax id="submitOTPAjax" method="post" content-type="application/json" handle-as="json" hidden="">
+      </iron-ajax>
+      <iron-ajax id="resendOTPAjax" method="post" content-type="application/json" handle-as="json" hidden="">
+      </iron-ajax>
+      <iron-ajax id="otpVerifyForPin" method="post" content-type="application/json" handle-as="json" hidden="">
+      </iron-ajax>
+      <div class="modal-content-full">
+        <div class="otp-container-dialog">
+          <div class="title">Masukkan Kode Verifikasi</div>
+          <div class="desc">
+            Kode verifikasi telah dikirimkan melalui 
+            <b class="desc-bold">WhatsApp</b> 
+            ke 
+            <b class="desc-bold"></b>
+          </div>
+          <div class="otp-container">
+            <div class="otp-input-container">
+              <div class="input-container">
+                  <input id="input-1" class="number-input" type="tel" maxlength="1" size="1">
+                  <input id="input-2" class="number-input" type="tel" maxlength="1" size="1">
+                  <input id="input-3" class="number-input" type="tel" maxlength="1" size="1">
+                  <input id="input-4" class="number-input" type="tel" maxlength="1" size="1">
+                  <input id="input-5" class="number-input" type="tel" maxlength="1" size="1">
+                  <input id="input-6" class="number-input" type="tel" maxlength="1" size="1">
+              </div>
+              <div id="notif" class="notif" style="display:none;">
+                Kami telah mengirim ulang kode verifikasi.
+              </div>
+              <div id="errorNotif" class="error-notif" style="display:none;">
+                
+              </div>
+              <div id="submitBtn" class="submit-btn-container inactive">
+                <div class="submit"> Selanjutnya </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-login">
+          <p id="messageResendCounter">Mohon tunggu
+            <span class="links" id="time">30</span>
+            <span class="links">detik</span> untuk kirim ulang
+          </p>
+          <div id="btnResendWA" class="btn-resend" style="display:none;">
+            <img alt="iconWhatsApp" class="icon" src="/packs/images/icons/ic_whatsapp_blue-b4abea447d7ecadfcf1162f0c7bbedba.svg"> Kirim ulang WhatsApp
+          </div>
+          <div id="btnResendSMS" class="btn-resend" style="display:none;">
+            <img alt="iconMail" class="icon" src="/packs/images/ic_email-1930ec3418d6e2de16d185cf9ea7686e.svg"> Kirim ulang SMS
+          </div>
+          <div id="changeRequestViaSMS" style="margin-top:12px;">
+            Tidak punya WhatsApp?<br>
+            <span class="links" style="margin-top:4px; font-size: 14px;">
+              <img alt="iconMail" class="icon" src="/packs/images/ic_email-1930ec3418d6e2de16d185cf9ea7686e.svg"> Ubah melalui SMS
+            </span>
+          </div>
+          <div id="changeRequestViaWA" style="margin-top:12px;">
+            Tidak mendapatkan kode?<br>
+            <span class="links" style="margin-top:4px; font-size: 14px;">
+              <img alt="iconWhatsApp" class="icon" src="/packs/images/icons/ic_whatsapp_blue-b4abea447d7ecadfcf1162f0c7bbedba.svg"> Ubah melalui WhatsApp
+            </span>
+          </div>
+          <p id="errorSmsDisable" class="error-sms-disable" style="display:none;">
+            Pengiriman SMS sedang tidak tersedia.<br>
+            Silakan kirim ulang OTP melalui WhatsApp.
+          </p>
+          <div id="redirectUrl" style="display:none;"></div>
+        </div>
+        <div class="modal-container-spinner" hidden="">
+          <div class="modal-spinner">
+            <img class="loader" src="/packs/images/spinner-alo-4c8ff72a883857622a490625a57f157d.gif">
+          </div>
+        </div>
+      </div>
+    </template>

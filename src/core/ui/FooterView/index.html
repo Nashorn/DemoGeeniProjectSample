@@ -1,0 +1,332 @@
+<template><style>.footer {
+  background-color: #3570d2;
+          margin: 0 auto;
+          margin-top: 80px;
+}
+
+.footer.clear-margin {
+  margin-top: 0;
+}
+
+.footer-inner {
+  padding-top: 36pt;
+}
+
+.footer a {
+  text-decoration: none;
+          color: #fff;
+          margin-right: 23px;
+          margin-bottom: 10px;
+}
+
+.container-footer {
+  width: 1080px;
+          margin: 0 auto;
+}
+
+.footer-top .footer-data-item {
+  display: inline-block;
+          width: 330px;
+          vertical-align: top;
+          font-size: 18px;
+          margin-bottom: 30px;
+}
+
+.footer-data-item h4 {
+  color: #fff;
+          font-size: 20px;
+          margin: 0;
+}
+
+.footer-data-item ul {
+  list-style-type: none;
+          padding: 0;
+}
+
+.footer-data-item li {
+  margin: 5px auto;
+}
+
+.footer-data-item li a {
+  position: relative;
+}
+
+.footer-data-item li a:before {
+  -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+          content: '';
+          width: 0%;
+          height: 1px;
+          background-color: #fff;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+}
+
+.footer-data-item li a:hover:before {
+  width: 100%;
+}
+
+.footer-data-title {
+  color: #fff !important;
+          font-size: 18px;
+          font-weight: bold;
+          display: block;
+}
+
+.footer-data-title.alo-group {
+  font-size: 16px;
+          margin: 38px 0 10px 0;
+}
+
+.social-media-link img {
+  width: 35px;
+          height: 35px;
+}
+
+.footer-row {
+  margin: 14px 0;
+          display: flex;
+          justify-content: space-between;
+}
+
+.footer-copyright {
+  border-top: solid 1px #fff;
+          display: flex;
+          justify-content: space-between;
+          color: #fff;
+}
+
+.socmedList {
+  max-width: 260px;
+}
+
+.alo-group-link {
+  margin-right: 20px;
+}
+
+.banner-footer {
+  padding: 24px 0 21px;
+          
+          background: #1c4b9a; 
+          background: -moz-linear-gradient(
+            left,
+            #1c4b9a 0%,
+            #6d97de 83%
+          ); 
+          background: -webkit-linear-gradient(
+            left,
+            #1c4b9a 0%,
+            #6d97de 83%
+          ); 
+          background: linear-gradient(189deg, #6d97de, #1c4b9a);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c4b9a', endColorstr='#6d97de',GradientType=1 ); 
+          box-shadow: 25px -26px 160px inset #1c4b9a;
+}
+
+.image_phone {
+  max-width: 237px;
+          height: auto;
+          position: absolute;
+          bottom: -20px;
+          left: 0;
+}
+
+.text-banner {
+  margin-left: 270px;
+          color: #fff;
+          margin-right: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-right: 34px;
+}
+
+.text-banner h3, .text-banner h4 {
+  margin: 0;
+          font-size: 26px;
+}
+
+.text-banner h4 {
+  font-weight: 100;
+}
+
+.flex-center {
+  display: flex;
+          position: relative;
+}
+
+.downloadApp {
+  width: 150px;
+}
+
+.downloadApp a {
+  display: block;
+          margin: 0 0 10px 0;
+}
+
+.downloadApp a:last-child {
+  margin: 0;
+}
+
+.alo-group span:first-child {
+  margin-right: 25px;
+}
+
+.logo-kemenkes {
+  display: flex;
+          justify-content: flex-end;
+          margin-top: -20px;
+}
+
+.logo-kemenkes img {
+  width: 160px;
+          height: 48px;
+}
+
+@media only screen and (max-width: 1340px) {
+.footer {
+  width: 1340px;
+}
+
+}
+
+.text-banner-3 {
+  font-size: 26px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 40px;
+          letter-spacing: 0px;
+          text-align: left;
+}
+
+.text-banner-4 {
+  font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 29px;
+          letter-spacing: 0px;
+          text-align: left;
+}
+
+</style>
+      
+
+      <div id="_footer" class="footer ">
+        
+          <div class="banner-footer">
+            <div class="container-footer flex-center">
+              <img class="image_phone" alt="Download App" src="/packs/images/new-home/phone-c35544e47bc0de0353c812ef38851a7f.png">
+              <div class="text-banner">
+                <div class="text-banner-3">Chat lebih dari 1.000 dokter di Aplikasi Alodokter!</div>
+                <div class="text-banner-4">Respons Cepat, Jawaban Akurat!</div>
+                
+                  <div class="logo-kemenkes">
+                    <img alt="dibina oleh Kemenkes" src="https://images.alodokter.com/dk0z4ums3/image/upload/f_auto,q_auto/v1730097699/setting/1730097698.png">
+                  </div>
+                <dom-if style="display: none;"><template is="dom-if"></template></dom-if>
+                         
+            </div>
+            <div class="downloadApp">
+              <a id="googleplay_btn" class="banner-dl" target="_blank" rel="noopener" href="https://alodokter.onelink.me/1997390319?pid=Web-Bottom-Banner-Android&amp;is_retargeting=true&amp;af_dp=alodokter%3A%2F%2F&amp;af_web_dp=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.alodokter.android">
+                <img alt="Google Play" width="145px" data-store-name="Playstore" src="/packs/images/new-home/googleplay-d2ef5cf6daeaa576c7a2dab745e23085.png">
+              </a>
+              <a id="appstore_btn" class="banner-dl" target="_blank" rel="noopener" href="https://alodokter.onelink.me/1997390319?pid=Web-Bottom-Banner-IOS&amp;is_retargeting=true&amp;af_dp=alodokter%3A%2F%2F&amp;af_web_dp=https%3A%2F%2Fapps.apple.com%2Fid%2Fapp%2Fid1405482962">
+                <img alt="App Store" width="146px" data-store-name="Appstore" src="/packs/images/new-home/appstore-f2cdfeb59a9a1d6ab5e4d6cbf77b0e03.png">
+              </a>
+            </div>
+         </div>
+      </div>
+      <dom-if style="display: none;"><template is="dom-if"></template></dom-if>
+        <div class="container-footer">
+          <div class="footer-inner">
+            <div class="footer-top">
+              <div class="footer-data-item about-us">
+                <h4>Alodokter</h4>
+                <ul>
+                  
+                    <li><a href="/about">Tentang Kami</a></li>
+                  <dom-if style="display: none;"><template is="dom-if"></template></dom-if>
+                  
+                    <li>
+                      <a href="https://www.kalibrr.id/c/alodokter/jobs">Karier</a>
+                    </li>
+                  <dom-if style="display: none;"><template is="dom-if"></template></dom-if>
+                  
+                    <li><a href="/hubungi-kami">Hubungi Kami</a></li>
+                  <dom-if style="display: none;"><template is="dom-if"></template></dom-if>
+                  
+                    <li><a href="/editorial">Tim Editorial</a></li>
+                  <dom-if style="display: none;"><template is="dom-if"></template></dom-if>
+                  
+                    <li>
+                      <a href="/alochat-unlimited">Langganan</a>
+                    </li>
+                  <dom-if style="display: none;"><template is="dom-if"></template></dom-if>
+                  
+                    <li>
+                      <a href="https://www.aloproteksi.com/">Aloproteksi - Asuransi Kesehatan Karyawan</a>
+                    </li>
+                  <dom-if style="display: none;"><template is="dom-if"></template></dom-if>
+                </ul>
+              </div>
+              <div class="footer-data-item contact-us">
+                <h4>Lainnya</h4>
+                <ul>
+                  <li>
+                    <a href="/syarat-dan-ketentuan">Syarat &amp; Ketentuan</a>
+                  </li>
+                  <li><a href="/privasi">Privasi</a></li>
+                  <li><a href="/advertise">Iklan</a></li>
+                  <li><a href="/join-doctor">Gabung di Tim Dokter</a></li>
+                  <li>
+                    <a href="https://program.alodokter.com/hospital-partnership/">Daftarkan Rumah Sakit Anda</a>
+                  </li>
+                  <dom-if style="display: none;"><template is="dom-if"></template></dom-if>
+                </ul>
+              </div>
+              <div class="footer-data-item social-media">
+                <h4>Media Sosial</h4>
+                <div class="footer-row socmedList">
+                  
+                      <a rel="noopener" class="social-media-link" title="Facebook Alodokter" target="_blank" href="https://www.facebook.com/alodokter">
+                        <img alt="Facebook Alodokter" src="/packs/images/new-home/facebook-b37e5302baf95e1f4243d9c45ed14cd1.svg">
+                      </a>
+                    
+                      <a rel="noopener" class="social-media-link" title="Twitter Alodokter" target="_blank" href="https://www.twitter.com/alodokter">
+                        <img alt="Twitter Alodokter" src="/packs/images/new-home/twitter-a9c18da6c7b480283f374f8f1af25279.svg">
+                      </a>
+                    
+                      <a rel="noopener" class="social-media-link" title="Linkedin Alodokter" target="_blank" href="https://www.linkedin.com/company/alodokter">
+                        <img alt="Linkedin Alodokter" src="/packs/images/new-home/linkedin-171e311fa0505065759e6f4f925461b1.svg">
+                      </a>
+                    
+                      <a rel="noopener" class="social-media-link" title="Instagram Alodokter" target="_blank" href="https://www.instagram.com/alodokter_id">
+                        <img alt="Instagram Alodokter" src="/packs/images/new-home/instagram-71401e8d0ad454bcb377c3fba4d6ee22.svg">
+                      </a>
+                    
+                      <a rel="noopener" class="social-media-link" title="Youtube Alodokter" target="_blank" href="https://www.youtube.com/channel/UCVlQXBPDCbz5YES_gBpC1rg">
+                        <img alt="Youtube Alodokter" src="/packs/images/new-home/youtube-ffafb3b70da590918ac2dd3bddbf6f06.svg">
+                      </a>
+                    <dom-repeat as="item" style="display: none;">
+                    <template></template>
+                  </dom-repeat>
+                </div>
+                <p class="footer-data-title alo-group">Bagian dari Alodokter</p>
+                <div class="alo-group">
+                  <span>
+                    <a href="https://www.alomedika.com" rel="noopener" target="_blank" class="alo-group-link">alomedika.com</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <p>Hak Cipta © 2026 Alodokter</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>

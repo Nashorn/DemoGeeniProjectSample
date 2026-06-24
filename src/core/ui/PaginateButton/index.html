@@ -1,0 +1,53 @@
+<template><style>.button {
+  margin-top:16px;
+}
+
+.button.link-button {
+  display: block;
+        width: 160px;
+        height: 44px;
+        line-height: 44px;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 600;
+        margin: 24px 0 0;
+        border: 0;
+        border-radius: 5px;
+        text-align: left;
+        text-decoration: none;
+        background-color: #3570d2;
+}
+
+.button.link-button.page-prev {
+  float: left;
+        background-position: top 15.5px left 24px;
+        background-repeat: no-repeat;
+        text-indent: 46px;
+}
+
+.button.link-button.page-next {
+  float: right;
+        background-position: top 15.5px right 26px;
+        background-repeat: no-repeat;
+        text-indent: 27px;
+}
+
+.button.link-button.page-prev.disabled {
+  opacity: 0.5;
+}
+
+</style>
+      
+
+      <!-- BASEURL PREV PAGE -->
+      <dom-if style="display: none;"><template is="dom-if"></template></dom-if>
+
+      <!-- NORMAL PREV PAGE -->
+      <dom-if style="display: none;"><template is="dom-if"></template></dom-if>
+
+      
+      <a rel="next" class="button link-button page-next" href="/page/2" style="background-image: url(&quot;/packs/images/new-home/goupsig-503bd0b785ff7e7dfc3e83baa4f8048f.svg&quot;);">
+        Selanjutnya
+      </a>
+      <dom-if style="display: none;"><template is="dom-if"></template></dom-if>
+    </template>
