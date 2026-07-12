@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-12T20:34:09.566Z",
+  "generatedAt": "2026-07-12T21:47:51.359Z",
   "source": {
     "snapshots": "/resources/data/snapshots.json",
     "triggers": "/resources/data/triggers.json"
@@ -217,8 +217,32 @@
           "targetSnapshotId": null,
           "hasNavigationAction": false,
           "missingDefinition": false
+        },
+        {
+          "id": "trigger-recording-1783888467302-clip-1",
+          "label": "Clip1",
+          "description": "whatsapp.com — Recording 1",
+          "kind": "trigger",
+          "rect": null,
+          "actionType": null,
+          "targetSnapshotId": null,
+          "hasNavigationAction": false,
+          "missingDefinition": false
         }
       ]
+    },
+    {
+      "id": "4d838cd4-660e-4a9a-ba33-b9db943c1098",
+      "snapshotId": "4d838cd4-660e-4a9a-ba33-b9db943c1098",
+      "label": "Google",
+      "url": "https://www.google.com/?zx=1783892854682",
+      "namespace": "snapshots.Google",
+      "kind": "HTML",
+      "scope": "screen",
+      "filePath": "/src/snapshots/Google/index8.html",
+      "imgPath": null,
+      "created": "2026-07-12T21:47:51.357Z",
+      "triggers": []
     }
   ],
   "edges": [],

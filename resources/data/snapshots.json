@@ -219,6 +219,27 @@
         "trigger-f6367e57-25ae-40ee-b6ac-389dfe735fb4",
         "trigger-recording-1783888467302-clip-1"
       ]
+    },
+    {
+      "id": "4d838cd4-660e-4a9a-ba33-b9db943c1098",
+      "url": "https://www.google.com/?zx=1783892854682",
+      "namespace": "snapshots.Google",
+      "kind": "HTML",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "filePath": "/src/snapshots/Google/index8.html",
+      "imgPath": "",
+      "meta": {
+        "label": "Google",
+        "created": "2026-07-12T21:47:51.357Z",
+        "tags": []
+      },
+      "triggers": []
     }
   ]
 }
