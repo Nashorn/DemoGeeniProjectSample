@@ -1,0 +1,16 @@
+#query-tests #query-summary { margin-bottom: 12px; padding: 10px 12px; border-radius: 7px; background: rgb(238, 241, 247); font-weight: 700; }
+#query-tests #query-summary.running { color: rgb(59, 111, 240); }
+#query-tests #query-summary.passed { color: rgb(46, 158, 91); background: rgb(229, 246, 236); }
+#query-tests #query-summary.failed { color: rgb(180, 35, 24); background: rgb(254, 228, 226); }
+#query-results { display: grid; gap: 5px; margin: 0px; padding: 0px; list-style: none; }
+#query-results li { display: grid; grid-template-columns: 44px 1fr auto; gap: 10px; align-items: baseline; padding: 7px 9px; border: 1px solid rgb(227, 231, 239); border-radius: 6px; }
+#query-results b { font-size: 10px; letter-spacing: 0.06em; }
+#query-results .pass b { color: rgb(46, 158, 91); }
+#query-results .fail b, #query-results .fail em { color: rgb(180, 35, 24); }
+#query-results span > strong { display: block; color: rgb(28, 35, 51); font-weight: 700; }
+#query-results small { color: rgb(107, 116, 135); }
+#query-results code { display: block; margin-top: 2px; color: rgb(82, 96, 120); font: 11px / 1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; overflow-wrap: anywhere; }
+#query-results mark { border-radius: 3px; padding: 0px 3px; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-language-override: inherit; font-weight: 800; }
+#query-results .shadow-operator { color: rgb(105, 65, 198); background: rgb(244, 235, 255); }
+#query-results .document-operator { color: rgb(2, 106, 162); background: rgb(224, 242, 254); }
+#query-results em { grid-column: 2 / -1; font-size: 12px; font-style: normal; }

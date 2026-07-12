@@ -1,12 +1,207 @@
 {
   "triggers": [
     {
-      "id": "trigger-recording-1782334573823-clip-1",
-      "label": "Clip1",
-      "description": "adp.com — Recording 1",
+      "id": "trigger-b50cea05-18a9-48fe-8a40-3c8489b3ddd7",
+      "label": "Untitled Trigger",
+      "description": "",
       "isGlobal": false,
       "isPseudo": false,
-      "selector": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > a",
+      "selector": "html > body > div#ph-body > div#ADP_c0e993b4249843f286aafc3761b93da3 > section > div:nth-of-type(1) > div:nth-of-type(1) > h1",
+      "rect": {
+        "x": 207.5,
+        "y": 156,
+        "width": 1240,
+        "height": 50
+      },
+      "condition": null,
+      "binding": null,
+      "style": {
+        "overlayColor": "rgba(0,0,0,0.1)",
+        "border": "1px solid red",
+        "align": "center",
+        "z": 10,
+        "highlightable": true,
+        "highlightState": "off",
+        "highlightStyle": "trigger-highlight",
+        "pulsate": false
+      },
+      "tracking": true,
+      "action": null,
+      "meta": {
+        "status": "draft",
+        "createdBy": "demogeeni",
+        "createdAt": "2026-07-12T16:18:08.807Z",
+        "sourceUrl": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Adp/index.html",
+        "snapshotContext": {
+          "snapshotId": "31fd5102-f600-45bb-85fe-bf75ab202573",
+          "namespace": "snapshots.Adp",
+          "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Adp/index.html"
+        }
+      }
+    },
+    {
+      "id": "trigger-a4e3d565-0fe4-4336-b8cd-96742d896c48",
+      "label": "Untitled Trigger",
+      "description": "",
+      "isGlobal": false,
+      "isPseudo": false,
+      "selector": "html > body > div#ph-body > div#ADP_c0e993b4249843f286aafc3761b93da3 > section > div:nth-of-type(1) > div:nth-of-type(2) > div > div:nth-of-type(1) > input",
+      "rect": {
+        "x": 489.11,
+        "y": 306,
+        "width": 197.4,
+        "height": 60
+      },
+      "condition": null,
+      "binding": null,
+      "style": {
+        "overlayColor": "rgba(0,0,0,0.1)",
+        "border": "1px solid red",
+        "align": "center",
+        "z": 10,
+        "highlightable": true,
+        "highlightState": "off",
+        "highlightStyle": "trigger-highlight",
+        "pulsate": false
+      },
+      "tracking": true,
+      "action": null,
+      "meta": {
+        "status": "draft",
+        "createdBy": "demogeeni",
+        "createdAt": "2026-07-12T16:18:19.245Z",
+        "sourceUrl": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Adp/index.html",
+        "snapshotContext": {
+          "snapshotId": "31fd5102-f600-45bb-85fe-bf75ab202573",
+          "namespace": "snapshots.Adp",
+          "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Adp/index.html"
+        }
+      }
+    },
+    {
+      "id": "trigger-c339632f-3bd9-4857-8b68-af83616129ea",
+      "label": "Untitled Trigger",
+      "description": "",
+      "isGlobal": false,
+      "isPseudo": false,
+      "selector": "html > body > div:nth-of-type(2) > div:nth-of-type(6) > form > div:nth-of-type(1) > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > textarea#APjFqb",
+      "rect": {
+        "x": 531.5,
+        "y": 179,
+        "width": 446.86,
+        "height": 50
+      },
+      "condition": null,
+      "binding": null,
+      "style": {
+        "overlayColor": "rgba(0,0,0,0.1)",
+        "border": "1px solid red",
+        "align": "center",
+        "z": 10,
+        "highlightable": true,
+        "highlightState": "off",
+        "highlightStyle": "trigger-highlight",
+        "pulsate": false
+      },
+      "tracking": true,
+      "action": null,
+      "meta": {
+        "status": "draft",
+        "createdBy": "demogeeni",
+        "createdAt": "2026-07-12T20:24:22.226Z",
+        "sourceUrl": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Google/index7.html",
+        "snapshotContext": {
+          "snapshotId": "27830235-60f2-4516-b94b-6143d3322a49",
+          "namespace": "snapshots.Google",
+          "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Google/index7.html"
+        }
+      }
+    },
+    {
+      "id": "trigger-ee9af748-7084-47fe-ba68-a377ed7fd828",
+      "label": "Untitled Trigger",
+      "description": "",
+      "isGlobal": false,
+      "isPseudo": false,
+      "selector": "html > body > div > main > section#support-panel > div:nth-of-type(2) > support-widget >>> div > chat-panel >>> div > chat-frame >>> iframe#chat ::document html > body > main#thread > div:nth-of-type(3)",
+      "rect": {
+        "x": 14,
+        "y": 3418.53,
+        "width": 313.55,
+        "height": 53.69
+      },
+      "condition": null,
+      "binding": null,
+      "style": {
+        "overlayColor": "rgba(0,0,0,0.1)",
+        "border": "1px solid red",
+        "align": "center",
+        "z": 10,
+        "highlightable": true,
+        "highlightState": "off",
+        "highlightStyle": "trigger-highlight",
+        "pulsate": false
+      },
+      "tracking": true,
+      "action": null,
+      "meta": {
+        "status": "draft",
+        "createdBy": "demogeeni",
+        "createdAt": "2026-07-12T20:27:29.288Z",
+        "sourceUrl": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/TestHarness/index8.html",
+        "snapshotContext": {
+          "snapshotId": "14540af7-24cd-4c32-96ce-3bf6aee805c3",
+          "namespace": "snapshots.TestHarness",
+          "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/TestHarness/index8.html"
+        }
+      }
+    },
+    {
+      "id": "trigger-f6367e57-25ae-40ee-b6ac-389dfe735fb4",
+      "label": "Untitled Trigger",
+      "description": "",
+      "isGlobal": false,
+      "isPseudo": false,
+      "selector": "html#facebook > body#top-of-page > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > header#u_0_1_ot > div > nav > ul > li:nth-of-type(2) > a > span > span > span",
+      "rect": {
+        "x": 566.63,
+        "y": 29.5,
+        "width": 53.16,
+        "height": 20.5
+      },
+      "condition": null,
+      "binding": null,
+      "style": {
+        "overlayColor": "rgba(0,0,0,0.1)",
+        "border": "1px solid red",
+        "align": "center",
+        "z": 10,
+        "highlightable": true,
+        "highlightState": "off",
+        "highlightStyle": "trigger-highlight",
+        "pulsate": false
+      },
+      "tracking": true,
+      "action": null,
+      "meta": {
+        "status": "draft",
+        "createdBy": "demogeeni",
+        "createdAt": "2026-07-12T20:34:09.562Z",
+        "sourceUrl": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/WhatsApp/index.html",
+        "snapshotContext": {
+          "snapshotId": "0fe97416-8dbe-4a0b-803f-9689cc19ef41",
+          "namespace": "snapshots.WhatsApp",
+          "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/WhatsApp/index.html"
+        }
+      }
+    },
+    {
+      "id": "trigger-recording-1783888467302-clip-1",
+      "label": "Clip1",
+      "description": "whatsapp.com — Recording 1",
+      "isGlobal": false,
+      "isPseudo": false,
+      "selector": "body#top-of-page > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > header#u_0_1_ot > div > nav > ul > li:nth-of-type(1) > div > button#u_0_9_tt > span > span",
       "rect": null,
       "condition": null,
       "binding": null,
@@ -24,114 +219,24 @@
       "action": {
         "class": "PlayClipAction",
         "config": {
-          "recordingId": "recording-1782334573823",
+          "recordingId": "recording-1783888467302",
           "clipId": "clip-1"
         }
       },
       "meta": {
         "status": "draft",
         "createdBy": "dom-recorder",
-        "createdAt": "2026-06-24T20:56:25.443Z",
-        "sourceUrl": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Adp/index.html",
+        "createdAt": "2026-07-12T20:34:43.079Z",
+        "sourceUrl": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/WhatsApp/index.html",
         "recording": {
-          "recordingId": "recording-1782334573823",
+          "recordingId": "recording-1783888467302",
           "clipId": "clip-1",
           "event": "click"
         },
         "snapshotContext": {
-          "snapshotId": "d2c568e9-0801-466b-b9ce-ed480ac87dd6",
-          "namespace": "snapshots.Adp",
-          "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Adp/index.html"
-        }
-      }
-    },
-    {
-      "id": "trigger-recording-1782334573823-clip-2",
-      "label": "Clip2",
-      "description": "adp.com — Recording 1",
-      "isGlobal": false,
-      "isPseudo": false,
-      "selector": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > div > ul > li:nth-of-type(3) > a",
-      "rect": null,
-      "condition": null,
-      "binding": null,
-      "style": {
-        "overlayColor": "rgba(0,0,0,0.1)",
-        "border": "1px solid red",
-        "align": "center",
-        "z": 10,
-        "highlightable": true,
-        "highlightState": "off",
-        "highlightStyle": "trigger-highlight",
-        "pulsate": false
-      },
-      "tracking": true,
-      "action": {
-        "class": "PlayClipAction",
-        "config": {
-          "recordingId": "recording-1782334573823",
-          "clipId": "clip-2"
-        }
-      },
-      "meta": {
-        "status": "draft",
-        "createdBy": "dom-recorder",
-        "createdAt": "2026-06-24T20:56:25.443Z",
-        "sourceUrl": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Adp/index.html",
-        "recording": {
-          "recordingId": "recording-1782334573823",
-          "clipId": "clip-2",
-          "event": "click"
-        },
-        "snapshotContext": {
-          "snapshotId": "d2c568e9-0801-466b-b9ce-ed480ac87dd6",
-          "namespace": "snapshots.Adp",
-          "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Adp/index.html"
-        }
-      }
-    },
-    {
-      "id": "trigger-recording-1782334573823-clip-3",
-      "label": "Clip3",
-      "description": "adp.com — Recording 1",
-      "isGlobal": false,
-      "isPseudo": false,
-      "selector": "body > header > div > div:nth-of-type(1) > div > div > nav > ul > li:nth-of-type(2) > div > ul > li:nth-of-type(4) > a",
-      "rect": null,
-      "condition": null,
-      "binding": null,
-      "style": {
-        "overlayColor": "rgba(0,0,0,0.1)",
-        "border": "1px solid red",
-        "align": "center",
-        "z": 10,
-        "highlightable": true,
-        "highlightState": "off",
-        "highlightStyle": "trigger-highlight",
-        "pulsate": false
-      },
-      "tracking": true,
-      "action": {
-        "class": "PlayClipAction",
-        "config": {
-          "recordingId": "recording-1782334573823",
-          "clipId": "clip-3"
-        }
-      },
-      "meta": {
-        "status": "draft",
-        "createdBy": "dom-recorder",
-        "createdAt": "2026-06-24T20:56:25.443Z",
-        "sourceUrl": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Adp/index.html",
-        "recording": {
-          "recordingId": "recording-1782334573823",
-          "clipId": "clip-3",
-          "event": "click"
-        },
-        "snapshotContext": {
-          "snapshotId": "d2c568e9-0801-466b-b9ce-ed480ac87dd6",
-          "namespace": "snapshots.Adp",
-          "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/Adp/index.html"
+          "snapshotId": "0fe97416-8dbe-4a0b-803f-9689cc19ef41",
+          "namespace": "snapshots.WhatsApp",
+          "url": "file:///Users/jasonsmith/Development/DemoSample/src/snapshots/WhatsApp/index.html"
         }
       }
     }

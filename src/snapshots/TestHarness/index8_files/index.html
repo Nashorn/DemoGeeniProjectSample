@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><base href="../">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Acme Metrics — Dashboard (iframe selector harness)</title>
+<script charset="utf-8" data-kernel="" data-rootpath="../../" data-namespace="ui.screens.IframeSelectorHarness" data-src-path="/src/" data-controller="index.js"></script>
+<style>
+    :root {
+        --bg: #f4f6fa;
+        --panel: #ffffff;
+        --ink: #1c2333;
+        --muted: #6b7487;
+        --accent: #3b6ff0;
+        --accent-ink: #ffffff;
+        --line: #e3e7ef;
+        --ok: #2e9e5b;
+        --warn: #d98324;
+    }
+    * { box-sizing: border-box; }
+    body {
+        margin: 0; background: var(--bg); color: var(--ink);
+        font: 14px/1.5 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    /* ---------- header ---------- */
+    header.app-header {
+        display: flex; align-items: center; gap: 24px;
+        background: #101828; color: #fff; padding: 0 20px; height: 56px;
+        position: sticky; top: 0; z-index: 100;
+    }
+    .brand { font-weight: 700; letter-spacing: .3px; }
+    .brand em { color: #7ea2ff; font-style: normal; }
+    nav.top-nav { display: flex; gap: 4px; flex: 1; }
+    nav.top-nav a {
+        color: #c6cbd8; text-decoration: none; padding: 6px 12px; border-radius: 6px;
+    }
+    nav.top-nav a.active, nav.top-nav a:hover { background: #1e2a44; color: #fff; }
+    .user-menu { position: relative; }
+    .user-menu button.avatar {
+        width: 34px; height: 34px; border-radius: 50%; border: 2px solid #3a4a6b;
+        background: #27406e; color: #fff; font-weight: 600; cursor: pointer;
+    }
+    .user-menu .menu {
+        display: none; position: absolute; right: 0; top: 42px; min-width: 180px;
+        background: var(--panel); color: var(--ink); border: 1px solid var(--line);
+        border-radius: 8px; box-shadow: 0 8px 24px rgba(16,24,40,.15); padding: 6px;
+    }
+    .user-menu .menu.open { display: block; }
+    .user-menu .menu a {
+        display: block; padding: 8px 10px; border-radius: 6px; color: var(--ink); text-decoration: none;
+    }
+    .user-menu .menu a:hover { background: #eef2fb; }
+
+    /* ---------- layout ---------- */
+    .shell { display: flex; min-height: calc(100vh - 56px); }
+    aside.sidebar {
+        width: 210px; background: var(--panel); border-right: 1px solid var(--line);
+        padding: 16px 10px;
+    }
+    aside.sidebar h3 {
+        font-size: 11px; text-transform: uppercase; letter-spacing: .8px;
+        color: var(--muted); margin: 14px 8px 6px;
+    }
+    aside.sidebar a {
+        display: block; padding: 7px 10px; border-radius: 6px;
+        color: var(--ink); text-decoration: none;
+    }
+    aside.sidebar a.active { background: #e9effc; color: var(--accent); font-weight: 600; }
+    aside.sidebar a:hover { background: #f0f3f9; }
+    main.content { flex: 1; padding: 22px; max-width: 1200px; }
+
+    h1.page-title { font-size: 20px; margin: 0 0 4px; }
+    p.page-sub { margin: 0 0 20px; color: var(--muted); }
+
+    /* ---------- cards ---------- */
+    .stat-row { display: flex; gap: 14px; margin-bottom: 22px; flex-wrap: wrap; }
+    .stat-card {
+        flex: 1; min-width: 160px; background: var(--panel); border: 1px solid var(--line);
+        border-radius: 10px; padding: 14px 16px;
+    }
+    .stat-card .label { color: var(--muted); font-size: 12px; }
+    .stat-card .value { font-size: 24px; font-weight: 700; margin-top: 2px; }
+    .stat-card .delta { font-size: 12px; }
+    .delta.up { color: var(--ok); }
+    .delta.down { color: #d0453e; }
+
+    section.panel {
+        background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+        margin-bottom: 22px;
+    }
+    section.panel > .panel-head {
+        display: flex; align-items: center; justify-content: space-between;
+        padding: 12px 16px; border-bottom: 1px solid var(--line);
+    }
+    section.panel > .panel-head h2 { font-size: 15px; margin: 0; }
+    section.panel > .panel-body { padding: 16px; }
+    .hint { color: var(--muted); font-size: 12px; }
+
+    button.btn {
+        background: var(--accent); color: var(--accent-ink); border: 0;
+        padding: 7px 14px; border-radius: 7px; cursor: pointer; font-weight: 600;
+    }
+    button.btn.secondary { background: #eef1f7; color: var(--ink); }
+
+    table.orders { width: 100%; border-collapse: collapse; }
+    table.orders th, table.orders td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+    table.orders th { color: var(--muted); font-weight: 600; font-size: 12px; }
+    .pill { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+    .pill.paid { background: #e5f6ec; color: var(--ok); }
+    .pill.pending { background: #fdf0e0; color: var(--warn); }
+
+    iframe.embed {
+        display: block; width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff;
+    }
+    #editor { height: 340px; }
+    #ad-banner { height: 90px; }
+    .xorigin-row { display: flex; gap: 14px; }
+    .xorigin-row > div { flex: 1; }
+    #office-map { height: 220px; }
+    #status-page { height: 220px; }
+
+    .team-row { display: flex; gap: 14px; flex-wrap: wrap; }
+
+    /* ---------- modal ---------- */
+    dialog#invite-modal {
+        border: 0; border-radius: 12px; padding: 0; width: 380px;
+        box-shadow: 0 24px 60px rgba(16,24,40,.3);
+    }
+    dialog#invite-modal::backdrop { background: rgba(16,24,40,.45); }
+    dialog#invite-modal .modal-head { padding: 16px 18px 0; }
+    dialog#invite-modal .modal-head h3 { margin: 0; }
+    dialog#invite-modal form { padding: 14px 18px 18px; display: flex; flex-direction: column; gap: 10px; }
+    dialog#invite-modal input, dialog#invite-modal select {
+        padding: 8px 10px; border: 1px solid var(--line); border-radius: 7px; font: inherit;
+    }
+    dialog#invite-modal .modal-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 4px; }
+
+    footer.app-footer {
+        padding: 18px 22px; color: var(--muted); font-size: 12px;
+        border-top: 1px solid var(--line);
+    }
+
+    /* ---------- harness legend ---------- */
+    section#harness-legend .case { margin-bottom: 10px; }
+    section#harness-legend code {
+        display: block; background: #101828; color: #9fd0ff; padding: 6px 10px;
+        border-radius: 6px; font: 12px/1.6 ui-monospace, Menlo, Consolas, monospace;
+        overflow-x: auto; white-space: nowrap;
+    }
+    section#harness-legend .case b { font-size: 13px; }
+</style>
+</head>
+<body namespace="ui.screens.IframeSelectorHarness">
+
+<header class="app-header">
+    <div class="brand">Acme<em>Metrics</em></div>
+    <nav class="top-nav">
+        <a href="#" class="active">Dashboard</a>
+        <a href="#">Reports</a>
+        <a href="#">Customers</a>
+        <a href="#">Settings</a>
+    </nav>
+    <div class="user-menu">
+        <button class="avatar" id="user-menu-btn" title="Account">JS</button>
+        <div class="menu" id="user-menu-dropdown">
+            <a href="#" id="menu-profile">Profile</a>
+            <a href="#" id="menu-billing">Billing</a>
+            <a href="#" id="menu-signout">Sign out</a>
+        </div>
+    </div>
+</header>
+
+<div class="shell">
+    <aside class="sidebar">
+        <h3>Analytics</h3>
+        <a href="#" class="active" id="nav-overview">Overview</a>
+        <a href="#" id="nav-funnels">Funnels</a>
+        <a href="#" id="nav-retention">Retention</a>
+        <h3>Workspace</h3>
+        <a href="#" id="nav-team">Team</a>
+        <a href="#" id="nav-integrations">Integrations</a>
+    </aside>
+
+    <main class="content">
+        <h1 class="page-title">Overview</h1>
+        <p class="page-sub">Your workspace at a glance — last 30 days.</p>
+
+        <!-- plain-DOM stat cards -->
+        <div class="stat-row" id="stats">
+            <div class="stat-card">
+                <div class="label">Revenue</div>
+                <div class="value">$48,230</div>
+                <div class="delta up">▲ 12.4%</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Active users</div>
+                <div class="value">9,412</div>
+                <div class="delta up">▲ 3.1%</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Churn</div>
+                <div class="value">1.9%</div>
+                <div class="delta down">▼ 0.4%</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Open tickets</div>
+                <div class="value">37</div>
+                <div class="delta">—</div>
+            </div>
+        </div>
+
+        <!-- CASE: shadow DOM (>>>), incl. nested shadow root -->
+        <section class="panel" id="team-panel">
+            <div class="panel-head">
+                <h2>Team</h2>
+                <button class="btn" id="invite-btn">Invite member</button>
+            </div>
+            <div class="panel-body">
+                <div class="team-row">
+                    <user-card name="Dana Ito" role="Engineering" status="online"></user-card>
+                    <user-card name="Marcus Webb" role="Design" status="away"></user-card>
+                    <user-card name="Priya Nair" role="Product" status="online"></user-card>
+                </div>
+                <p class="hint">Cards are shadow-DOM components; the status badge is a <em>nested</em> shadow root.</p>
+            </div>
+        </section>
+
+        <!-- CASE: iframe (::document), containing a shadow component (::document … >>>) and a nested iframe (::document … ::document) -->
+        <section class="panel" id="editor-panel">
+            <div class="panel-head">
+                <h2>Campaign editor</h2>
+                <span class="hint">embedded editor app (same-origin iframe)</span>
+            </div>
+            <div class="panel-body">
+                <iframe class="embed" id="editor" src="./index8_files/editor.html" title="Campaign editor"></iframe>
+            </div>
+        </section>
+
+        <!-- CASE: iframe inside a shadow root (>>> … ::document) -->
+        <section class="panel" id="report-panel">
+            <div class="panel-head">
+                <h2>Weekly report</h2>
+                <span class="hint">iframe hosted INSIDE a shadow root</span>
+            </div>
+            <div class="panel-body">
+                <embedded-report src="frames/report.html"></embedded-report>
+            </div>
+        </section>
+
+        <!-- plain-DOM table -->
+        <section class="panel" id="orders-panel">
+            <div class="panel-head">
+                <h2>Recent orders</h2>
+                <button class="btn secondary" id="export-orders">Export CSV</button>
+            </div>
+            <div class="panel-body">
+                <table class="orders">
+                    <thead>
+                        <tr><th>Order</th><th>Customer</th><th>Amount</th><th>Status</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>#10412</td><td>Northwind Ltd.</td><td>$1,250.00</td><td><span class="pill paid">Paid</span></td></tr>
+                        <tr><td>#10411</td><td>Initech</td><td>$420.00</td><td><span class="pill pending">Pending</span></td></tr>
+                        <tr><td>#10410</td><td>Globex Corp.</td><td>$3,780.00</td><td><span class="pill paid">Paid</span></td></tr>
+                        <tr><td>#10409</td><td>Stark Industries</td><td>$980.00</td><td><span class="pill paid">Paid</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- CASE: srcdoc iframe (::document on a document with no URL) -->
+        <section class="panel" id="promo-panel">
+            <div class="panel-head">
+                <h2>Partner promo</h2>
+                <span class="hint">srcdoc iframe — document has no URL</span>
+            </div>
+            <div class="panel-body">
+                <iframe class="embed" id="ad-banner" title="Partner promo" srcdoc="
+                    <body style='margin:0;font:13px -apple-system,sans-serif;display:flex;align-items:center;justify-content:space-between;padding:0 18px;height:90px;background:linear-gradient(90deg,#101828,#27406e);color:#fff'>
+                        <div>
+                            <strong id='promo-title'>CloudRelay Pro</strong><br>
+                            <span style='color:#b9c6e4'>Ship webhooks 4x faster. 30-day trial.</span>
+                        </div>
+                        <button id='promo-cta' style='background:#7ea2ff;border:0;color:#0c1526;font-weight:700;padding:8px 16px;border-radius:7px;cursor:pointer'>Start trial</button>
+                    </body>"></iframe>
+            </div>
+        </section>
+
+        <!-- CASE: iframe nested under THREE shadow roots (>>> >>> >>> … ::document) -->
+        <section class="panel" id="support-panel">
+            <div class="panel-head">
+                <h2>Support</h2>
+                <span class="hint">iframe nested inside 3 levels of shadow roots</span>
+            </div>
+            <div class="panel-body">
+                <support-widget></support-widget>
+            </div>
+        </section>
+
+        <!-- CASE: CROSS-ORIGIN iframes (third-party domains) — ::document must NOT cross -->
+        <section class="panel" id="xorigin-panel">
+            <div class="panel-head">
+                <h2>Office &amp; status</h2>
+                <span class="hint">cross-origin iframes (third-party domains) — boundary is NOT crossable. Note: google.com itself refuses framing (X-Frame-Options: SAMEORIGIN)</span>
+            </div>
+            <div class="panel-body">
+                <!-- Deterministic opaque-origin boundary for the automated suite. -->
+                <iframe id="opaque-frame" sandbox="" srcdoc="<body><p id='private-target'>Private</p></body>" hidden></iframe>
+                <div class="xorigin-row">
+                    <div>
+                        <p class="hint" style="margin-top:0">HQ location (openstreetmap.org)</p>
+                        <iframe class="embed" id="office-map" src="./index8_files/embed.html?bbox=-122.52%2C37.70%2C-122.35%2C37.83&layer=mapnik" title="Office location" loading="lazy"></iframe>
+                    </div>
+                    <div>
+                        <p class="hint" style="margin-top:0">Vendor status page (example.com)</p>
+                        <iframe class="embed" id="status-page" src="./index8_files/index.html" title="Vendor status" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- test matrix: expected breadcrumb / selector shapes -->
+        <section class="panel" id="harness-legend">
+            <div class="panel-head"><h2>Harness legend — expected selector shapes</h2></div>
+            <div class="panel-body">
+                <div class="case">
+                    <b>1 — plain DOM</b>
+                    <code>body &gt; div.shell &gt; main &gt; section#orders-panel &gt; div:nth-of-type(2) &gt; table &gt; tbody &gt; tr:nth-of-type(2) &gt; td:nth-of-type(4) &gt; span</code>
+                </div>
+                <div class="case">
+                    <b>2 — shadow root (&gt;&gt;&gt;)</b>
+                    <code>body &gt; div.shell &gt; main &gt; section#team-panel … &gt; user-card:nth-of-type(1) &gt;&gt;&gt; button#msg-btn</code>
+                </div>
+                <div class="case">
+                    <b>3 — nested shadow (&gt;&gt;&gt; &gt;&gt;&gt;)</b>
+                    <code>… &gt; user-card:nth-of-type(2) &gt;&gt;&gt; status-badge &gt;&gt;&gt; span#dot</code>
+                </div>
+                <div class="case">
+                    <b>4 — iframe (::document), component inside it (::document … &gt;&gt;&gt;) — the canonical example</b>
+                    <code>… &gt; section#editor-panel … &gt; iframe#editor ::document body &gt; main &gt; editor-toolbar &gt;&gt;&gt; button.save</code>
+                </div>
+                <div class="case">
+                    <b>5 — nested iframe (::document … ::document)</b>
+                    <code>… &gt; iframe#editor ::document body &gt; main &gt; section#preview-pane &gt; iframe#preview ::document body &gt; article &gt; h1#preview-title</code>
+                </div>
+                <div class="case">
+                    <b>6 — iframe inside shadow root (&gt;&gt;&gt; … ::document)</b>
+                    <code>… &gt; section#report-panel … &gt; embedded-report &gt;&gt;&gt; iframe#report ::document body &gt; section#kpis &gt; div:nth-of-type(1)</code>
+                </div>
+                <div class="case">
+                    <b>7 — srcdoc iframe (::document on a URL-less document)</b>
+                    <code>… &gt; section#promo-panel … &gt; iframe#ad-banner ::document body &gt; button#promo-cta</code>
+                </div>
+                <div class="case">
+                    <b>8 — CROSS-ORIGIN iframes (openstreetmap.org / example.com) — boundary must NOT cross</b>
+                    <code>… &gt; section#xorigin-panel … &gt; iframe#office-map   (deepest pickable node; no ::document — contentDocument is inaccessible)</code>
+                </div>
+                <div class="case">
+                    <b>9 — iframe under THREE shadow roots (&gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; … ::document)</b>
+                    <code>… &gt; section#support-panel … &gt; support-widget &gt;&gt;&gt; chat-panel &gt;&gt;&gt; chat-frame &gt;&gt;&gt; iframe#chat ::document html &gt; body &gt; form#composer &gt; button#send-btn</code>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<footer class="app-footer">
+    Acme Metrics · iframe/shadow selector test harness · Arc2D demos
+</footer>
+
+<!-- modal for recorder/interaction testing -->
+<dialog id="invite-modal">
+    <div class="modal-head"><h3>Invite a team member</h3></div>
+    <form method="dialog">
+        <input type="email" id="invite-email" placeholder="name@company.com" required>
+        <select id="invite-role">
+            <option value="viewer">Viewer</option>
+            <option value="editor">Editor</option>
+            <option value="admin">Admin</option>
+        </select>
+        <div class="modal-actions">
+            <button class="btn secondary" value="cancel" id="invite-cancel">Cancel</button>
+            <button class="btn" value="send" id="invite-send">Send invite</button>
+        </div>
+    </form>
+</dialog>
+
+<script></script>
+
+</body>
+</html>

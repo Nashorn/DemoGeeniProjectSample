@@ -1,14 +1,40 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-24T20:55:17.356Z",
+  "generatedAt": "2026-07-12T20:34:09.566Z",
   "source": {
     "snapshots": "/resources/data/snapshots.json",
     "triggers": "/resources/data/triggers.json"
   },
   "nodes": [
     {
-      "id": "d2c568e9-0801-466b-b9ce-ed480ac87dd6",
-      "snapshotId": "d2c568e9-0801-466b-b9ce-ed480ac87dd6",
+      "id": "16536e1a-7d08-4772-8409-785e21ce09a0",
+      "snapshotId": "16536e1a-7d08-4772-8409-785e21ce09a0",
+      "label": "Google",
+      "url": "https://www.google.com/?zx=1783872484605",
+      "namespace": "snapshots.Google",
+      "kind": "HTML",
+      "scope": "screen",
+      "filePath": "/src/snapshots/Google/index.html",
+      "imgPath": null,
+      "created": "2026-07-12T16:08:19.911Z",
+      "triggers": []
+    },
+    {
+      "id": "773d35e9-d642-48a1-b8ba-d9c8bd6c4efc",
+      "snapshotId": "773d35e9-d642-48a1-b8ba-d9c8bd6c4efc",
+      "label": "Google",
+      "url": "https://www.google.com/?zx=1783872515910",
+      "namespace": "snapshots.Google",
+      "kind": "HTML",
+      "scope": "screen",
+      "filePath": "/src/snapshots/Google/index2.html",
+      "imgPath": null,
+      "created": "2026-07-12T16:08:44.333Z",
+      "triggers": []
+    },
+    {
+      "id": "31fd5102-f600-45bb-85fe-bf75ab202573",
+      "snapshotId": "31fd5102-f600-45bb-85fe-bf75ab202573",
       "label": "Payroll, HR and Tax Services | ADP Official Site",
       "url": "https://www.adp.com/",
       "namespace": "snapshots.Adp",
@@ -16,8 +42,183 @@
       "scope": "screen",
       "filePath": "/src/snapshots/Adp/index.html",
       "imgPath": null,
-      "created": "2026-06-24T20:55:17.355Z",
+      "created": "2026-07-12T16:16:45.446Z",
+      "triggers": [
+        {
+          "id": "trigger-b50cea05-18a9-48fe-8a40-3c8489b3ddd7",
+          "label": "Untitled Trigger",
+          "description": "",
+          "kind": "trigger",
+          "rect": {
+            "x": 207.5,
+            "y": 156,
+            "width": 1240,
+            "height": 50
+          },
+          "actionType": null,
+          "targetSnapshotId": null,
+          "hasNavigationAction": false,
+          "missingDefinition": false
+        },
+        {
+          "id": "trigger-a4e3d565-0fe4-4336-b8cd-96742d896c48",
+          "label": "Untitled Trigger",
+          "description": "",
+          "kind": "trigger",
+          "rect": {
+            "x": 489.11,
+            "y": 306,
+            "width": 197.4,
+            "height": 60
+          },
+          "actionType": null,
+          "targetSnapshotId": null,
+          "hasNavigationAction": false,
+          "missingDefinition": false
+        }
+      ]
+    },
+    {
+      "id": "1310e45f-e972-425a-b8d8-cad24d62f8da",
+      "snapshotId": "1310e45f-e972-425a-b8d8-cad24d62f8da",
+      "label": "Google",
+      "url": "https://www.google.com/?zx=1783873930513",
+      "namespace": "snapshots.Google",
+      "kind": "HTML",
+      "scope": "screen",
+      "filePath": "/src/snapshots/Google/index3.html",
+      "imgPath": null,
+      "created": "2026-07-12T16:32:40.158Z",
       "triggers": []
+    },
+    {
+      "id": "f5230995-02f5-4fe0-a2fe-a2d7ada042a0",
+      "snapshotId": "f5230995-02f5-4fe0-a2fe-a2d7ada042a0",
+      "label": "Google",
+      "url": "https://www.google.com/?zx=1783874066185",
+      "namespace": "snapshots.Google",
+      "kind": "HTML",
+      "scope": "screen",
+      "filePath": "/src/snapshots/Google/index4.html",
+      "imgPath": null,
+      "created": "2026-07-12T16:35:01.078Z",
+      "triggers": []
+    },
+    {
+      "id": "c26cd714-37c6-421a-b119-1c2aade94d56",
+      "snapshotId": "c26cd714-37c6-421a-b119-1c2aade94d56",
+      "label": "Google",
+      "url": "https://www.google.com/?zx=1783883942656",
+      "namespace": "snapshots.Google",
+      "kind": "HTML",
+      "scope": "screen",
+      "filePath": "/src/snapshots/Google/index5.html",
+      "imgPath": null,
+      "created": "2026-07-12T19:23:45.719Z",
+      "triggers": []
+    },
+    {
+      "id": "d3d854f4-0047-47ff-aa17-133c2f30e06b",
+      "snapshotId": "d3d854f4-0047-47ff-aa17-133c2f30e06b",
+      "label": "Google",
+      "url": "https://www.google.com/?zx=1783884871607",
+      "namespace": "snapshots.Google",
+      "kind": "HTML",
+      "scope": "screen",
+      "filePath": "/src/snapshots/Google/index6.html",
+      "imgPath": null,
+      "created": "2026-07-12T19:35:09.124Z",
+      "triggers": []
+    },
+    {
+      "id": "27830235-60f2-4516-b94b-6143d3322a49",
+      "snapshotId": "27830235-60f2-4516-b94b-6143d3322a49",
+      "label": "Google",
+      "url": "https://www.google.com/?zx=1783887211515",
+      "namespace": "snapshots.Google",
+      "kind": "HTML",
+      "scope": "screen",
+      "filePath": "/src/snapshots/Google/index7.html",
+      "imgPath": null,
+      "created": "2026-07-12T20:13:44.798Z",
+      "triggers": [
+        {
+          "id": "trigger-c339632f-3bd9-4857-8b68-af83616129ea",
+          "label": "Untitled Trigger",
+          "description": "",
+          "kind": "trigger",
+          "rect": {
+            "x": 531.5,
+            "y": 179,
+            "width": 446.86,
+            "height": 50
+          },
+          "actionType": null,
+          "targetSnapshotId": null,
+          "hasNavigationAction": false,
+          "missingDefinition": false
+        }
+      ]
+    },
+    {
+      "id": "14540af7-24cd-4c32-96ce-3bf6aee805c3",
+      "snapshotId": "14540af7-24cd-4c32-96ce-3bf6aee805c3",
+      "label": "Acme Metrics — Dashboard (iframe selector harness)",
+      "url": "http://127.0.0.1:8080/demos/iframe-selector-harness/index.html#",
+      "namespace": "snapshots.TestHarness",
+      "kind": "HTML",
+      "scope": "screen",
+      "filePath": "/src/snapshots/TestHarness/index8.html",
+      "imgPath": null,
+      "created": "2026-07-12T20:27:01.293Z",
+      "triggers": [
+        {
+          "id": "trigger-ee9af748-7084-47fe-ba68-a377ed7fd828",
+          "label": "Untitled Trigger",
+          "description": "",
+          "kind": "trigger",
+          "rect": {
+            "x": 14,
+            "y": 3418.53,
+            "width": 313.55,
+            "height": 53.69
+          },
+          "actionType": null,
+          "targetSnapshotId": null,
+          "hasNavigationAction": false,
+          "missingDefinition": false
+        }
+      ]
+    },
+    {
+      "id": "0fe97416-8dbe-4a0b-803f-9689cc19ef41",
+      "snapshotId": "0fe97416-8dbe-4a0b-803f-9689cc19ef41",
+      "label": "WhatsApp | Secure and Reliable Free Private Messaging and Calling",
+      "url": "https://www.whatsapp.com/?zx=1783888369969",
+      "namespace": "snapshots.WhatsApp",
+      "kind": "HTML",
+      "scope": "screen",
+      "filePath": "/src/snapshots/WhatsApp/index.html",
+      "imgPath": null,
+      "created": "2026-07-12T20:33:26.386Z",
+      "triggers": [
+        {
+          "id": "trigger-f6367e57-25ae-40ee-b6ac-389dfe735fb4",
+          "label": "Untitled Trigger",
+          "description": "",
+          "kind": "trigger",
+          "rect": {
+            "x": 566.63,
+            "y": 29.5,
+            "width": 53.16,
+            "height": 20.5
+          },
+          "actionType": null,
+          "targetSnapshotId": null,
+          "hasNavigationAction": false,
+          "missingDefinition": false
+        }
+      ]
     }
   ],
   "edges": [],

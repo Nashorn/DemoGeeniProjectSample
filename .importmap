@@ -28,6 +28,9 @@
         "core.ui.SubNavbar": "../../../src/core/ui/SubNavbar/index.js",
         "core.ui.TopNavbarTransparentView": "../../../src/core/ui/TopNavbarTransparentView/index.js",
         "core.ui.TrendingNow": "../../../src/core/ui/TrendingNow/index.js",
-        "core.ui.UpdatePinContainer": "../../../src/core/ui/UpdatePinContainer/index.js"
+        "core.ui.UpdatePinContainer": "../../../src/core/ui/UpdatePinContainer/index.js",
+        "core.ui.EmbeddedReport": "../../../src/core/ui/EmbeddedReport/index.js",
+        "core.ui.StatusBadge": "../../../src/core/ui/StatusBadge/index.js",
+        "core.ui.UserCard": "../../../src/core/ui/UserCard/index.js"
     }
 }
