@@ -22,3 +22,4 @@ export { default as PngScreenRenderer } from './renderers/PngScreenRenderer.js';
 export { default as PngRegionRenderer } from './renderers/PngRegionRenderer.js';
 export { default as TriggerScreenRenderer } from './renderers/TriggerScreenRenderer.js';
 export { default as TriggerRegionRenderer } from './renderers/TriggerRegionRenderer.js';
+export { default as BaseComponent } from './BaseComponent.js';
