@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-12T21:47:51.359Z",
+  "generatedAt": "2026-07-12T23:37:29.471Z",
   "source": {
     "snapshots": "/resources/data/snapshots.json",
     "triggers": "/resources/data/triggers.json"
@@ -242,6 +242,19 @@
       "filePath": "/src/snapshots/Google/index8.html",
       "imgPath": null,
       "created": "2026-07-12T21:47:51.357Z",
+      "triggers": []
+    },
+    {
+      "id": "ee9e29e5-c04f-4e5f-8508-a5fe4186e506",
+      "snapshotId": "ee9e29e5-c04f-4e5f-8508-a5fe4186e506",
+      "label": "Payroll, HR and Tax Services | ADP Official Site",
+      "url": "https://www.adp.com/",
+      "namespace": "snapshots.Adp",
+      "kind": "HTML",
+      "scope": "screen",
+      "filePath": "/src/snapshots/Adp/index2.html",
+      "imgPath": null,
+      "created": "2026-07-12T23:37:29.470Z",
       "triggers": []
     }
   ],

@@ -240,6 +240,27 @@
         "tags": []
       },
       "triggers": []
+    },
+    {
+      "id": "ee9e29e5-c04f-4e5f-8508-a5fe4186e506",
+      "url": "https://www.adp.com/",
+      "namespace": "snapshots.Adp",
+      "kind": "HTML",
+      "scope": "screen",
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "filePath": "/src/snapshots/Adp/index2.html",
+      "imgPath": "",
+      "meta": {
+        "label": "Payroll, HR and Tax Services | ADP Official Site",
+        "created": "2026-07-12T23:37:29.470Z",
+        "tags": []
+      },
+      "triggers": []
     }
   ]
 }
