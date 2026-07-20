@@ -65,6 +65,9 @@ export default namespace `runtime` (
                 this.triggerBinder.bind(drawnTriggers);
             }
 
+            // capture native navigation at document level; only triggers pass through
+            this.clickGuard = new runtime.ClickGuard(document);
+
         }
 
         isSnapshotRasterized(snapshot) {
