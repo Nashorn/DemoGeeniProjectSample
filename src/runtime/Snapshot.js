@@ -7,6 +7,9 @@ export default namespace `runtime` (
 
             await super.onConnected();
             
+            // capture native navigation at document level; only triggers pass through
+            this.clickGuard = new runtime.ClickGuard(document);
+            
             // 
             this.triggerBinder = new runtime.TriggerBinder(this);
             this.snapshotRepository = await new runtime.SnapshotRepository;
@@ -65,8 +68,7 @@ export default namespace `runtime` (
                 this.triggerBinder.bind(drawnTriggers);
             }
 
-            // capture native navigation at document level; only triggers pass through
-            this.clickGuard = new runtime.ClickGuard(document);
+            
 
         }
 
