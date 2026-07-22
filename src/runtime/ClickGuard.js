@@ -37,7 +37,10 @@ export default class ClickGuard {
     this._docs = new Set();          // every document wired (top + same-origin frames)
     this._frameLoadHandlers = [];    // { frame, wire } so we can unbind on destroy
 
-    const authoring = () => window.idehost?.isAuthoringMode?.() === true;
+    // Resolve idehost from the TOP window so this same class works whether it's
+    // guarding the top document or running inside a (same-origin) frame — inside a
+    // frame window.idehost is undefined, but window.top.idehost is reachable.
+    const authoring = () => (window.top ?? window).idehost?.isAuthoringMode?.() === true;
     // Elements whose native activation navigates / acts — killed in BOTH modes.
     const NAV = 'a[href], button, input[type="submit"], input[type="button"], input[type="image"], [role="link"], [role="button"]';
 
@@ -99,7 +102,11 @@ export default class ClickGuard {
     doc.addEventListener('auxclick', this._onAux, true);
     doc.addEventListener('submit', this._onSubmit, true);
     doc.addEventListener('keydown', this._onKeydown, true);
-    this._wireFrames(doc);
+    // Iframe piercing is intentionally disabled here — frames now self-guard by
+    // importing + running this same class from their own <head> (injected by a
+    // post-capture filter), which sidesteps the runtime discovery/latency races.
+    // _wireFrames() is kept below for reference / possible fallback.
+    // this._wireFrames(doc);
   }
 
   _wireFrames(doc) {
