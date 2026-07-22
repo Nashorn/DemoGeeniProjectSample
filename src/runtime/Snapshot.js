@@ -7,9 +7,6 @@ export default namespace `runtime` (
 
             await super.onConnected();
 
-            var el =await this.find("html > body > div > main > section#xorigin-panel > div:nth-of-type(2) > div > div:nth-of-type(1) > iframe#office-map ::document > html > body");
-            alert(el);
-            
             // capture native navigation at document level; only triggers pass through
             this.clickGuard = new runtime.ClickGuard(document);
             
