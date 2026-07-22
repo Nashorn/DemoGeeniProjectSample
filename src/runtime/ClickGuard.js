@@ -15,11 +15,11 @@
 // (not `instanceof Element`) so it also holds across iframe realms.
 //
 // iframes: an iframe is a separate document — composedPath() does NOT cross the
-// frame boundary, so a top-document guard can't see clicks inside a frame. We
-// therefore attach the same guard into every SAME-ORIGIN frame document too
-// (recursively, and on each frame (re)load). Cross-origin frames are unreachable
-// from JS (same-origin policy); their links navigate within the frame, not the
-// top page, so the demo itself stays put.
+// frame boundary, so a top-document guard can't see clicks inside a frame.
+// Frames instead SELF-GUARD: every captured frame runs `import "runtime"`, and
+// runtime/index.js installs a ClickGuard on any non-top document. So an instance
+// of this class guards exactly the ONE document it's handed; the runtime-side
+// frame discovery below (_wireFrames) is disabled and kept only for reference.
 //
 // Two modes:
 //  - Navigation vectors (links, buttons, submits, aux-click, keyboard) are ALWAYS
@@ -34,7 +34,7 @@
 export default class ClickGuard {
   constructor(root = document) {
     this.root = root;
-    this._docs = new Set();          // every document wired (top + same-origin frames)
+    this._docs = new Set();          // every document wired
     this._frameLoadHandlers = [];    // { frame, wire } so we can unbind on destroy
 
     // Resolve idehost from the TOP window so this same class works whether it's
@@ -60,8 +60,12 @@ export default class ClickGuard {
     // Left click.
     this._onClick = (ev) => {
       if (pathMatches(ev, '[data-trigger-id]')) { ev.preventDefault(); return; }  // trigger → bubbles to TriggerBinder
-      // Navigation dies in both modes; every other click dies in play mode only.
-      if (pathMatches(ev, NAV) || !authoring()) {
+
+      if (authoring()) {
+        // Authoring: kill only navigation; let every other click reach the IDE's tools.
+        if (pathMatches(ev, NAV)) { ev.preventDefault(); ev.stopImmediatePropagation(); }
+      } else {
+        // Play: freeze everything that isn't a trigger.
         ev.preventDefault();
         ev.stopImmediatePropagation();
       }
@@ -98,6 +102,7 @@ export default class ClickGuard {
   _wireDoc(doc) {
     if (!doc || this._docs.has(doc)) return;
     this._docs.add(doc);
+    doc.documentElement.dataset.clickGuardAttached = "true";   // mark the guarded document
     doc.addEventListener('click', this._onClick, true);
     doc.addEventListener('auxclick', this._onAux, true);
     doc.addEventListener('submit', this._onSubmit, true);
