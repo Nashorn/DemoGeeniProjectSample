@@ -6,6 +6,9 @@ export default namespace `runtime` (
         async onConnected() {
 
             await super.onConnected();
+
+            var el =await this.find("html > body > div > main > section#xorigin-panel > div:nth-of-type(2) > div > div:nth-of-type(1) > iframe#office-map ::document > html > body");
+            alert(el);
             
             // capture native navigation at document level; only triggers pass through
             this.clickGuard = new runtime.ClickGuard(document);
@@ -100,9 +103,25 @@ export default namespace `runtime` (
 
         onRedirect(url, ev){
             console.log("Trigger redirected");
-            
-            var fullUrl = new URL(url, location.origin).href;
-            location.href = fullUrl;
+
+            location.href = this.resolveSnapshotUrl(url);
+        }
+
+        // Snapshot filePaths are stored root-absolute ("/src/snapshots/.../index.html").
+        // Resolving those against location.origin breaks under file:// (origin is
+        // just "file://" with no path, so "/src/..." lands at the filesystem root)
+        // and under any http server not mounted at the origin root. Resolve against
+        // the PROJECT ROOT instead — everything before the current page's own "/src/"
+        // segment — so redirects work under both file:// (IDE) and http (player).
+        resolveSnapshotUrl(url){
+            if (/^[a-z][a-z0-9+.-]*:/i.test(url)) {
+                return url;                          // already absolute (http:, file:, ...)
+            }
+            const here = location.href;
+            const marker = here.lastIndexOf('/src/');
+            const base = marker !== -1 ? here.slice(0, marker) : location.origin;
+            const path = url.startsWith('/') ? url : '/' + url;
+            return base + path;
         }
     }
 );
