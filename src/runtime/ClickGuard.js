@@ -43,6 +43,11 @@ export default class ClickGuard {
     const authoring = () => (window.top ?? window).idehost?.isAuthoringMode?.() === true;
     // Elements whose native activation navigates / acts — killed in BOTH modes.
     const NAV = 'a[href], button, input[type="submit"], input[type="button"], input[type="image"], [role="link"], [role="button"]';
+    // The IDE's own authoring chrome (trigger toolbars, handles, overlays, the
+    // draw-mode controls). These are <button>s too, so without this they'd match
+    // NAV and have their clicks killed. Same marker set the capture pipeline
+    // uses to exclude authoring UI. Never guarded.
+    const IDE_UI = '[data-demogeeni-ui], [data-demogeeni-overlay], [data-demogeeni-authoring-control], [id^="demogeeni-"], [class^="demogeeni-"], [class*=" demogeeni-"]';
 
     // Shadow-safe (and iframe-realm-safe): does any element on the event's
     // composed path match `sel`? composedPath() includes the deep target and every
@@ -60,6 +65,7 @@ export default class ClickGuard {
     // Left click.
     this._onClick = (ev) => {
       if (pathMatches(ev, '[data-trigger-id]')) { ev.preventDefault(); return; }  // trigger → bubbles to TriggerBinder
+      if (pathMatches(ev, IDE_UI)) return;  // IDE authoring chrome — let its buttons click
 
       if (authoring()) {
         // Authoring: kill only navigation; let every other click reach the IDE's tools.
