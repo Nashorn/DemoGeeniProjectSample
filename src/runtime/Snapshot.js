@@ -24,6 +24,8 @@ export default namespace `runtime` (
             // const snapshot = this.snapshotRepository.getByNamespace(this.namespace);
                 const snapshot = this.snapshotRepository.getByID(document.body.dataset.snapshotId);
             console.log("snapshot", snapshot);
+            this._snapshot = snapshot;       // kept for live draw-one (drawOneTrigger)
+            this._triggerSheet = null;       // set to the sheet container in the PNG branch
 
             //get all triggers for snapshot
             // const triggers = this.triggerRepository.getTriggersBy(snapshot);
@@ -57,6 +59,7 @@ export default namespace `runtime` (
                 const triggers = this.triggerRepository.getTriggersBy(snapshot);
 
                 // draw onto the same sheet so everything shares the coordinate system
+                this._triggerSheet = handle.container;
                 const drawnTriggers = this.renderService.drawTriggers(triggers, handle.container, snapshot);
 
                 // bind with your variable store + callback
@@ -68,8 +71,31 @@ export default namespace `runtime` (
                 this.triggerBinder.bind(drawnTriggers);
             }
 
-            
+            // Live draw-one hook: lets the IDE add a just-created trigger to the
+            // stage without a full page reload (the IDE calls this via
+            // executeJavaScript). Uses the SAME draw+bind path as boot, so it's
+            // not a second source of truth.
+            globalThis.__demogeeniRuntime = {
+                drawTrigger: (def) => this.drawOneTrigger(def)
+            };
+        }
 
+        // Draw + bind a single trigger from its definition (as stored in
+        // triggers.json). Idempotent — skips if the element is already on stage.
+        drawOneTrigger(def) {
+            try {
+                if (!def || !def.id) return;
+                if (document.querySelector(`[data-trigger-id="${def.id}"]`)) return; // already drawn
+                const trigger = new runtime.Trigger(def);
+                const drawn = this.isSnapshotRasterized(this._snapshot)
+                    ? this.renderService.drawTriggers([trigger], this._triggerSheet, this._snapshot)
+                    : this.renderService.drawTriggers([trigger]);
+                this.triggerBinder.bind(drawn);
+                return true;
+            } catch (e) {
+                console.error('[Snapshot] drawOneTrigger failed:', e);
+                return false;
+            }
         }
 
         isSnapshotRasterized(snapshot) {
