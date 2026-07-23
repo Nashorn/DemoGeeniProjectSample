@@ -295,6 +295,11 @@ export default class RenderService {
     const el = trigger.element;
     if (!el) return;
 
+    // Author identity: expose the trigger's assigned color as a CSS var so the
+    // IDE's edit-mode overlays can tint to match the sidebar color chip. Inert
+    // in playback (nothing references it there).
+    if (trigger.color) el.style.setProperty('--trigger-color', trigger.color);
+
     // Base clickability
     el.style.cursor = 'pointer';
 

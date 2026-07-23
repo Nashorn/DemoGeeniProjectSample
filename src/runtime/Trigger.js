@@ -18,6 +18,7 @@ export default class Trigger {
     this.condition    = definition.condition || null; // evaluated by ConditionEvaluator
     this.binding      = definition.binding || null;   // {expr, format}
     this.style        = definition.style || null;     // {overlayColor,border,align,z,highlight*,pulsate}
+    this.color        = definition.color || null;     // author identity color (IDE edit-overlay tint)
     this.tracking     = !!definition.tracking;
 
     // Action (hydrate from meta-driven config)

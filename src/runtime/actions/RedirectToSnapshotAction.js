@@ -5,7 +5,9 @@ export default class RedirectToSnapshotAction {
     id: "RedirectToSnapshotAction",
     label: "Redirect to Snapshot",
     fields: [
-      { kind: "select", name: "snapshotId", label: "Target Snapshot", required: true, source: "snapshots", filter: { scope: ["screen"] } }
+      // acceptsDrop: this field can be set by dropping a snapshot (e.g. dragging
+      // a frame from the IDE's snapshot filmstrip onto its drop-zone control).
+      { kind: "select", name: "snapshotId", label: "Target Snapshot", required: true, source: "snapshots", filter: { scope: ["screen"] }, acceptsDrop: "snapshots" }
     ],
 
     persist: ["snapshotId"],
